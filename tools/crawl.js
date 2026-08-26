@@ -1,0 +1,550 @@
+/* ART 마법사의 **모든 갈래**를 돌며 화면 텍스트를 전부 긁습니다.
+ *
+ * 이전 도구들의 한계
+ *   sweep_activities.js  선택만 바꿈 → 하위 질문 화면에 도달 못 함
+ *   walk_classes.js      활동 등급 한 축만 순회 → 제품 유형 8가지를 못 덮음
+ *   grab_descriptions.js 화면을 직접 nav → 마법사가 순서를 강제해 튕겨냄
+ *
+ * ── 왜 '간선(edge) 목록' 방식인가 ─────────────────────────────────────────
+ * 처음에는 탐색 대기열을 메모리에만 두었습니다. 그러니 중간에 끊고 다시 돌릴 때
+ * "목적지를 이미 알고 그 화면도 다 훑었으니 건너뛴다" 규칙에 전부 걸려서
+ * 1경로 만에 끝나 버렸습니다. 아직 안 가본 자식 갈래가 대기열과 함께 사라진 탓.
+ *
+ * 그래서 **(화면, 선택) 간선 하나하나를 파일에 적어 둡니다**(crawl_edges.json).
+ *   dest === null       아직 안 걸어봄
+ *   dest === '/x.aspx'  걸어본 결과 그 화면으로 감
+ *   dest === 'BLOCKED'  화면이 안 넘어감
+ *   dest === 'PRUNED'   수렴 가지치기로 생략
+ * 간선을 평생 딱 한 번만 걷고, 언제 끊어도 그대로 이어집니다.
+ *
+ * ── 막히는 이유 세 가지 (이걸 모르면 똑같이 막힙니다) ─────────────────────
+ * 1. ART 는 값을 **직접 입력**하거나 **범주를 선택**하거나 하나만 받습니다.
+ *    둘 다 채우면 오류 메시지도 없이 화면이 안 넘어갑니다. 그래서 next() 는
+ *    아무것도 더하지 않고 먼저 눌러 보고, 막힐 때만 채우고, 그래도 막히면
+ *    숫자 칸을 비웁니다. 순서가 중요합니다.
+ * 2. 1차 국소 제어를 고르면 그 아래 하위 라디오 그룹이 새로 뜹니다. 숫자와
+ *    드롭다운만 채우면 q042 에서 계속 막힙니다.
+ * 3. 클릭 직후 URL 을 읽으면 아직 이전 화면입니다 → cdp.js 의 act() 참고.
+ *
+ *   node crawl.js [최대걸음수]
+ */
+const fs = require('fs');
+const { connect } = require('./cdp.js');
+const P = require('./pagelib.js');
+
+const START = '/loggedin/mechquest/q002_7_activities.aspx';
+// 마법사의 첫 화면. reset() 이 여기까지 되돌립니다.
+const FIRST = 'q003_090_producttype';
+const MAX_STEPS = Number(process.argv[2] || 400);
+const MAX_DEPTH = 22;
+/* 검증용 독립 순회 (ART_RUN=b 처럼 지정).
+ *
+ * 계정을 달리해 크롬을 따로 띄우고(ART_PORT) 결과 파일도 따로 씁니다.
+ * 그러면 서로를 전혀 건드리지 않는 **완전히 독립된 순회**가 되고,
+ * 끝난 뒤 compare_edges.py 로 맞대 보면 어긋난 곳이 곧 '그때그때 다른 곳'입니다.
+ *
+ * 발견형 순회라서 한 파일을 같이 쓰면 안 됩니다 — 읽고-고치고-쓰는 사이에
+ * 다른 일꾼이 쓴 것이 통째로 날아갑니다.
+ */
+const RUN = process.env.ART_RUN ? '.' + process.env.ART_RUN : '';
+const OUT_SCREENS = 'crawl_screens' + RUN + '.json';
+const OUT_TODO = 'crawl_todo' + RUN + '.json';
+const OUT_EDGES = 'crawl_edges' + RUN + '.json';
+
+const IGNORE = ['English', 'Deutsche', 'Francais', 'Nederlands',
+  'claude-translanguage', 'XLUNIFAC', 'xylene', 'toluene'];
+
+// ASP.NET 예외 페이지 문구. 시나리오가 미완성이면 서버 오류가 나는데,
+// 그 진단 화면 boilerplate 는 ART UI 가 아니라 번역 대상이 아닙니다.
+const ASPNET_ERR = /Server Error in|unhandled exception|stack trace|Debug\s*=\s*"true"|<%@|<configuration|<system\.web|compilation debug|Microsoft\.NET|ASP\.NET Version|Runtime Version|Exception Details|Source Error|debug mode|memory\/performance overhead|System\.(InvalidOperationException|Exception|Web)|@import|Stack Trace/i;
+
+const HANGUL = /[가-힣]/;
+
+function ignorable(s) {
+  const t = s.trim();
+  if (ASPNET_ERR.test(t)) return true;
+  if (IGNORE.indexOf(t) !== -1) return true;
+  // 이미 한국어인 문장이 다시 수집되지 않도록. 'ART — 고급 REACH 도구' 처럼
+  // 영미어 낙말이 섞여 있으면 기존 알파벳 검사만으로는 걸러지지 않습니다.
+  if (HANGUL.test(t)) return true;
+  if (t.length < 4) return true;
+  if (!/[A-Za-z]{4}/.test(t)) return true;                           // 알파벳 낱말 없음
+  if (/^[\d.,\s%<>=+/()-]*[A-Za-z/²³°µ]{1,6}$/.test(t)) return true; // 순수 단위
+  return false;
+}
+
+const OUT_OTHER = 'crawl_otherattrs' + RUN + '.json';
+const load = (f, d) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : d);
+const screens = load(OUT_SCREENS, {});
+const todo = load(OUT_TODO, {});
+const store = load(OUT_EDGES, { edges: {}, enumerated: [] });
+const edges = store.edges || {};
+const enumerated = new Set(store.enumerated || []);
+let newHits = 0;
+
+function record(url, kind, s) {
+  const t = String(s || '').replace(/\s+/g, ' ').trim();
+  if (!t || ignorable(t)) return;
+  if (!(t in todo)) { todo[t] = ''; newHits++; }
+  const sc = screens[url] || (screens[url] = {});
+  if (!sc[kind]) sc[kind] = [];
+  if (sc[kind].indexOf(t) === -1) sc[kind].push(t);
+}
+// 유저스크립트가 아직 안 건드리는 표시용 속성(aria-label, summary, data-*).
+// 번역 단위가 아니라 '여기에 글이 있으니 ATTRS 에 추가할지 판단하라' 는 진단입니다.
+const otherAttrs = load(OUT_OTHER, {});
+function noteOther(url, s) {
+  const t = String(s || '').replace(/\s+/g, ' ').trim();
+  if (!t) return;
+  (otherAttrs[t] || (otherAttrs[t] = [])).indexOf(url) === -1
+    && otherAttrs[t].push(url);
+}
+function save() {
+  fs.writeFileSync(OUT_OTHER, JSON.stringify(otherAttrs, null, 1), 'utf8');
+  fs.writeFileSync(OUT_SCREENS, JSON.stringify(screens, null, 1), 'utf8');
+  fs.writeFileSync(OUT_TODO, JSON.stringify(todo, null, 1), 'utf8');
+  fs.writeFileSync(OUT_EDGES,
+    JSON.stringify({ edges, enumerated: [...enumerated] },
+      (k, v) => (k === '__k' ? undefined : v), 1), 'utf8');
+}
+// 라디오+드롭다운 쌍 갈래의 구분자. ASP.NET 컨트롤 이름에 안 쓰이는 조합.
+const PAIR_SEP = '~~';
+// 간선 키에 문맥(제품 유형)을 넣습니다. 활동 등급 목록이 제품 유형마다
+// 다르기 때문에, 문맥을 빼면 처음 도착한 유형의 목록만 열거하고 끝납니다.
+const edgeKey = (ch) => ch.at + '@' + (ch.ctx || '')
+  + '|' + ch.kind + '|' + ch.name + '|' + ch.v;
+// 문맥 = 제품 유형 + **흐름을 가르는 예/아니오 답**.
+//
+// 7차 세션까지는 제품 유형(경로의 첫 선택)만 담았습니다. 그래서 근거리로 도착한
+// 국소 제어 화면과 원거리로 도착한 국소 제어 화면이 **같은 키**가 되어, 먼저 도착한
+// 쪽(근거리)만 자식 갈래를 열거하고 끝났습니다. 그 결과 원거리에서만 나오는
+// 격리(q043)·개인 밀폐(q044) 화면이 그래프에서 통째로 빠졌습니다.
+// 실측 증거: 경로에 q016=rbYes 인 간선 346개, rbNo 는 5개뿐이었습니다.
+const CTX_SCREENS = ['q016_nearfieldsource'];
+const ctxOf = (path) => {
+  if (!path || !path.length) return '';
+  const parts = [String(path[0].v)];               // 제품 유형
+  for (const ch of path) {
+    const at = ch.at || '';
+    if (CTX_SCREENS.some((s) => at.indexOf(s) !== -1)) parts.push(String(ch.v));
+  }
+  return parts.join('+');
+};
+
+(async () => {
+  const c = await connect();
+  const log = (s) => process.stdout.write(s + '\n');
+  const url = () => c.run(function () { return location.pathname; });
+
+  // '활동 구성' 은 **이전 활동을 이어받아** 중간 화면에서 시작하는 경우가 있습니다.
+  // 그러면 경로 되밟기가 첫걸음부터 어긋납니다('경로 이탈'). 그래서 첫 화면까지
+  // '이전' 을 눌러 되돌립니다.
+  async function reset() {
+    await c.nav(START);
+    let u = await url();
+    if (u.indexOf('q002_7') === -1) { await c.nav(START); u = await url(); }
+    const r = await c.act(() => c.run(P.clickBtn, ['활동 구성', 'configure activity']), 2500);
+    if (r.result === 'NOTFOUND') throw new Error('활동 구성 버튼 없음 @' + u);
+    let now = await url();
+    if (now === u) throw new Error('활동 구성 클릭이 안 먹음');
+    for (let i = 0; i < 40 && now.indexOf(FIRST) === -1; i++) {
+      const p = await clickPrev();
+      if (p.result === 'NOTFOUND') break;
+      const nu = await url();
+      if (nu === now) break;
+      now = nu;
+    }
+    if (now.indexOf(FIRST) === -1) {
+      throw new Error('첫 화면으로 못 감 (' + now.split('/').pop() + ')');
+    }
+    return now;
+  }
+
+  async function sweep(u) {
+    const h = await c.run(P.harvest);
+    if (h.title) record(u, 'title', h.title);
+    h.residue.forEach((s) => record(u, 'text', s));
+    h.attrs.forEach((s) => record(u, 'attr', s));
+    h.opts.forEach((s) => record(u, 'option', s));
+    h.legends.forEach((s) => record(u, 'legend', s));
+    (h.dialogs || []).forEach((s) => record(u, 'dialog', s));
+    (h.otherAttrs || []).forEach((x) => noteOther(u, x));
+    if (h.desc) for (const v of Object.values(h.desc)) record(u, 'desc', v);
+
+    // 읽기전용 textarea 설명 상자는 라디오를 하나씩 눌러야 채워집니다.
+    // 전역 Descriptions 가 있는 화면은 클릭 없이 위에서 이미 다 읽었습니다.
+    const hasTa = h.tas.some((t) => t.ro || t.dis);
+    if (hasTa && !h.desc) {
+      const g = await c.run(P.radioGroups);
+      for (const name of Object.keys(g)) {
+        for (const opt of g[name]) {
+          const r = await c.act(() => c.run(P.pickRadio, name, opt.v), 1500);
+          if (r.result === 'MISS') continue;
+          const h2 = await c.run(P.harvest);
+          if (h2.url !== u) return;   // 라디오가 화면을 넘겨버렸으면 중단
+          h2.tas.filter((t) => t.ro || t.dis).forEach((t) => record(u, 'desc', t.full));
+          if (h2.descBox && h2.descBox.val) record(u, 'desc', h2.descBox.val);
+          h2.residue.forEach((s) => record(u, 'text', s));
+        }
+      }
+      for (const s of await c.run(P.selectInfo)) {
+        if (s.opts.length < 2 || s.opts.length > 30) continue;
+        for (const o of s.opts) {
+          if (o.v === '') continue;
+          await c.act(() => c.run(P.pickSelect, s.name, o.v), 1200);
+          const h3 = await c.run(P.harvest);
+          if (h3.url !== u) return;
+          h3.tas.filter((t) => t.ro || t.dis).forEach((t) => record(u, 'desc', t.full));
+          h3.residue.forEach((x) => record(u, 'text', x));
+          h3.opts.forEach((x) => record(u, 'option', x));
+        }
+      }
+    }
+
+    const o = await c.act(() => c.run(P.openHelp), 1200);
+    if (o.result === 'OK') {
+      await c.sleep(1500);
+      (await c.run(P.readHelp)).forEach((s) => record(u, 'help', s));
+    }
+  }
+
+  // 앞으로 갈 선택지.
+  //
+  // 활동 등급 화면(q017)은 **라디오(등급) + 드롭다운(하위등급)** 조합입니다.
+  // 라디오만 갈래로 잡으면 하위등급마다 다른 하위 질문 화면에 못 갑니다
+  // (액체 쪽 q026 분무, q028 정지 액면, q032 하부 적재 등이 그래서 안 잡혔습니다).
+  // 그래서 등급을 하나씩 골라 그때 뜨는 하위등급 목록을 읽고 **쌍(pair)** 으로
+  // 갈래를 만듭니다. 열거에 포스트백이 들지만 화면당 딱 한 번입니다.
+  async function choices() {
+    const g = await c.run(P.radioGroups);
+    const names = Object.keys(g);
+    if (!names.length) {
+      for (const s of await c.run(P.selectInfo)) {
+        if (s.opts.length > 1) {
+          return s.opts.filter((o) => o.v !== '')
+            .map((o) => ({ kind: 'select', name: s.name, v: o.v }));
+        }
+      }
+      // 라디오도 드롭다운도 없는 화면(숫자만 넣는 곳)입니다. 갈래가 0개면
+      // 여기가 막다른 길이 되어 **그 뒤 전체가 미탐색**으로 남습니다 —
+      // 액체 갈래가 실제로 그렇게 통째로 빠졌습니다.
+      // 그래서 '채우고 다음' 이라는 갈래 하나를 만듭니다.
+      return [{ kind: 'linear', name: '(직진)', v: '' }];
+    }
+
+    const n = names[0];
+    const subSel = (await c.run(P.selectInfo))
+      .filter((s) => /subclass|subcategory/i.test(s.name || ''))[0];
+    if (!subSel) return g[n].map((o) => ({ kind: 'radio', name: n, v: o.v }));
+
+    const here = await url();
+    const out = [];
+    for (const o of g[n]) {
+      await c.act(() => c.run(P.pickRadio, n, o.v), 1500);
+      if ((await url()) !== here) break;   // 라디오가 화면을 넘겼으면 중단
+      const ss = (await c.run(P.selectInfo))
+        .filter((s) => (s.name || '') === subSel.name)[0];
+      // 자리표시자('(하위 활동 등급 없음)' 같은 것)는 값이 비어 있거나 하나뿐입니다.
+      const real = ss ? ss.opts.filter((x) => x.v !== '') : [];
+      if (real.length <= 1) {
+        out.push({ kind: 'radio', name: n, v: o.v });
+      } else {
+        for (const r of real) {
+          out.push({ kind: 'pair', name: n + PAIR_SEP + subSel.name,
+                     v: o.v + PAIR_SEP + r.v });
+        }
+      }
+    }
+    return out;
+  }
+
+  async function applyChoice(ch) {
+    if (ch.kind === 'linear') return 'LINEAR';
+    if (ch.kind === 'pair') {
+      // 라디오를 먼저 고르고(포스트백으로 하위등급 목록이 갱신됨) 그다음 드롭다운.
+      const rn = ch.name.split(PAIR_SEP)[0];
+      const sn = ch.name.split(PAIR_SEP)[1];
+      const rv = ch.v.split(PAIR_SEP)[0];
+      const sv = ch.v.split(PAIR_SEP)[1];
+      await c.act(() => c.run(P.pickRadio, rn, rv), 1500);
+      return (await c.act(() => c.run(P.pickSelect, sn, sv), 1500)).result;
+    }
+    const fn = ch.kind === 'radio'
+      ? () => c.run(P.pickRadio, ch.name, ch.v)
+      : () => c.run(P.pickSelect, ch.name, ch.v);
+    return (await c.act(fn, 1500)).result;
+  }
+
+  const clickNext = () => c.act(() => c.run(P.clickBtn, ['다음', 'next']), 3000);
+  const clickPrev = () => c.act(() => c.run(P.clickBtn, ['이전', 'previous', 'back']), 3000);
+
+  // 화면을 넘깁니다. 성공하면 새 경로, 실패하면 false.
+  async function next(u) {
+    const r = await clickNext();
+    if (r.result === 'NOTFOUND') return false;
+    let now = await url();
+    if (now !== u) return now;
+
+    // 2단계: 비어 있는 컨트롤 채우기. 라디오가 먼저입니다(하위 질문 그룹).
+    let touched = false;
+    const gg = await c.run(P.radioGroups);
+    for (const nm of Object.keys(gg)) {
+      if (gg[nm].some((o) => o.c)) continue;
+      await c.act(() => c.run(P.pickRadio, nm, gg[nm][0].v), 1500);
+      touched = true;
+    }
+    if (touched) {
+      await clickNext();
+      now = await url();
+      if (now !== u) return now;
+    }
+    const f = await c.act(() => c.run(P.fillBlanks), 1200);
+    const filledAny = (f.result || []).length > 0;
+    let pickedSelect = false;
+    if (!filledAny) {
+      for (const s of await c.run(P.selectInfo)) {
+        if (s.opts.length > 1 && s.idx <= 0) {
+          await c.act(() => c.run(P.pickSelect, s.name, s.opts[1].v), 1200);
+          pickedSelect = true;
+        }
+      }
+    }
+    if (filledAny || pickedSelect) {
+      await clickNext();
+      now = await url();
+      if (now !== u) return now;
+    }
+
+    // 3단계: 숫자 칸을 비워 '범주 선택' 쪽만 남기기
+    const cleared = await c.act(() => c.run(function () {
+      var n = 0;
+      var ins = document.querySelectorAll('input[type=text],input[type=number]');
+      for (var i = 0; i < ins.length; i++) {
+        var e = ins[i];
+        if (e.offsetParent === null || !e.value) continue;
+        if (String(e.name || e.id || '').toLowerCase().indexOf('usernote') >= 0) continue;
+        e.value = '';
+        e.dispatchEvent(new Event('change', { bubbles: true }));
+        n++;
+      }
+      return n;
+    }), 1200);
+    if (cleared.result) {
+      await clickNext();
+      now = await url();
+      if (now !== u) return now;
+    }
+
+    (await c.run(P.errors)).forEach((e) => record(u, 'error', e));
+    return false;
+  }
+
+  // ── 상태 ────────────────────────────────────────────────────────────────
+  const swept = new Set(Object.keys(screens));
+  let curPath = [];   // 브라우저가 실제로 밟아 온 선택들
+  let pruned = 0;
+  let walked = 0;
+  const openCount = () => Object.keys(edges).filter((k) => edges[k].dest === null).length;
+
+  // 한 컨트롤의 선택지들이 모두 같은 화면으로 가면(질량분율 구간, 발진성 등급처럼)
+  // 나머지 형제는 걸어보지 않습니다. 선택지 문구는 sweep() 이 이미 다 읽었고,
+  // 잃는 것은 '그 아래 화면' 뿐인데 어차피 같은 화면입니다.
+  // 건너뛴 개수를 반드시 남깁니다 — 조용히 줄이면 다 덮은 줄 착각합니다.
+  // ART_NO_PRUNE=1 로 가지치기를 끕니다. 건너뛴 갈래를 전부 다시 걸어볼 때 씁니다.
+  // (가지치기는 '선택지 3개가 같은 화면으로 가면 나머지도 같다' 는 가정입니다.
+  //  가정이지 확인이 아니므로 한 번은 끄고 돌려봐야 합니다.)
+  const CONVERGE_AFTER = process.env.ART_NO_PRUNE ? 1e9 : 3;
+  function convergedDest(ch) {
+    const pre = ch.at + '@' + (ch.ctx || '')
+      + '|' + ch.kind + '|' + ch.name + '|';
+    const dests = {};
+    let n = 0;
+    for (const k of Object.keys(edges)) {
+      if (k.indexOf(pre) !== 0) continue;
+      const d = edges[k].dest;
+      if (!d || d === 'PRUNED') continue;
+      n++;
+      dests[d] = 1;
+    }
+    if (n < CONVERGE_AFTER) return null;
+    const ds = Object.keys(dests);
+    return (ds.length === 1 && swept.has(ds[0])) ? ds[0] : null;
+  }
+
+  // 현재 화면을 훑고 자식 간선을 등록합니다.
+  async function visit(pathTo) {
+    const u = await url();
+    const cx = ctxOf(pathTo);
+
+    // 선택지 문구는 문맥마다 다릅니다. 방문할 때마다 가벼운 harvest 로 다시
+    // 긁습니다(포스트백 0회). 라디오를 하나씩 눌러 설명을 읽는 무거운 sweep 은
+    // URL 당 한 번이면 충분합니다.
+    try {
+      const h = await c.run(P.harvest);
+      if (h.title) record(u, 'title', h.title);
+      h.residue.forEach((x) => record(u, 'text', x));
+      h.attrs.forEach((x) => record(u, 'attr', x));
+      h.opts.forEach((x) => record(u, 'option', x));
+      h.legends.forEach((x) => record(u, 'legend', x));
+      (h.dialogs || []).forEach((x) => record(u, 'dialog', x));
+      (h.otherAttrs || []).forEach((x) => noteOther(u, x));
+      if (h.desc) for (const v of Object.values(h.desc)) record(u, 'desc', v);
+    } catch (e) { /* 무시 */ }
+
+    if (!swept.has(u)) {
+      swept.add(u);
+      log('  훑기 + ' + u.split('/').pop());
+      try { await sweep(u); } catch (e) { log('  훑기 실패: ' + e.message); }
+      log('  화면 ' + swept.size + '개 / 수집 ' + Object.keys(todo).length
+        + '개 (새로 ' + newHits + ')');
+    }
+
+    // 순환 차단. 마법사는 활동을 끝내면 제품 유형 화면으로 되돌아갑니다.
+    // 그때 자식 갈래를 또 등록하면 같은 트리를 두 번 탑니다(얻는 것 없이 비용 2배).
+    const revisit = pathTo.some((ch) => ch.at === u);
+    if (revisit) log('  (순환 — 자식 갈래 등록 생략: ' + u.split('/').pop() + ')');
+
+    const ek = u + '@' + cx;
+    if (!revisit && !enumerated.has(ek) && pathTo.length < MAX_DEPTH) {
+      enumerated.add(ek);
+      let n = 0;
+      for (const ch of await choices()) {
+        const e = { at: u, ctx: cx, kind: ch.kind, name: ch.name, v: ch.v, dest: null };
+        const k = edgeKey(e);
+        if (edges[k]) continue;
+        e.path = pathTo.concat([{ at: u, ctx: cx, kind: ch.kind, name: ch.name, v: ch.v }]);
+        edges[k] = e;
+        n++;
+      }
+      if (n) log('  새 갈래 ' + n + '개 (문맥 ' + (cx || '뿌리') + ')');
+    }
+    save();
+  }
+
+  // 필요한 만큼만 '이전' 을 눌러 되돌립니다. 형제 갈래는 길이가 같아
+  // '이어 걷기' 가 안 먹으므로 이게 없으면 매번 처음부터 다시 걸어야 합니다.
+  async function rewindTo(wantUrl) {
+    for (let i = 0; i < 40; i++) {
+      const u = await url();
+      if (u === wantUrl) return true;
+      const r = await clickPrev();
+      if (r.result === 'NOTFOUND') return false;
+      if ((await url()) === u) return false;
+    }
+    return false;
+  }
+
+  // prefix 를 밟아 wantUrl 까지 갑니다. 이어 걷기 → 되감기 → 처음부터.
+  async function goTo(prefix, wantUrl) {
+    let common = 0;
+    while (common < curPath.length && common < prefix.length
+           && edgeKey(curPath[common]) === edgeKey(prefix[common])) common++;
+
+    const here = await url();
+    if (common === curPath.length && common === prefix.length && here === wantUrl) {
+      // 이미 그 자리
+    } else if (common === prefix.length && await rewindTo(wantUrl)) {
+      curPath = curPath.slice(0, common);
+    } else {
+      await reset();
+      curPath = [];
+    }
+    for (let k = curPath.length; k < prefix.length; k++) {
+      const ch = prefix[k];
+      const u = await url();
+      if (ch.at && ch.at !== u) throw new Error('경로 이탈 ' + u.split('/').pop());
+      const ap = await applyChoice(ch);
+      if (ap === 'DISABLED') {
+        const dk = edgeKey(ch);
+        if (edges[dk]) edges[dk].dest = 'DISABLED';
+        throw new Error('선택 불가 @' + u.split('/').pop() + ' ' + ch.v);
+      }
+      const nu = await next(u);
+      const kk = edgeKey(ch);
+      if (edges[kk]) edges[kk].dest = nu || 'BLOCKED';
+      if (!nu) throw new Error('막힘 @' + u.split('/').pop());
+      curPath = prefix.slice(0, k + 1);
+    }
+    const at = await url();
+    if (at !== wantUrl) throw new Error('도착 불일치 ' + at.split('/').pop());
+  }
+
+  // 갈래별 실패 횟수. 이게 없으면 replay 가 계속 실패하는 갈래를 영원히 다시
+  // 고릅니다 — 실제로 같은 자리에서 209번 헛돌았습니다.
+  const fails = {};
+  const MAX_FAIL = 3;
+
+  function pickEdge() {
+    let best = null;
+    for (const k of Object.keys(edges)) {
+      const e = edges[k];
+      if (e.dest !== null || !e.path) continue;
+      if ((fails[k] || 0) >= MAX_FAIL) continue;
+      if (!best || e.path.length > best.path.length) { best = e; best.__k = k; }
+    }
+    return best;
+  }
+
+  try {
+    if (!enumerated.size || !Object.keys(edges).length) {
+      await reset();
+      curPath = [];
+      await visit([]);
+    }
+
+    while (walked < MAX_STEPS) {
+      const e = pickEdge();
+      if (!e) { log('\n남은 갈래가 없습니다.'); break; }
+
+      const conv = convergedDest(e);
+      if (conv) {
+        e.dest = 'PRUNED';
+        pruned++;
+        if (pruned % 25 === 1) {
+          log('  (가지치기 ' + pruned + '개: ' + e.at.split('/').pop()
+            + ' 선택지가 모두 ' + conv.split('/').pop() + ' 로 수렴)');
+        }
+        save();
+        continue;
+      }
+
+      walked++;
+      log('\n### ' + walked + '/' + MAX_STEPS + '  깊이 ' + e.path.length
+        + '  ' + e.at.split('/').pop() + '  (남은 갈래 ' + openCount() + ')');
+
+      try {
+        await goTo(e.path.slice(0, -1), e.at);
+        const ap = await applyChoice(e);
+        if (ap === 'DISABLED') {
+          // 잠긴 선택지입니다. 그냥 넘기면 원래 값의 동작을 기록해 버립니다.
+          e.dest = 'DISABLED';
+          log('  선택 불가 (잠긴 컨트롤)');
+          curPath = [];
+          save();
+          continue;
+        }
+        const nu = await next(e.at);
+        e.dest = nu || 'BLOCKED';
+        if (!nu) { log('  막힘'); curPath = []; save(); continue; }
+        curPath = e.path.slice();
+        await visit(e.path);
+      } catch (err) {
+        const k = e.__k;
+        fails[k] = (fails[k] || 0) + 1;
+        log('  실패(' + fails[k] + '/' + MAX_FAIL + '): ' + err.message);
+        if (fails[k] >= MAX_FAIL) {
+          e.dest = 'UNREACHABLE';
+          log('    -> 접근불가로 확정');
+        }
+        curPath = [];
+        save();
+      }
+    }
+  } finally {
+    save();
+    log('\n=== 끝. 화면 ' + swept.size + '개, 수집 ' + Object.keys(todo).length
+      + '개, 걸은 갈래 ' + walked + ', 가지치기 ' + pruned
+      + ', 남은 갈래 ' + openCount() + ' ===');
+    c.close();
+  }
+})();

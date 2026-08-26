@@ -1,0 +1,30 @@
+
+/* ── 단독 파일용 추가분 ─────────────────────────────────────────── */
+/* 아티팩트 뷰어가 넣어주던 리셋을 여기서 직접 넣습니다 */
+img,svg,video{max-width:100%}
+button,input,textarea{font:inherit;color:inherit}
+
+/* 테마 전환 버튼 — 아티팩트에는 뷰어 설정이 있지만 단독 파일에는 없습니다 */
+.theme-btn{
+  position:fixed;right:1rem;bottom:1rem;z-index:50;
+  width:2.9rem;height:2.9rem;border-radius:100px;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule);color:var(--ink-2);
+  box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;line-height:1;
+}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* 인쇄 */
+@media print{
+  :root{--ground:#fff;--surface:#fff;--surface-2:#f4f4f4;--ink:#000;--ink-2:#333;
+        --ink-3:#555;--rule:#bbb;--rule-2:#ddd;--accent:#0C6B5E;--accent-soft:#eef6f4;
+        --warn:#8A3512;--warn-soft:#fbeee8;--ok:#1F6B3A;--ok-soft:#eaf4ed;--shadow:none}
+  body{font-size:11pt;line-height:1.6}
+  .theme-btn{display:none}
+  .step,figure,.big-warn,.note,.filecard{break-inside:avoid;page-break-inside:avoid}
+  h2{break-after:avoid;page-break-after:avoid}
+  .tsq{border:1px solid var(--rule)}
+  .tsq .body{display:block !important}
+  .fprev{max-height:none}
+  a{text-decoration:none}
+}

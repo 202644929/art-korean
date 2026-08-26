@@ -1,0 +1,105 @@
+%%{init: {"flowchart": {"useMaxWidth": false, "nodeSpacing": 45, "rankSpacing": 55}, "themeVariables": {"fontSize": "15px"}} }%%
+flowchart TD
+  Sq004_091_dustiness{"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)"}
+  Sq006_093_moisturecontent{"제품의 수분 함량은 얼마입니까?"}
+  Sq006_5_093_5_powderweightfraction{"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?"}
+  Sq016_nearfieldsource{"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 …"}
+  Sq017_055_103_activityclass{"활동 등급 선택"}
+  Sq025_063_111_compressinggranularmaterial{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq023_061_109_movementagitationgranularmaterial{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq024_062_110_fallinggranularmaterial{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq024_9_1_062_9_1_110_9_1_vacuumtransfer{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq025_5_063_5_111_5_fracturinggranularmaterial{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq022_060_108_sprayapplicationpowders{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq021_059_107_contaminatedobjectspaste{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq020_058_106_impactionsolidobjects{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq020_5_058_5_106_5_impactionsolidobjectshandlingtype{"취급의 종류는 무엇입니까?"}
+  Sq042_080_130_primarylocalizedcontrols{"일반 제어수단"}
+  Sq021_5_059_5_107_5_contaminatedobjectspastehandlingtype{"오염된 물체 또는 페이스트를 어떻게 취급합니까?"}
+  Sq022_5_060_5_108_5_sprayapplicationpowdersspraydirection{"분무 방향은 어떻습니까?"}
+  Sq023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel{"교반 정도는 어떻습니까?"}
+  Sq023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq024_5_062_5_110_5_fallinggranularmaterialhandlingtype{"취급의 종류는 무엇입니까?"}
+  Sq024_7_062_7_110_7_fallinggranularmaterialdropheight{"낙하 높이는 얼마입니까?"}
+  Sq024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq045_081_surfacecontamination{"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?"}
+  Sq043_131_segregation{"격리(발생원) 선택"}
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols{"일반 제어수단"}
+  Sq044_personalenclosure{"Select 격리(작업자)"}
+  Sq084_dispersion{"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?"}
+  Sq048_dispersion{"작업을 실내 또는 실외에서 수행합니까?"}
+  Sq089_0_secondaryfarfieldsources{"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?"}
+  Sq002_7_activities{"시나리오 개요 - ART 기계론적 모델"}
+  Sq003_090_producttype{"물질/조제품의 제품 유형은 무엇입니까?"}
+  Sq004_091_dustiness -->|"5개 선택지"| Sq006_093_moisturecontent
+  Sq006_093_moisturecontent -->|"건조 제품 (수분 함량 <5 %)<br/>수분 함량 5 - 10 %<br/>수분 함량 >10 %"| Sq006_5_093_5_powderweightfraction
+  Sq006_5_093_5_powderweightfraction -->|"9개 선택지"| Sq016_nearfieldsource
+  Sq016_nearfieldsource -->|"아니오<br/>예"| Sq017_055_103_activityclass
+  Sq017_055_103_activityclass -->|"분말, 과립 또는 펠릿형 재료의 압축<br/>분말, 과립 또는 펠릿형 재료의 압축"| Sq025_063_111_compressinggranularmaterial
+  Sq017_055_103_activityclass -->|"분말, 과립 또는 펠릿형 재료의 이동 및 교반<br/>분말, 과립 또는 펠릿형 재료의 이동 및 교반"| Sq023_061_109_movementagitationgranularmaterial
+  Sq017_055_103_activityclass -->|"분말, 과립 또는 펠릿형 재료의 이송 / — 선택 —<br/>분말, 과립 또는 펠릿형 재료의 이송 / — 선택 —<br/>분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 …<br/>분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 …"| Sq024_062_110_fallinggranularmaterial
+  Sq017_055_103_activityclass -->|"분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 …<br/>분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 …"| Sq024_9_1_062_9_1_110_9_1_vacuumtransfer
+  Sq017_055_103_activityclass -->|"분말, 과립 또는 펠릿형 재료의 파쇄<br/>분말, 과립 또는 펠릿형 재료의 파쇄"| Sq025_5_063_5_111_5_fracturinggranularmaterial
+  Sq017_055_103_activityclass -->|"분말의 분무 적용<br/>분말의 분무 적용"| Sq022_060_108_sprayapplicationpowders
+  Sq017_055_103_activityclass -->|"오염된 고체 물체 또는 페이스트의 취급<br/>오염된 고체 물체 또는 페이스트의 취급"| Sq021_059_107_contaminatedobjectspaste
+  Sq017_055_103_activityclass -->|"오염된 고체 물체에 대한 충격<br/>오염된 고체 물체에 대한 충격"| Sq020_058_106_impactionsolidobjects
+  Sq020_058_106_impactionsolidobjects -->|"8개 선택지"| Sq020_5_058_5_106_5_impactionsolidobjectshandlingtype
+  X_Sq020_058_106_impactionsolidobjects_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq020_058_106_impactionsolidobjects -->|"경미하게 오염된(수 그램 미만의 층) 물체에 대한 충격<br/>외견상 깨끗한 물체에 대한 충격"| X_Sq020_058_106_impactionsolidobjects_PRUNED
+  Sq020_5_058_5_106_5_impactionsolidobjectshandlingtype -->|"중(重)기계적 충격<br/>중(重)기계적 충격<br/>통상적 충격 (수동 또는 경(輕)기계적)<br/>통상적 충격 (수동 또는 경(輕)기계적)"| Sq042_080_130_primarylocalizedcontrols
+  Sq021_059_107_contaminatedobjectspaste -->|"8개 선택지"| Sq021_5_059_5_107_5_contaminatedobjectspastehandlingtype
+  X_Sq021_059_107_contaminatedobjectspaste_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq021_059_107_contaminatedobjectspaste -->|"경미하게 오염된(수 그램 미만의 층) 물체의 취급<br/>외견상 깨끗한 물체의 취급"| X_Sq021_059_107_contaminatedobjectspaste_PRUNED
+  Sq021_5_059_5_107_5_contaminatedobjectspastehandlingtype -->|"6개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  Sq022_060_108_sprayapplicationpowders -->|"분체 도장<br/>분체 도장<br/>블로워를 이용한 분말 살포<br/>블로워를 이용한 분말 살포"| Sq022_5_060_5_108_5_sprayapplicationpowdersspraydirection
+  Sq022_5_060_5_108_5_sprayapplicationpowdersspraydirection -->|"6개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  Sq023_061_109_movementagitationgranularmaterial -->|"10개 선택지"| Sq023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel
+  X_Sq023_061_109_movementagitationgranularmaterial_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq023_061_109_movementagitationgranularmaterial -->|"0.1 - 1 kg의 이동 및 교반<br/>1 - 10 kg의 이동 및 교반<br/>10 - 100 gram의 이동 및 교반<br/>< 10 gram의 이동 및 교반"| X_Sq023_061_109_movementagitationgranularmaterial_PRUNED
+  Sq023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel -->|"6개 선택지"| Sq023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel
+  Sq023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel -->|"개방 공정<br/>개방 공정<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq042_080_130_primarylocalizedcontrols
+  Sq024_062_110_fallinggranularmaterial -->|"10개 선택지"| Sq024_5_062_5_110_5_fallinggranularmaterialhandlingtype
+  X_Sq024_062_110_fallinggranularmaterial_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq024_062_110_fallinggranularmaterial -->|"이송 0.1 - 1 kg/minute<br/>이송 1 - 10 kg/minute<br/>이송 10 - 100 gram/minute<br/>이송 10 gram/minute 미만"| X_Sq024_062_110_fallinggranularmaterial_PRUNED
+  Sq024_5_062_5_110_5_fallinggranularmaterialhandlingtype -->|"정형적 이송<br/>정형적 이송<br/>주의 깊은 이송이란 작업자가 잠재적 위험, 오류, 피해에 주…<br/>주의 깊은 이송이란 작업자가 잠재적 위험, 오류, 피해에 주…"| Sq024_7_062_7_110_7_fallinggranularmaterialdropheight
+  Sq024_7_062_7_110_7_fallinggranularmaterialdropheight -->|"낙하 높이 < 0.5 m<br/>낙하 높이 < 0.5 m<br/>낙하 높이 > 0.5 m<br/>낙하 높이 > 0.5 m"| Sq024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel
+  Sq024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel -->|"개방 공정<br/>개방 공정<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq042_080_130_primarylocalizedcontrols
+  Sq024_9_1_062_9_1_110_9_1_vacuumtransfer -->|"10개 선택지"| Sq024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel
+  X_Sq024_9_1_062_9_1_110_9_1_vacuumtransfer_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq024_9_1_062_9_1_110_9_1_vacuumtransfer -->|"이송 0.1 - 1 kg/minute<br/>이송 1 - 10 kg/minute<br/>이송 10 - 100 gram/minute<br/>이송 10 gram/minute 미만"| X_Sq024_9_1_062_9_1_110_9_1_vacuumtransfer_PRUNED
+  Sq024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel -->|"개방 공정<br/>개방 공정<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq042_080_130_primarylocalizedcontrols
+  Sq025_063_111_compressinggranularmaterial -->|"10개 선택지"| Sq025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel
+  X_Sq025_063_111_compressinggranularmaterial_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq025_063_111_compressinggranularmaterial -->|"압축 0.1 - 1 kg/minute<br/>압축 1 - 10 kg/minute<br/>압축 10 - 100 gram/minute<br/>압축 10 gram/minute 미만"| X_Sq025_063_111_compressinggranularmaterial_PRUNED
+  Sq025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel -->|"개방 공정<br/>개방 공정<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq042_080_130_primarylocalizedcontrols
+  Sq025_5_063_5_111_5_fracturinggranularmaterial -->|"10개 선택지"| Sq025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel
+  X_Sq025_5_063_5_111_5_fracturinggranularmaterial_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq025_5_063_5_111_5_fracturinggranularmaterial -->|"파쇄 0.1 - 1 kg/minute<br/>파쇄 1 - 10 kg/minute<br/>파쇄 10 - 100 gram/minute<br/>파쇄 10 gram/minute 미만"| X_Sq025_5_063_5_111_5_fracturinggranularmaterial_PRUNED
+  Sq025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel -->|"개방 공정 (예: 개방된 표면에서의 벌크 분쇄)<br/>개방 공정 (예: 개방된 표면에서의 벌크 분쇄)<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq042_080_130_primarylocalizedcontrols
+  Sq042_080_130_primarylocalizedcontrols -->|"국소 제어 없음"| Sq045_081_surfacecontamination
+  Sq042_080_130_primarylocalizedcontrols -->|"국소 제어 없음"| Sq043_131_segregation
+  X_Sq042_080_130_primarylocalizedcontrols_BLOCKED[/"막힘(검증오류)"/]
+  Sq042_080_130_primarylocalizedcontrols -->|"국소배기장치(LEV)<br/>국소배기장치(LEV)<br/>글로브 박스 및 글로브 백<br/>글로브 박스 및 글로브 백"| X_Sq042_080_130_primarylocalizedcontrols_BLOCKED
+  Sq042_080_130_primarylocalizedcontrols -->|"6개 선택지"| Sq042_5_080_5_130_5_secondarylocalizedcontrols
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"2차 국소 제어 없음<br/>밀폐 — 배기 없음<br/>억제 기법<br/>증기 회수 시스템"| Sq045_081_surfacecontamination
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"2차 국소 제어 없음<br/>밀폐 — 배기 없음<br/>억제 기법"| Sq043_131_segregation
+  X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_BLOCKED[/"막힘(검증오류)"/]
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"국소배기장치(LEV)<br/>글로브 박스 및 글로브 백"| X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_BLOCKED
+  X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"국소배기장치(LEV)<br/>글로브 박스 및 글로브 백<br/>증기 회수 시스템"| X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_PRUNED
+  Sq043_131_segregation -->|"(미수집) rbCompleteNoVentilation<br/>(미수집) rbPartialNoVentilation<br/>(미수집) rbPartialVentilation"| Sq044_personalenclosure
+  X_Sq043_131_segregation_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq043_131_segregation -->|"(미수집) rbCompleteVentilation<br/>(미수집) rbNoSegregation"| X_Sq043_131_segregation_PRUNED
+  Sq044_personalenclosure -->|"(미수집) rbCompleteNoVentilation<br/>(미수집) rbPartialNoVentilation<br/>(미수집) rbPartialVentilation"| Sq045_081_surfacecontamination
+  X_Sq044_personalenclosure_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq044_personalenclosure -->|"(미수집) rbCompleteVentilation<br/>(미수집) rbNoPersonalEnclosure"| X_Sq044_personalenclosure_PRUNED
+  Sq045_081_surfacecontamination -->|"아니오<br/>예"| Sq084_dispersion
+  Sq045_081_surfacecontamination -->|"아니오<br/>예"| Sq048_dispersion
+  X_Sq048_dispersion_BLOCKED[/"막힘(검증오류)"/]
+  Sq048_dispersion -->|"(미수집) rbIndoors<br/>(미수집) rbOutdoors"| X_Sq048_dispersion_BLOCKED
+  Sq084_dispersion -->|"스프레이 룸<br/>실내<br/>실외<br/>하향 층류 부스"| Sq089_0_secondaryfarfieldsources
+  Sq089_0_secondaryfarfieldsources -->|"아니오"| Sq002_7_activities
+  Sq089_0_secondaryfarfieldsources -->|"예"| Sq003_090_producttype

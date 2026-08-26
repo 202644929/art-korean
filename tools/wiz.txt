@@ -1,0 +1,585 @@
+(0 ≤ process temperature ≤ 150 °C)
+(0.0 < liquid mole fraction ≤ 1.0)
+(0.0 < measured dustiness ≤ 100000.0 mg/kg)
+(0.0 < powder weight fraction ≤ 1.0)
+(0.0 < solid weight fraction ≤ 1.0)
+(0.0 < weight fraction ≤ 1.0)
+(0.001 ≤ activity coefficient ≤ 1000.0)
+(Cut-off) Grinding of steel
+(Dustiness)
+(If not known, leave blank and click Next to provide the boiling temperature instead.)
+(Manual) milling
+(No Aerosol Formation)
+(This is outside the applicability domain of the current ART.)
+(Untitled scenario)
+(no activity subclasses)
+(none selected)
+(or similar)
+(untitled)
+(이는 현재 ART 의 적용 범위를 벗어납니다.)
+*Warning! Model is optimised for 480 minute exposure period.
+0 min
+0.1 - 1 l/minute
+0.3 ACH
+1 (for solids)
+1 - 10 l/minute
+1 ACH
+10 - 100 l/minute
+10 ACH
+100 - 1000 l/minute
+3 ACH
+30 ACH
+480 min
+5 - 10 % moisture content
+< 0.1 l/minute
+> 1000 l/minute
+>10 % moisture content
+A curtain of descending laminar air is created between the ceiling and the rear of the booth where exhaust grilles are located at the lower section. The worker must not stand at the exhaust grilles and standing in-between the source and the grilles will reduce the effectiveness of the booth. The exhaust volume is typically between 3500-4000 m³/h (per 1m width).
+A powdered product containing very fine, free flowing, light particles. This category may also contain products with a mixture of very fine particles and large particles or granules. Handling the product in its dry form results in a dust cloud that remains airborne for a long time. The product may be wind swept: e.g., magnesium stearate.
+A safe work line (SWL) marks the limit of effective containment and dust capture.
+A surface preparation technique for removing coatings or contamination by propelling abrasive material towards the surface at high velocity. ART only considers exposure arising from the surface coatings during abrasive blasting (i.e., exposure to the abrasive material is not included).
+ACH = air changes per hour
+ART Help
+ART 도움말
+ART 로고
+ART 홈페이지로 이동
+Above room temperature (25 – 50 ºC)
+Abrasive blasting
+Activities used to atomise liquids into droplets for dispersion on surfaces (surface spraying) or into air (space spraying). Spraying techniques may be used for dispersion of e.g. pesticides, biocides, and paints.
+Activities where a liquid product is directly spread on surfaces using e.g. a roller, brush or wipe.
+Activities where a stream of liquid product is transferred from one reservoir to the next. The stream may either fall or glide from high to a lower point (falling liquids) or is transferred with pressure (pressurised transfer: e.g. bottom loading).
+Activities where a stream of powder is transferred from one reservoir (or container, vessel) to the receiving vessel. The product may either fall due to gravity from a high to a lower point (dumping of powders), be transferred horizontally (scooping of powders) or is transferred through a hose or tube with pressure (vacuum transfer).
+Activities where impaction or striking of a tool on an object contaminated with powder or granules potentially results in re-suspension of that powder. For this activity class, exposure is estimated to be related to the level of contamination on the surface or the object that is impacted on.
+Activities where movement and agitation of powders results in disturbances of the product causing dust particles to become airborne.
+Activities where powders, granules or pelletised material are compressed due to compaction or crushing.
+Activities where powders, granules or pelletised material are crushed and broken into smaller parts or sizes due to frictional forces (e.g. between two surfaces or objects).
+Activities where solid objects are broken into smaller parts or are abraded due to frictional forces.
+Activities with Relatively Undisturbed Surfaces
+Activities with agitated surfaces
+Activities with open liquid surfaces or open reservoirs
+Activities with treated/contaminated objects (surface 0.1 - 0.3 m²)
+Activities with treated/contaminated objects (surface 0.3 - 1 m²)
+Activities with treated/contaminated objects (surface 1 - 3 m²)
+Activities with treated/contaminated objects (surface < 0.1 m²)
+Activities with treated/contaminated objects (surface > 3 m²)
+Activities with undisturbed surfaces (no aerosol formation)
+Activity Class
+Activity Coefficient
+Activity Subclass
+Activity Subclass/Example Activities
+Activity emission potential
+Activity is configured
+Activity is not configured
+Aeration of waste water
+Air blast pesticide spraying of e.g. tree nursery
+Any size workroom
+Application of Liquids in High Speed Processes (e.g. Rotating Tools)
+Application of liquids in high speed processes (e.g. rotating tools)
+Appropriate labelling of your scenario will enable you to locate it more easily at a later date.
+Are demonstrable and effective housekeeping practices in place (e.g. daily cleaning using appropriate methods (e.g. vacuum), preventive maintenance of machinery and control measures, and use of protective clothing that will repel spills and reduce personal cloud)?
+Are general housekeeping practices in place?
+Are secondary sources present in the workroom in addition to the source in the breathing zone of the worker?
+Are there any control measures in close proximity of the far-field emission source intended to minimise emissions from the source?
+Are there any control measures in close proximity of the near-field emission source intended to minimise emissions from the source?
+Assess contamination of the paste/slurry then click Next.
+Bagging solids
+Bath with gas bubbling
+Below room temperature (< 15 ºC)
+Belt sanding
+Bending metal tubes
+Boiling
+Booth sizes are adaptable to the work task and process equipment and can have varying levels of filtration.
+Both the source and the worker are located indoors. The indoor environment should be enclosed by walls on each side and a roof on top. A garage with the garage door open should be treated as an indoor environment.
+Bottom Loading
+Bottom loading
+Bottom loading of tanker at bulk terminal
+Broad categories of room sizes and ventilation rates can be selected. Alternatively, the room size and ventilation rate can be selected from the list of specific room sizes and ventilation rates.
+Buffing
+Burning of liquids
+Cancel
+Canopy hood
+Capturing Hoods
+Capturing hoods
+Careful handling, involves workers showing attention to potential danger, error or harm and carrying out the activity in a very exact and thorough (or cautious) manner
+Careful transfer involves workers showing attention to potential danger, error or harm and carrying out the activity in a very exact and thorough (or cautious) manner e.g. careful weighing in laboratory
+Carry over near-field inputs?
+Carrying
+Cas No.
+Centrifuging wet items
+Check CAS No.
+Chemical Structure
+Chiseling
+Choose site
+Cleaning of liquid spills
+Cleaning of oil residue from bulk tanks
+Clearly (soaked) wet powdered material (like paste or slurry) should not be treated as a powder and the product type ‘paste or slurry or clearly (soaked) wet powder’ should be selected.
+Click
+Click for help
+Click for quick revision options
+Click to disable activity
+Click to edit notes, comments and justifications
+Click to enable activity
+Coarse dust
+Cold rolling of metal sheets
+Compressing of powders, granules or pelletised material
+Configure Activity
+Configure Activity — Primary Emission Source Proximity
+Configure Activity — Secondary Emission Source
+Configure activity...
+Configure the process temperature then click Next to continue.
+Configure this activity situation then click Next to continue.
+Containment
+Containment — no extraction
+Contamination of Paste/Slurry
+Coupling and decoupling of hoses or (drilling) equipment
+Cross-flow spray room
+Crushing concrete
+Cutting
+Demolishing with wrecking ball
+Depending on your selection you may be required to further define the localised controls.
+Description
+Dipping objects in a cleaning bath (where the presence of treated surfaces in the area is limited)
+Disable
+Dispersion
+Dispersion is the movement of a contaminant from a source throughout the work area, giving rise to varying spatial concentrations. The dispersion is dependent on the size of the workroom and the air changes in this room (with personal exposure levels being higher in a small poorly ventilated room).
+Disposal of empty bags
+Disposal of empty contaminated bags
+Disposal of heavily contaminated filters
+Down-flow spray room
+Downward laminar flow booth
+Downward only
+Drilling
+Drop height < 0.5 m
+Drop height > 0.5 m
+Dry product (<5 % moisture content)
+Dry solid object (<5 % moisture content)
+Dumping solids in mixers
+Dustiness
+Dustiness may be measured by two methods, the rotating drum test and the continuous single drop test, which is described in detail in CEN EN 15051 (2006). The two test methods do not always rank materials in the same order and users should therefore choose the method that is most appropriate for the material and handling process they wish to simulate.
+Dustiness of Powder Contamination
+Dustiness of the inhalable fraction may be measured by two methods, the rotating drum test and the continuous single drop test, which is described in detail in CEN EN 15051 (2006). The two test methods do not always rank materials in the same order and users should therefore choose the method that is most appropriate for the material and handling process they wish to simulate.
+Edit duration of activity
+Edit name of activity
+Edit near-field activity emission potential for this activity
+Edit near-field dispersion for this activity
+Edit near-field localised controls for this activity
+Edit near-field surface contamination for this activity
+Edit non-exposure period
+Either supply a dustiness value or choose a dustiness class.
+Either supply a temperature value or choose a process temperature category.
+Either supply a weight fraction value or choose a weight fraction category.
+Electroplating
+Embalming
+Emissions from contaminated surfaces arise from the evaporation of liquids or the re-suspension of dusts from leaks, spills or other sources that have produced surface contamination. Surfaces that may be contaminated include work surfaces, floors, walls, clothing, tools, process equipment, and used rags. Contamination may arise due to leaks or spills, or in the case of particles, deposition from the airborne state. Exposure from these sources will occur through re-suspension of settled dust or evaporation of spilled liquids.
+Enable/
+Enclosing Hoods
+Enclosing hoods
+Enter a value for activity coefficient then press Next.
+Enter the vapour pressure (in Pascal) of the pure substance at room temperature (even if it is in a mixture).
+Evaporation from painted surface or object
+Example Activities
+Example situation: Dumping powders in a big bag through a small dumping opening
+Example situation: enclosed cover on a circular saw (relatively small openings are possible)
+Examples:
+Extremely fine and light powder
+Extremely minute (< 0.01 %)
+Extremely small (0.1 - 0.5 %)
+Falling liquids
+Falling of Powders, Granules or Pelletised Material
+Falling of powders, granules or pelletised material
+Far Field Primary Emission Source —
+Far Field Secondary Emission Source —
+Fibrous material
+Figure
+Filling of bottles
+Filling of drums
+Filling of paint gun
+Fine dust
+Finish & Run
+Firm granules, flakes or pellets
+Fixed capturing hood
+Flow booths can be equipped with partial or full screens with glove ports, potentially offering a further level of containment.
+Fly spray
+Foaming
+Fogging
+For booth down flow and laminar flow booths capture velocity approx 0.5 m/second.
+For each activity class/subclass you will be shown several activities typical for the selected class.
+For this activity class exposure is related to the contamination on the surface or object.
+For this activity class exposure is related to the contamination on the surfaces or objects that are impacted upon.
+For which (chemical) substance would you like to perform the exposure assessment?
+Fracturing and Abrasion of Solid Objects
+Fracturing and abrasion of solid objects
+Fracturing of powders, granules or pelletised material
+Fugitive emissions are unintended and unpredictable leaks from process equipment that are not yet classified as a near-field or far-field source.
+Full screen fitted with glove ports
+Fume cupboard
+Gas
+General Control Measures
+Glass (this is outside the applicability domain of the current ART)
+Glove bags
+Glove bags (non-ventilated)
+Glove bags (ventilated or kept under negative pressure)
+Glove boxes
+Glove boxes and glove bags
+Gluing
+Granules, flakes or pellets
+Hammering
+Hand lay-up activities with styrene
+Handheld sanding machine
+Handling of Contaminated Objects
+Handling of Contaminated Solid Objects or Paste
+Handling of a liquid product in a bath or other reservoir. The liquid may either be relatively undisturbed (e.g. manual stirring, dipping in bath) or agitated (e.g. gas bubbling, mechanical mixing in vessel).
+Handling of apparently clean objects
+Handling of contaminated objects
+Handling of contaminated solid objects or paste
+Handling of contaminated tools
+Handling of objects with limited residual dust (thin layer visible)
+Handling of objects with visible contamination (object covered with fugitive dust from surrounding dusty activities)
+Handling of slightly contaminated (layers of less than few grams) objects
+Handling of solid objects that are treated or contaminated with the liquid of interest.
+Handling of substantially and visibly contaminated objects (layers of more than 0.5 kg)
+Handling or transport of surfaces, objects or pastes that are (potentially) contaminated with powders or granules. For this activity class, exposure is estimated to the contamination on the surface, object or paste.
+Handling that departs from regular work procedures and involves large amounts of energy (e.g. rough handling or throwing of bags)
+Handling that reduces contact between product and adjacent air
+Heat drying tasks
+Heavy mechanical impaction
+Help - Capturing Hoods
+Help - Containment
+Help - Enclosing Hoods
+Help - Glove boxes and glove bags
+Help - Receiving Hoods
+Help - Suppression
+Help on enabling an activity
+Help on name and duration
+High application rate (> 3 l/minute)
+High energy activities with e.g. rotating tools where liquids are added to the process (e.g. metal working fluids).
+High level containment
+High specification glove box / isolator
+Horizontal/downward laminar flow booth
+Hot or molten metal
+Hot processes (50 – 150 ºC)
+How are contaminated objects or pastes handled?
+Hydraulic hammers
+If applicable, a non-exposure period can be used and should be assigned a duration in minutes.
+If known enter a value for mole fraction for the substance in the liquid mixture. Alternatively provide an estimate by selecting from one of the categories provided.
+If known enter a value for weight fraction for the substance in the liquid mixture. Alternatively provide an estimate by selecting from one of the categories provided.
+If known enter a value for weight fraction of powder. Alternatively provide an estimate by selecting from one of the categories provided.
+If known, please provide the activity coefficient for the substance in this mixture? (One method for estimating activity coefficient for liquid mixtures is using the UNIFAC method). The default value is set at 1.
+If known, what is the vapour pressure (in Pascal) of the substance at this process temperature?
+If the dustiness of the material was not measured: To which dustiness class does the substance belong?
+If the dustiness of the powder was not measured: To which dustiness class does the substance belong?
+If the process temperature of the liquid is not precisely known, pick one of the categories below.
+If the substance has a CAS number, please enter it here:
+If the weight fraction is not precisely known, pick one of the categories below.
+If the weight fraction of the substance in the liquid mixture is not precisely known, pick one of the categories below.
+If the weight fraction of the substance in the material is not precisely known, pick one of the categories below.
+If you answer no to this question, the assessment for this activity will involve a primary far-field emission source only.
+If you answer yes to this question, the assessment for this activity will involve a primary near-field emission source and an optional secondary far-field source.
+Immersion of objects
+Impaction on Contaminated Solid Objects
+Impaction on apparently clean objects
+Impaction on contaminated solid objects
+Impaction on heavily contaminated filters
+Impaction on objects with limited visible residual dust
+Impaction on objects with visible residual dust
+Impaction on slightly contaminated (layers of less than few grams) objects
+Impaction on substantially and visibly contaminated objects (layers of more than 0.5 kg)
+In some cases an activity class has several subclasses. Use the drop-down list in the right-hand panel to narrow down your selection.
+Increasing the moisture content or adding other additives can reduce exposure potential. Water may have been added before handling the product or during handling. The latter is taken into account in the principal MF “localised control’, whereas the former is considered an intrinsic property of the material.
+Indoors
+Info
+Inhalable fraction: > 5000 mg/kg
+Insoluble solids
+Invalid CAS No.
+Is the paste or slurry (potentially) contaminated with powdered material?
+Is the primary emission source located in the breathing zone of the worker (i.e. the volume of air within 1 metre in any direction of the worker’s head)?
+Is the process fully enclosed and is the integrity of that enclosure regularly monitored?
+Is the source located close to buildings?
+Is the work performed indoors, outdoors or in a spray room or downward laminar flow booth?
+Jack hammering
+Kneading
+Knockdown suppression
+Label this scenario:
+Laminating
+Large scale transfer with big bags
+Large workrooms only
+Leather (this is outside the applicability domain of the current ART)
+Liquid Mole Fraction
+Liquid solutions
+Liquids
+Liquids with low viscosity (like water)
+Liquids with medium viscosity (like oil)
+Loading barges with minerals or cereals
+Local Exhaust Ventilation
+Local exhaust ventilation (LEV)
+Localised controls
+Logging
+Low application rate (0.03 - 0.3 l/minute)
+Low level containment
+Low specification glove box
+Lubricating
+Main component (50 - 90 %)
+Maintenance of fuel pumps
+Maintenance of heavily contaminated equipment
+Manual calibration of fuel pump
+Manual handling of wood resulting in limited amount of dust
+Manual handling of wood resulting in very limited amount of dust
+Manual stirring of paint
+Maximum solubility
+Mechanical handling of wood resulting in large amounts of dust (e.g., large speed of moving work pieces or rotating cutting blades)
+Mechanical handling of wood resulting in limited amount of dust
+Mechanical mixing / blending of paint
+Mechanical sanding of wood resulting in large amounts of dust
+Mechanical ventilation giving at least 1 ACH
+Medium level containment
+Medium specification glove box
+Metal
+Minor (5 - 10 %)
+Minute (0.01 - 0.1 %)
+Modeling of product
+Moderate application rate (0.3 - 3 l/minute)
+Moisture Content
+Mopping
+More info
+Movable capturing hood
+Movement and agitation of powders, granules or pelletised material
+Nailing
+Name
+Name & Duration
+Near Field Primary Emission Source —
+Near Field:
+Next
+Next to each activity name is a tick or cross, indicating whether the activity is ready for use.
+No barriers or screens
+No control measures in close proximity of the source.
+No localised controls
+No restriction on general ventilation characteristics
+Non-exposure period (optional)
+Normal handling, involves regular work procedures
+Normal impaction (manual or light mechanical)
+Note, if the room size or air change rate is between two categories, then the next lower category should be selected for a specific situation, e.g. a 200 m³ room with 0.7 ACH should have the multiplier for 100 m³ and 0.3 ACH selected.
+Note: This does not include processes that are fully contained by localised controls (see next questions).
+Notes
+Notes/Comments/Justifications
+On-tool extraction
+One or more of your activites is not properly configured.
+Only for situations where there are no or few boundaries nearby, i.e. the source is not located close to walls or in an enclosed courtyard. If this is not the case, the assessor should assume the work is essentially carried out indoors in an appropriately sized room.
+Only good natural ventilation
+Only horizontal or downward spraying
+Open process
+Open surface 0.1 - 0.3 m²
+Open surface 0.3 - 1 m²
+Open surface 1 - 3 m²
+Open surface < 0.1 m²
+Open surface > 3 m²
+Other (this is outside the applicability domain of the current ART)
+Other LEV systems
+Other enclosing hoods
+Other receiving hoods
+Outdoors
+Over wing refuelling of aircraft
+Packaging
+Paint spraying using HVLP or airless techniques
+Painting a ceiling and walls with a roller and a brush
+Partial screen
+Partial screen fitted with glove ports
+Paste, slurry or clearly (soaked) wet powder (not containing volatile liquid components)
+Paving
+Pest control operations (using backpack)
+Pest control operations using backpack
+Picking / collecting objects
+Piling
+Plastering
+Plastic (this is outside the applicability domain of the current ART)
+Please answer either yes or no.
+Please assess the dispersion for this emission source before continuing.
+Please configure this activity situation before continuing.
+Please select an activity class/subclass.
+Polishing
+Pouring
+Pouring a liquid flooring material on a floor
+Powder Weight Fraction
+Powders dissolved in a liquid or incorporated in a liquid matrix (e.g. copper in anti-fouling paint)
+Powders, granules or pelletised material
+Press printing
+Previous
+Primary Emission Source —
+Primary Localised Controls
+Process Temperature
+Product
+Product Type
+Pulverising
+Punching
+Pure liquid
+Pure liquid (100%)
+Pure material (100%)
+Quick
+Receiving Hoods
+Receiving hoods
+Refuelling of cars
+Return to Activity Configuration
+Revision
+Room temperature (15 – 25 ºC)
+Routine transfer
+Sanding
+Scattering
+Scenario Overview — CAS No.
+Scenario Overview — Chemical Name
+Scenario Overview — Configure Activities
+Scenario Overview — Name and Description
+Scooping
+Screen printing
+Secondary far field sources can be co-workers, machines or evaporating baths, objects or surfaces.
+Select Activity Class
+Select the general type of localised controls present for this emission source.
+Select the material of the solid object then click Next.
+Select the type of the product at the beginning of the activity.
+Select the viscosity of the powder/liquid mixture then click Next to continue.
+Select ‘open process’ here if the localised control ‘full containment without extraction’ or ‘enclosing hoods’ will be selected in the subsequent question on localised controls.
+Shaking liquids (e.g. in chemical laboratories)
+Shredding of batteries
+Similar organic solvents
+Small (1 - 5 %)
+Small workrooms only
+Solid Material
+Solid Weight Fraction
+Solid objects
+Sorting
+Sparingly soluble liquids
+Specialised room ventilation with more than 10 ACH
+Sponging
+Spray application of liquids
+Spray application of paints on e.g. ships (using HVLP or airless techniques)
+Spray application of powders
+Spray room
+Spray rooms and laminar down-flow booths (with the size of a room which contains both the source and the worker) are not considered to be a localised control and will be treated together with the dispersion questions at a later stage.
+Spraying activities used to intentionally disperse powders on surfaces by using a pressure difference.
+Spraying cleaning agents onto surfaces
+Spraying in any direction (including upwards)
+Spraying of liquids in a space
+Spraying room deodorisers or fragrances
+Spraying with high compressed air use
+Spraying with no or low compressed air use
+Spreading of Liquid Products
+Spreading of liquid products
+Spreading of liquids at surfaces or work pieces 0.1 - 0.3 m² / hour
+Spreading of liquids at surfaces or work pieces 0.3 - 1 m² / hour
+Spreading of liquids at surfaces or work pieces 1 - 3 m² / hour
+Spreading of liquids at surfaces or work pieces < 0.1 m² / hour
+Spreading of liquids at surfaces or work pieces > 3 m² / hour
+Stacking
+Stacking cement bags with dust contamination (leakage from bag valve)
+Start workflow questionnaire for this activity
+Stone
+Substantial (10 - 50 %)
+Suppression Techniques
+Suppression techniques
+Surface Contamination/Fugitive Emission Sources
+Surface Spraying of Liquids
+Surface contamination
+Surface spraying of liquids
+Tank dipping
+Temperature out of range. Please enter a temperature in °C in the range shown.
+Textile fabrics (this is outside the applicability domain of the current ART)
+The CAS No. field is for your information only. You can verify the CAS number by clicking the link to Chemspider.
+The approach taken in the ART conceptual model was to divide the workspace into two compartments: the near-field centred on the worker (i.e. the volume of air within 1 meter in any direction of the worker’s head) and the far-field comprising the remainder of the indoor space. Total personal exposure is the sum of emission contributions from near-field and far-field sources.
+The booths must completely enclose the work task and the worker.
+The categories are in rank order with activities generating highest emission levels at the top.
+The chemical name field is for your information only.
+The control measure should cover the whole activity.
+The drop height is measured from the bottom of the dumping opening to the top of the receiving object or surface.
+The filter should have high dust holding capacity, and performance and volume air flow need to be checked regularly.
+The fraction of the substance in the solid object should be estimated by expert judgement. For instance, if the quartz content in solid stone is 5%, then 0.05 should be entered here. For impregnated wood logs it will be more difficult to estimate the right proportion of substance in the log.
+The spray room has been designed by a competent ventilation engineer, the airflow performance is regularly checked and the ventilation system is maintained.
+The spray room is a fully enclosed, unidirectional spray room of volume between 30 and 1000 m³ with at least 10 air changes per hour.
+The spray room must meet the following conditions:
+The spray room needs to run under negative pressure (i.e. so any air leakage is inward).
+The substance can be a single chemical substance, but also broader categories like ‘wood dust’, ‘inhalable dust’ or complex mixtures such as petroleum products.
+The substance is considered volatile and exposure to vapours is estimated.
+The table below provide some guidance for choosing the activity coefficient.
+The workers in the spray room must be properly trained in correctly using the room (e.g. operation of the ventilation system, good positioning of the worker relative to the source and the ventilation, knowing the ventilation clearance time of the room).
+There is no potential for exposure through inhalation from this source.
+This activity class includes the spraying of liquids onto surfaces or objects (e.g. paint spraying).
+This category also includes liquids incorporated in granular or pelletised material (e.g. preservative in wood chips).
+This category also includes liquids incorporated or on the surface of this material (e.g. preservative in timber).
+To which activity class does your activity belong?
+Top loading of tanker at bulk terminal (boats, rail car or truck)
+Total duration =
+Tractor mounted spraying
+Transfer of additives in tanker using bottom loading
+Transfer of liquid product with flow of:
+Transfer of liquid products
+Transfer of powders, granules or pelletised material
+Transferring 0.1 – 1 kg/minute
+Transferring 1 – 10 kg/minute
+Transferring 10 – 100 gram/minute
+Transferring 10 – 100 kg/minute
+Transferring 100 – 1000 kg/minute
+Transferring less than 10 gram/minute
+Transferring more than 1000 kg/minute
+Under wing refuelling of aircraft
+Use of metal working fluids with e.g. circular saws and drills
+Use the left-hand panel to select the activity class that best fits this emission source.
+Use the left-hand panel to select the situation that best fits this activity.
+Using a circular saw
+Vacuum transfer of powders, granules or pelletised material
+Vapour Pressure
+Vapour recovery systems
+Very low application rate (< 0.03 l/minute)
+Very small (0.5 - 1 %)
+Viscosity of Powder/Liquid Mixture
+Warning!
+Warning:
+Weight Fraction of Powder Contamination
+Weight Fraction of Powdered Substance
+Wetting at point of release
+What is the drop height?
+What is the level of containment of the process?
+What is the material of the solid object?
+What is the measured dustiness of the material (mg/kg for inhalable fraction)?
+What is the measured dustiness of the powder contamination on the paste or slurry (mg/kg for inhalable fraction)?
+What is the moisture content of the product?
+What is the moisture content of the solid object?
+What is the mole fraction of the substance in the liquid mixture? If the mole fraction is unknown, assume that this is the same as the weight fraction.
+What is the product type of the substance/preparation?
+What is the room size of the work area?
+What is the spray direction?
+What is the spray technique?
+What is the temperature of the liquid in the process?
+What is the type of handling?
+What is the ventilation rate of the general ventilation system in the work area?
+What is the viscosity of the powder/liquid mixture?
+What is the weight fraction of the powdered substance in the liquid mixture?
+What is the weight fraction of the substance in the powdered contamination on the paste or slurry?
+What is the weight fraction of the substance in the powdered, granular or pelletised material?
+What is the weight fraction of the substance in the solid object?
+Which of the situations below does best represent your activity?
+Wire drawing
+Wood
+Wrapping
+Wrecking
+XLUNIFAC
+Yes
+Your scenario can consist of up to four activities. Assign each activity a name and duration in minutes. The activities together represent one working day and therefore the total duration should be around 480 minutes. ART assessments are still possible if the duration deviates from 480 minutes, but estimates should be treated with some caution as ART variability estimates are based on shift measurements.
+ZZ-BAYES-2
+ZZ-BAYES-TEST
+ZZ-BRANCH
+ZZ-DELETE-ME-i18n
+ZZ-PASTE
+ZZ-PIL
+ZZ-RESULTS-TEST
+dust handling
+dust transfer
+min
+temp activity
+to continue configuring your scenario until each activity has a tick next to it. You will then be able to click the Finish button and run the mechanistic model.
+— Choose —
+국소배기장치(LEV)
+귀하의 활동은 어느 활동 등급(Activity Class)에 속합니까?
+낙하 억제(knockdown)
+낮은 도포율 (0.03 - 0.3 l/minute)
+높은 도포율 (> 3 l/minute)
+매우 낮은 도포율 (< 0.03 l/minute)
+선박 등에 대한 도료 분무 도장 (HVLP 또는 무기압 기법 사용)
+중간 도포율 (0.3 - 3 l/minute)
+탱크 검척(dipping)

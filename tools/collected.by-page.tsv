@@ -1,0 +1,856 @@
+/loggedin/mechquest/q000_namedescription.aspx	Scenario Overview — Name and Description
+/loggedin/mechquest/q000_namedescription.aspx	Label this scenario:
+/loggedin/mechquest/q000_namedescription.aspx	Name
+/loggedin/mechquest/q000_namedescription.aspx	Description
+/loggedin/mechquest/q000_namedescription.aspx	(Untitled scenario)
+/loggedin/mechquest/q000_namedescription.aspx	Cancel
+/loggedin/mechquest/q000_namedescription.aspx	Notes
+/loggedin/mechquest/q000_namedescription.aspx	Appropriate labelling of your scenario will enable you to locate it more easily at a later date.
+/loggedin/mechquest/q000_namedescription.aspx	Next
+/loggedin/mechquest/q000_namedescription.aspx	Notes/Comments/Justifications
+/loggedin/mechquest/q000_namedescription.aspx	Click to edit notes, comments and justifications
+/loggedin/mechquest/q001_chemicalname.aspx	Scenario Overview — Chemical Name
+/loggedin/mechquest/q001_chemicalname.aspx	For which (chemical) substance would you like to perform the exposure assessment?
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-DELETE-ME-i18n
+/loggedin/mechquest/q001_chemicalname.aspx	The chemical name field is for your information only.
+/loggedin/mechquest/q001_chemicalname.aspx	The substance can be a single chemical substance, but also broader categories like ‘wood dust’, ‘inhalable dust’ or complex mixtures such as petroleum products.
+/loggedin/mechquest/q001_chemicalname.aspx	Previous
+/loggedin/mechquest/q001_chemicalname.aspx	Scenario Overview — CAS No.
+/loggedin/mechquest/q001_chemicalname.aspx	If the substance has a CAS number, please enter it here:
+/loggedin/mechquest/q001_chemicalname.aspx	Cas No.
+/loggedin/mechquest/q001_chemicalname.aspx	Check CAS No.
+/loggedin/mechquest/q001_chemicalname.aspx	Chemical Structure
+/loggedin/mechquest/q001_chemicalname.aspx	More info
+/loggedin/mechquest/q001_chemicalname.aspx	The CAS No. field is for your information only. You can verify the CAS number by clicking the link to Chemspider.
+/loggedin/mechquest/q002_7_activities.aspx	Scenario Overview — Configure Activities
+/loggedin/mechquest/q002_7_activities.aspx	Enable/
+/loggedin/mechquest/q002_7_activities.aspx	Disable
+/loggedin/mechquest/q002_7_activities.aspx	Name & Duration
+/loggedin/mechquest/q002_7_activities.aspx	Quick
+/loggedin/mechquest/q002_7_activities.aspx	Revision
+/loggedin/mechquest/q002_7_activities.aspx	(untitled)
+/loggedin/mechquest/q002_7_activities.aspx	0 min
+/loggedin/mechquest/q002_7_activities.aspx	Configure activity...
+/loggedin/mechquest/q002_7_activities.aspx	Non-exposure period (optional)
+/loggedin/mechquest/q002_7_activities.aspx	Total duration =
+/loggedin/mechquest/q002_7_activities.aspx	min
+/loggedin/mechquest/q002_7_activities.aspx	Your scenario can consist of up to four activities. Assign each activity a name and duration in minutes. The activities together represent one working day and therefore the total duration should be around 480 minutes. ART assessments are still possible if the duration deviates from 480 minutes, but estimates should be treated with some caution as ART variability estimates are based on shift measurements.
+/loggedin/mechquest/q002_7_activities.aspx	If applicable, a non-exposure period can be used and should be assigned a duration in minutes.
+/loggedin/mechquest/q002_7_activities.aspx	Next to each activity name is a tick or cross, indicating whether the activity is ready for use.
+/loggedin/mechquest/q002_7_activities.aspx	Click
+/loggedin/mechquest/q002_7_activities.aspx	Configure Activity
+/loggedin/mechquest/q002_7_activities.aspx	to continue configuring your scenario until each activity has a tick next to it. You will then be able to click the Finish button and run the mechanistic model.
+/loggedin/mechquest/q002_7_activities.aspx	*Warning! Model is optimised for 480 minute exposure period.
+/loggedin/mechquest/q002_7_activities.aspx	Finish & Run
+/loggedin/mechquest/q002_7_activities.aspx	Click to enable activity
+/loggedin/mechquest/q002_7_activities.aspx	Click to disable activity
+/loggedin/mechquest/q002_7_activities.aspx	Edit name of activity
+/loggedin/mechquest/q002_7_activities.aspx	Edit duration of activity
+/loggedin/mechquest/q002_7_activities.aspx	Activity is configured
+/loggedin/mechquest/q002_7_activities.aspx	Activity is not configured
+/loggedin/mechquest/q002_7_activities.aspx	Start workflow questionnaire for this activity
+/loggedin/mechquest/q002_7_activities.aspx	Click for quick revision options
+/loggedin/mechquest/q002_7_activities.aspx	Edit non-exposure period
+/loggedin/mechquest/q002_7_activities.aspx	Help on enabling an activity
+/loggedin/mechquest/q002_7_activities.aspx	Help on name and duration
+/loggedin/mechquest/q003_090_producttype.aspx	Primary Emission Source —
+/loggedin/mechquest/q003_090_producttype.aspx	Product Type
+/loggedin/mechquest/q003_090_producttype.aspx	What is the product type of the substance/preparation?
+/loggedin/mechquest/q003_090_producttype.aspx	Powders, granules or pelletised material
+/loggedin/mechquest/q003_090_producttype.aspx	This category also includes liquids incorporated in granular or pelletised material (e.g. preservative in wood chips).
+/loggedin/mechquest/q003_090_producttype.aspx	Solid objects
+/loggedin/mechquest/q003_090_producttype.aspx	This category also includes liquids incorporated or on the surface of this material (e.g. preservative in timber).
+/loggedin/mechquest/q003_090_producttype.aspx	Liquids
+/loggedin/mechquest/q003_090_producttype.aspx	Powders dissolved in a liquid or incorporated in a liquid matrix (e.g. copper in anti-fouling paint)
+/loggedin/mechquest/q003_090_producttype.aspx	Paste, slurry or clearly (soaked) wet powder (not containing volatile liquid components)
+/loggedin/mechquest/q003_090_producttype.aspx	Hot or molten metal
+/loggedin/mechquest/q003_090_producttype.aspx	(This is outside the applicability domain of the current ART.)
+/loggedin/mechquest/q003_090_producttype.aspx	Fibrous material
+/loggedin/mechquest/q003_090_producttype.aspx	Gas
+/loggedin/mechquest/q003_090_producttype.aspx	Return to Activity Configuration
+/loggedin/mechquest/q003_090_producttype.aspx	Select the type of the product at the beginning of the activity.
+/loggedin/mechquest/q009_096_processtemperature.aspx	Process Temperature
+/loggedin/mechquest/q009_096_processtemperature.aspx	What is the temperature of the liquid in the process?
+/loggedin/mechquest/q009_096_processtemperature.aspx	(0 ≤ process temperature ≤ 150 °C)
+/loggedin/mechquest/q009_096_processtemperature.aspx	If the process temperature of the liquid is not precisely known, pick one of the categories below.
+/loggedin/mechquest/q009_096_processtemperature.aspx	— Choose —
+/loggedin/mechquest/q009_096_processtemperature.aspx	Hot processes (50 – 150 ºC)
+/loggedin/mechquest/q009_096_processtemperature.aspx	Above room temperature (25 – 50 ºC)
+/loggedin/mechquest/q009_096_processtemperature.aspx	Room temperature (15 – 25 ºC)
+/loggedin/mechquest/q009_096_processtemperature.aspx	Below room temperature (< 15 ºC)
+/loggedin/mechquest/q009_096_processtemperature.aspx	Configure the process temperature then click Next to continue.
+/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx	Vapour Pressure
+/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx	If known, what is the vapour pressure (in Pascal) of the substance at this process temperature?
+/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx	(If not known, leave blank and click Next to provide the boiling temperature instead.)
+/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx	Enter the vapour pressure (in Pascal) of the pure substance at room temperature (even if it is in a mixture).
+/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx	ART Help
+/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx	Click for help
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Liquid Mole Fraction
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Warning:
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	The substance is considered volatile and exposure to vapours is estimated.
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	What is the mole fraction of the substance in the liquid mixture? If the mole fraction is unknown, assume that this is the same as the weight fraction.
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	(0.0 < liquid mole fraction ≤ 1.0)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	If the weight fraction of the substance in the liquid mixture is not precisely known, pick one of the categories below.
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Pure liquid (100%)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Main component (50 - 90 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Substantial (10 - 50 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Minor (5 - 10 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Small (1 - 5 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Very small (0.5 - 1 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Extremely small (0.1 - 0.5 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	Minute (0.01 - 0.1 %)
+/loggedin/mechquest/q014_101_liquidmolefraction.aspx	If known enter a value for mole fraction for the substance in the liquid mixture. Alternatively provide an estimate by selecting from one of the categories provided.
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Activity Coefficient
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	If known, please provide the activity coefficient for the substance in this mixture? (One method for estimating activity coefficient for liquid mixtures is using the UNIFAC method). The default value is set at 1.
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	(0.001 ≤ activity coefficient ≤ 1000.0)
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	The table below provide some guidance for choosing the activity coefficient.
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Product
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Pure liquid
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Liquid solutions
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	XLUNIFAC
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	(or similar)
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Similar organic solvents
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Insoluble solids
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	1 (for solids)
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Sparingly soluble liquids
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Maximum solubility
+/loggedin/mechquest/q015_102_activitycoefficient.aspx	Enter a value for activity coefficient then press Next.
+/loggedin/mechquest/q016_nearfieldsource.aspx	Configure Activity — Primary Emission Source Proximity
+/loggedin/mechquest/q016_nearfieldsource.aspx	Is the primary emission source located in the breathing zone of the worker (i.e. the volume of air within 1 metre in any direction of the worker’s head)?
+/loggedin/mechquest/q016_nearfieldsource.aspx	Yes
+/loggedin/mechquest/q016_nearfieldsource.aspx	The approach taken in the ART conceptual model was to divide the workspace into two compartments: the near-field centred on the worker (i.e. the volume of air within 1 meter in any direction of the worker’s head) and the far-field comprising the remainder of the indoor space. Total personal exposure is the sum of emission contributions from near-field and far-field sources.
+/loggedin/mechquest/q016_nearfieldsource.aspx	If you answer yes to this question, the assessment for this activity will involve a primary near-field emission source and an optional secondary far-field source.
+/loggedin/mechquest/q016_nearfieldsource.aspx	If you answer no to this question, the assessment for this activity will involve a primary far-field emission source only.
+/loggedin/mechquest/q016_nearfieldsource.aspx	Please answer either yes or no.
+/loggedin/mechquest/q016_nearfieldsource.aspx	Near Field Primary Emission Source —
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activity Class
+/loggedin/mechquest/q016_nearfieldsource.aspx	To which activity class does your activity belong?
+/loggedin/mechquest/q016_nearfieldsource.aspx	Select Activity Class
+/loggedin/mechquest/q016_nearfieldsource.aspx	Spray application of liquids
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activities with open liquid surfaces or open reservoirs
+/loggedin/mechquest/q016_nearfieldsource.aspx	Handling of contaminated objects
+/loggedin/mechquest/q016_nearfieldsource.aspx	Spreading of liquid products
+/loggedin/mechquest/q016_nearfieldsource.aspx	Application of liquids in high speed processes (e.g. rotating tools)
+/loggedin/mechquest/q016_nearfieldsource.aspx	Transfer of liquid products
+/loggedin/mechquest/q016_nearfieldsource.aspx	Burning of liquids
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activity Subclass/Example Activities
+/loggedin/mechquest/q016_nearfieldsource.aspx	(none selected)
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activity Subclass
+/loggedin/mechquest/q016_nearfieldsource.aspx	(no activity subclasses)
+/loggedin/mechquest/q016_nearfieldsource.aspx	Example Activities
+/loggedin/mechquest/q016_nearfieldsource.aspx	Figure
+/loggedin/mechquest/q016_nearfieldsource.aspx	Use the left-hand panel to select the activity class that best fits this emission source.
+/loggedin/mechquest/q016_nearfieldsource.aspx	In some cases an activity class has several subclasses. Use the drop-down list in the right-hand panel to narrow down your selection.
+/loggedin/mechquest/q016_nearfieldsource.aspx	For each activity class/subclass you will be shown several activities typical for the selected class.
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activities used to atomise liquids into droplets for dispersion on surfaces (surface spraying) or into air (space spraying). Spraying techniques may be used for dispersion of e.g. pesticides, biocides, and paints.
+/loggedin/mechquest/q016_nearfieldsource.aspx	Handling of a liquid product in a bath or other reservoir. The liquid may either be relatively undisturbed (e.g. manual stirring, dipping in bath) or agitated (e.g. gas bubbling, mechanical mixing in vessel).
+/loggedin/mechquest/q016_nearfieldsource.aspx	Handling of solid objects that are treated or contaminated with the liquid of interest.
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activities where a liquid product is directly spread on surfaces using e.g. a roller, brush or wipe.
+/loggedin/mechquest/q016_nearfieldsource.aspx	High energy activities with e.g. rotating tools where liquids are added to the process (e.g. metal working fluids).
+/loggedin/mechquest/q016_nearfieldsource.aspx	Activities where a stream of liquid product is transferred from one reservoir to the next. The stream may either fall or glide from high to a lower point (falling liquids) or is transferred with pressure (pressurised transfer: e.g. bottom loading).
+/loggedin/mechquest/q016_nearfieldsource.aspx	Info
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Surface spraying of liquids
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Spraying of liquids in a space
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Spray application of paints on e.g. ships (using HVLP or airless techniques)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Pest control operations (using backpack)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Spraying cleaning agents onto surfaces
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Foaming
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Tractor mounted spraying
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities with undisturbed surfaces (no aerosol formation)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities with agitated surfaces
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Spraying room deodorisers or fragrances
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Fogging
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Fly spray
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Dipping objects in a cleaning bath (where the presence of treated surfaces in the area is limited)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Immersion of objects
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Manual stirring of paint
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Tank dipping
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Electroplating
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Bath with gas bubbling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Mechanical mixing / blending of paint
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Aeration of waste water
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Boiling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Shaking liquids (e.g. in chemical laboratories)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Heat drying tasks
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Evaporation from painted surface or object
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Maintenance of fuel pumps
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Coupling and decoupling of hoses or (drilling) equipment
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Handling of contaminated tools
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Painting a ceiling and walls with a roller and a brush
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Hand lay-up activities with styrene
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Pouring a liquid flooring material on a floor
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Cleaning of liquid spills
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Gluing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Mopping
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Embalming
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Laminating
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Lubricating
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Sponging
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Screen printing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Cleaning of oil residue from bulk tanks
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Use of metal working fluids with e.g. circular saws and drills
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Centrifuging wet items
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Press printing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Bottom loading
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Falling liquids
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Bottom loading of tanker at bulk terminal
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Under wing refuelling of aircraft
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Transfer of additives in tanker using bottom loading
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Top loading of tanker at bulk terminal (boats, rail car or truck)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Filling of drums
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Pouring
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Filling of bottles
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Filling of paint gun
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Refuelling of cars
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Manual calibration of fuel pump
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Over wing refuelling of aircraft
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Surface Spraying of Liquids
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Which of the situations below does best represent your activity?
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	High application rate (> 3 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Moderate application rate (0.3 - 3 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Low application rate (0.03 - 0.3 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Very low application rate (< 0.03 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Examples:
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	Use the left-hand panel to select the situation that best fits this activity.
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	This activity class includes the spraying of liquids onto surfaces or objects (e.g. paint spraying).
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	The categories are in rank order with activities generating highest emission levels at the top.
+/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx	What is the spray direction?
+/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx	Spraying in any direction (including upwards)
+/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx	Only horizontal or downward spraying
+/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx	Downward only
+/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx	What is the spray technique?
+/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx	Spraying with high compressed air use
+/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx	Spraying with no or low compressed air use
+/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx	Air blast pesticide spraying of e.g. tree nursery
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Primary Localised Controls
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Are there any control measures in close proximity of the near-field emission source intended to minimise emissions from the source?
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Warning!
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	The control measure should cover the whole activity.
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	General Control Measures
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	No localised controls
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Suppression techniques
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Containment — no extraction
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Local exhaust ventilation (LEV)
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Glove boxes and glove bags
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Vapour recovery systems
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Suppression Techniques
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Knockdown suppression
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Wetting at point of release
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Containment
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Low level containment
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Medium level containment
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	High level containment
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Local Exhaust Ventilation
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Receiving hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Capturing hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Enclosing hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Other LEV systems
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Glove bags
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Glove boxes
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Receiving Hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Canopy hood
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Other receiving hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Capturing Hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Movable capturing hood
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Fixed capturing hood
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	On-tool extraction
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Enclosing Hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Fume cupboard
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Horizontal/downward laminar flow booth
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Other enclosing hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Glove bags (non-ventilated)
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Glove bags (ventilated or kept under negative pressure)
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Low specification glove box
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Medium specification glove box
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	High specification glove box / isolator
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Select the general type of localised controls present for this emission source.
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Depending on your selection you may be required to further define the localised controls.
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Spray rooms and laminar down-flow booths (with the size of a room which contains both the source and the worker) are not considered to be a localised control and will be treated together with the dispersion questions at a later stage.
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Help - Suppression
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Help - Containment
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Help - Glove boxes and glove bags
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Help - Receiving Hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Help - Capturing Hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Help - Enclosing Hoods
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	No control measures in close proximity of the source.
+/loggedin/mechquest/q045_081_surfacecontamination.aspx	Surface Contamination/Fugitive Emission Sources
+/loggedin/mechquest/q045_081_surfacecontamination.aspx	Is the process fully enclosed and is the integrity of that enclosure regularly monitored?
+/loggedin/mechquest/q045_081_surfacecontamination.aspx	Are demonstrable and effective housekeeping practices in place (e.g. daily cleaning using appropriate methods (e.g. vacuum), preventive maintenance of machinery and control measures, and use of protective clothing that will repel spills and reduce personal cloud)?
+/loggedin/mechquest/q045_081_surfacecontamination.aspx	Are general housekeeping practices in place?
+/loggedin/mechquest/q045_081_surfacecontamination.aspx	Emissions from contaminated surfaces arise from the evaporation of liquids or the re-suspension of dusts from leaks, spills or other sources that have produced surface contamination. Surfaces that may be contaminated include work surfaces, floors, walls, clothing, tools, process equipment, and used rags. Contamination may arise due to leaks or spills, or in the case of particles, deposition from the airborne state. Exposure from these sources will occur through re-suspension of settled dust or evaporation of spilled liquids.
+/loggedin/mechquest/q045_081_surfacecontamination.aspx	Fugitive emissions are unintended and unpredictable leaks from process equipment that are not yet classified as a near-field or far-field source.
+/loggedin/mechquest/q084_dispersion.aspx	Dispersion
+/loggedin/mechquest/q084_dispersion.aspx	Is the work performed indoors, outdoors or in a spray room or downward laminar flow booth?
+/loggedin/mechquest/q084_dispersion.aspx	Choose site
+/loggedin/mechquest/q084_dispersion.aspx	Indoors
+/loggedin/mechquest/q084_dispersion.aspx	Outdoors
+/loggedin/mechquest/q084_dispersion.aspx	Spray room
+/loggedin/mechquest/q084_dispersion.aspx	Downward laminar flow booth
+/loggedin/mechquest/q084_dispersion.aspx	What is the room size of the work area?
+/loggedin/mechquest/q084_dispersion.aspx	Any size workroom
+/loggedin/mechquest/q084_dispersion.aspx	Large workrooms only
+/loggedin/mechquest/q084_dispersion.aspx	Small workrooms only
+/loggedin/mechquest/q084_dispersion.aspx	Is the source located close to buildings?
+/loggedin/mechquest/q084_dispersion.aspx	Cross-flow spray room
+/loggedin/mechquest/q084_dispersion.aspx	Down-flow spray room
+/loggedin/mechquest/q084_dispersion.aspx	No barriers or screens
+/loggedin/mechquest/q084_dispersion.aspx	Partial screen
+/loggedin/mechquest/q084_dispersion.aspx	Partial screen fitted with glove ports
+/loggedin/mechquest/q084_dispersion.aspx	Full screen fitted with glove ports
+/loggedin/mechquest/q084_dispersion.aspx	What is the ventilation rate of the general ventilation system in the work area?
+/loggedin/mechquest/q084_dispersion.aspx	No restriction on general ventilation characteristics
+/loggedin/mechquest/q084_dispersion.aspx	Only good natural ventilation
+/loggedin/mechquest/q084_dispersion.aspx	Mechanical ventilation giving at least 1 ACH
+/loggedin/mechquest/q084_dispersion.aspx	Specialised room ventilation with more than 10 ACH
+/loggedin/mechquest/q084_dispersion.aspx	0.3 ACH
+/loggedin/mechquest/q084_dispersion.aspx	1 ACH
+/loggedin/mechquest/q084_dispersion.aspx	3 ACH
+/loggedin/mechquest/q084_dispersion.aspx	10 ACH
+/loggedin/mechquest/q084_dispersion.aspx	30 ACH
+/loggedin/mechquest/q084_dispersion.aspx	ACH = air changes per hour
+/loggedin/mechquest/q084_dispersion.aspx	Dispersion is the movement of a contaminant from a source throughout the work area, giving rise to varying spatial concentrations. The dispersion is dependent on the size of the workroom and the air changes in this room (with personal exposure levels being higher in a small poorly ventilated room).
+/loggedin/mechquest/q084_dispersion.aspx	Broad categories of room sizes and ventilation rates can be selected. Alternatively, the room size and ventilation rate can be selected from the list of specific room sizes and ventilation rates.
+/loggedin/mechquest/q084_dispersion.aspx	Note, if the room size or air change rate is between two categories, then the next lower category should be selected for a specific situation, e.g. a 200 m³ room with 0.7 ACH should have the multiplier for 100 m³ and 0.3 ACH selected.
+/loggedin/mechquest/q084_dispersion.aspx	Only for situations where there are no or few boundaries nearby, i.e. the source is not located close to walls or in an enclosed courtyard. If this is not the case, the assessor should assume the work is essentially carried out indoors in an appropriately sized room.
+/loggedin/mechquest/q084_dispersion.aspx	Both the source and the worker are located indoors. The indoor environment should be enclosed by walls on each side and a roof on top. A garage with the garage door open should be treated as an indoor environment.
+/loggedin/mechquest/q084_dispersion.aspx	Please assess the dispersion for this emission source before continuing.
+/loggedin/mechquest/q084_dispersion.aspx	The spray room must meet the following conditions:
+/loggedin/mechquest/q084_dispersion.aspx	The spray room is a fully enclosed, unidirectional spray room of volume between 30 and 1000 m³ with at least 10 air changes per hour.
+/loggedin/mechquest/q084_dispersion.aspx	The spray room has been designed by a competent ventilation engineer, the airflow performance is regularly checked and the ventilation system is maintained.
+/loggedin/mechquest/q084_dispersion.aspx	The spray room needs to run under negative pressure (i.e. so any air leakage is inward).
+/loggedin/mechquest/q084_dispersion.aspx	The workers in the spray room must be properly trained in correctly using the room (e.g. operation of the ventilation system, good positioning of the worker relative to the source and the ventilation, knowing the ventilation clearance time of the room).
+/loggedin/mechquest/q084_dispersion.aspx	A curtain of descending laminar air is created between the ceiling and the rear of the booth where exhaust grilles are located at the lower section. The worker must not stand at the exhaust grilles and standing in-between the source and the grilles will reduce the effectiveness of the booth. The exhaust volume is typically between 3500-4000 m³/h (per 1m width).
+/loggedin/mechquest/q084_dispersion.aspx	The booths must completely enclose the work task and the worker.
+/loggedin/mechquest/q084_dispersion.aspx	Booth sizes are adaptable to the work task and process equipment and can have varying levels of filtration.
+/loggedin/mechquest/q084_dispersion.aspx	The filter should have high dust holding capacity, and performance and volume air flow need to be checked regularly.
+/loggedin/mechquest/q084_dispersion.aspx	For booth down flow and laminar flow booths capture velocity approx 0.5 m/second.
+/loggedin/mechquest/q084_dispersion.aspx	A safe work line (SWL) marks the limit of effective containment and dust capture.
+/loggedin/mechquest/q084_dispersion.aspx	Flow booths can be equipped with partial or full screens with glove ports, potentially offering a further level of containment.
+/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Configure Activity — Secondary Emission Source
+/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Are secondary sources present in the workroom in addition to the source in the breathing zone of the worker?
+/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Carry over near-field inputs?
+/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Secondary far field sources can be co-workers, machines or evaporating baths, objects or surfaces.
+/loggedin/mechquest/q003_090_producttype.aspx	Far Field Secondary Emission Source —
+/loggedin/mechquest/q009_096_processtemperature.aspx	Either supply a temperature value or choose a process temperature category.
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	www.advancedreachtool.comc
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	프록시, 방화벽, DNS 설정 확인
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Windows 네트워크 진단 프로그램 실행
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	ERR_NAME_NOT_RESOLVED
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	DNS 설정 확인
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Chrome 메뉴 >
+/Program%20Files/Git/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx	Chrome이 방화벽이나 백신 프로그램이 설정된 네트워크에 액세스할 수 있도록 허용합니다.
+/loggedin/myscenarios.aspx	Currently loaded scenario:
+/loggedin/myscenarios.aspx	Public
+/loggedin/myscenarios.aspx	Save as New
+/loggedin/myscenarios.aspx	Activites
+/loggedin/myscenarios.aspx	Unload
+/loggedin/myscenarios.aspx	Save scenario to database
+/loggedin/myscenarios.aspx	Copy open scenario and save
+/loggedin/myscenarios.aspx	Edit scenario
+/loggedin/myscenarios.aspx	Configure activities
+/loggedin/myscenarios.aspx	Run scenario
+/loggedin/myscenarios.aspx	Delete scenario (NB: deletion is irreversible)
+/loggedin/myscenarios.aspx	Unload scenario (NB: any changes since last save will be lost)
+/loggedin/mechquest/q002_7_activities.aspx	One or more of your activites is not properly configured.
+/loggedin/mechquest/q004_091_dustiness.aspx	Dustiness
+/loggedin/mechquest/q004_091_dustiness.aspx	What is the measured dustiness of the material (mg/kg for inhalable fraction)?
+/loggedin/mechquest/q004_091_dustiness.aspx	(0.0 < measured dustiness ≤ 100000.0 mg/kg)
+/loggedin/mechquest/q004_091_dustiness.aspx	If the dustiness of the material was not measured: To which dustiness class does the substance belong?
+/loggedin/mechquest/q004_091_dustiness.aspx	Extremely fine and light powder
+/loggedin/mechquest/q004_091_dustiness.aspx	Fine dust
+/loggedin/mechquest/q004_091_dustiness.aspx	Coarse dust
+/loggedin/mechquest/q004_091_dustiness.aspx	Granules, flakes or pellets
+/loggedin/mechquest/q004_091_dustiness.aspx	Firm granules, flakes or pellets
+/loggedin/mechquest/q004_091_dustiness.aspx	Dustiness of the inhalable fraction may be measured by two methods, the rotating drum test and the continuous single drop test, which is described in detail in CEN EN 15051 (2006). The two test methods do not always rank materials in the same order and users should therefore choose the method that is most appropriate for the material and handling process they wish to simulate.
+/loggedin/mechquest/q004_091_dustiness.aspx	(Dustiness)
+/loggedin/mechquest/q004_091_dustiness.aspx	A powdered product containing very fine, free flowing, light particles. This category may also contain products with a mixture of very fine particles and large particles or granules. Handling the product in its dry form results in a dust cloud that remains airborne for a long time. The product may be wind swept: e.g., magnesium stearate.
+/loggedin/mechquest/q004_091_dustiness.aspx	Inhalable fraction: > 5000 mg/kg
+/loggedin/mechquest/q004_091_dustiness.aspx	Either supply a dustiness value or choose a dustiness class.
+/loggedin/mechquest/q006_093_moisturecontent.aspx	Moisture Content
+/loggedin/mechquest/q006_093_moisturecontent.aspx	What is the moisture content of the product?
+/loggedin/mechquest/q006_093_moisturecontent.aspx	Dry product (<5 % moisture content)
+/loggedin/mechquest/q006_093_moisturecontent.aspx	5 - 10 % moisture content
+/loggedin/mechquest/q006_093_moisturecontent.aspx	>10 % moisture content
+/loggedin/mechquest/q006_093_moisturecontent.aspx	Increasing the moisture content or adding other additives can reduce exposure potential. Water may have been added before handling the product or during handling. The latter is taken into account in the principal MF “localised control’, whereas the former is considered an intrinsic property of the material.
+/loggedin/mechquest/q006_093_moisturecontent.aspx	Clearly (soaked) wet powdered material (like paste or slurry) should not be treated as a powder and the product type ‘paste or slurry or clearly (soaked) wet powder’ should be selected.
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	Powder Weight Fraction
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	What is the weight fraction of the substance in the powdered, granular or pelletised material?
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	(0.0 < powder weight fraction ≤ 1.0)
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	If the weight fraction of the substance in the material is not precisely known, pick one of the categories below.
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	Pure material (100%)
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	Extremely minute (< 0.01 %)
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	If known enter a value for weight fraction of powder. Alternatively provide an estimate by selecting from one of the categories provided.
+/loggedin/mechquest/q006_5_093_5_powderweightfraction.aspx	Either supply a weight fraction value or choose a weight fraction category.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Impaction on contaminated solid objects
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Handling of contaminated solid objects or paste
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Spray application of powders
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Movement and agitation of powders, granules or pelletised material
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Transfer of powders, granules or pelletised material
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Compressing of powders, granules or pelletised material
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Fracturing of powders, granules or pelletised material
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities where impaction or striking of a tool on an object contaminated with powder or granules potentially results in re-suspension of that powder. For this activity class, exposure is estimated to be related to the level of contamination on the surface or the object that is impacted on.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Handling or transport of surfaces, objects or pastes that are (potentially) contaminated with powders or granules. For this activity class, exposure is estimated to the contamination on the surface, object or paste.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Spraying activities used to intentionally disperse powders on surfaces by using a pressure difference.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities where movement and agitation of powders results in disturbances of the product causing dust particles to become airborne.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities where a stream of powder is transferred from one reservoir (or container, vessel) to the receiving vessel. The product may either fall due to gravity from a high to a lower point (dumping of powders), be transferred horizontally (scooping of powders) or is transferred through a hose or tube with pressure (vacuum transfer).
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities where powders, granules or pelletised material are compressed due to compaction or crushing.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities where powders, granules or pelletised material are crushed and broken into smaller parts or sizes due to frictional forces (e.g. between two surfaces or objects).
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Hammering
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Nailing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Piling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Punching
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on Contaminated Solid Objects
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on substantially and visibly contaminated objects (layers of more than 0.5 kg)
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on objects with visible residual dust
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on objects with limited visible residual dust
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on slightly contaminated (layers of less than few grams) objects
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on apparently clean objects
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	For this activity class exposure is related to the contamination on the surfaces or objects that are impacted upon.
+/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx	Impaction on heavily contaminated filters
+/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx	What is the type of handling?
+/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx	Heavy mechanical impaction
+/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx	Normal impaction (manual or light mechanical)
+/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx	Hydraulic hammers
+/loggedin/mechquest/q002_7_activities.aspx	Near Field:
+/loggedin/mechquest/q002_7_activities.aspx	Activity emission potential
+/loggedin/mechquest/q002_7_activities.aspx	Localised controls
+/loggedin/mechquest/q002_7_activities.aspx	Surface contamination
+/loggedin/mechquest/q002_7_activities.aspx	Edit near-field activity emission potential for this activity
+/loggedin/mechquest/q002_7_activities.aspx	Edit near-field localised controls for this activity
+/loggedin/mechquest/q002_7_activities.aspx	Edit near-field surface contamination for this activity
+/loggedin/mechquest/q002_7_activities.aspx	Edit near-field dispersion for this activity
+/loggedin/mechquest/q002_7_activities.aspx	ZZ-RESULTS-TEST
+/loggedin/mechquest/q002_7_activities.aspx	temp activity
+/loggedin/mechquest/q002_7_activities.aspx	480 min
+/loggedin/progress.aspx	ART — Progress
+/loggedin/progress.aspx	The model is running. Please do not refresh the page, or use your browser's back button. Your results will be with you shortly.
+/loggedin/progress.aspx	The model is currently:
+/loggedin/progress.aspx	Connecting to server
+/loggedin/mechanisticresults.aspx	ART — Exposure Predictions
+/loggedin/mechanisticresults.aspx	Please set the options for the results.
+/loggedin/mechanisticresults.aspx	Type of exposure
+/loggedin/mechanisticresults.aspx	Full shift
+/loggedin/mechanisticresults.aspx	Long term
+/loggedin/mechanisticresults.aspx	Percentile
+/loggedin/mechanisticresults.aspx	50th (Median)
+/loggedin/mechanisticresults.aspx	Confidence interval
+/loggedin/mechanisticresults.aspx	Inter-quartile
+/loggedin/mechanisticresults.aspx	Estimate
+/loggedin/mechanisticresults.aspx	Confidence Interval
+/loggedin/mechanisticresults.aspx	This represents the air concentration in the worker's personal breathing zone outside of any respiratory protection. Currently the effect of respiratory protection equipment is outside the scope of ART.
+/loggedin/mechanisticresults.aspx	Download your report:
+/loggedin/mechanisticresults.aspx	PDF
+/loggedin/mechanisticresults.aspx	Excel
+/loggedin/mechanisticresults.aspx	Proceed to Bayesian Model
+/loggedin/mechanisticresults.aspx	Activity configuration
+/loggedin/mechanisticresults.aspx	In order to determine a "real world" exposure value, please choose the type of exposure that you are interested in, and an appropriate percentile and level of confidence.
+/loggedin/mechanisticresults.aspx	Reconfigure scenario
+/loggedin/mechanisticresults.aspx	Go to My Scenarios
+/loggedin/mechanisticresults.aspx	Go to Activity Configuration
+/loggedin/mechanisticresults.aspx	ART — About Analogous Data
+/loggedin/mechanisticresults.aspx	A Bayesian update of the mechanistic model predictions can be carried out using analogous exposure data. There are two sources for analogous data:
+/loggedin/mechanisticresults.aspx	Select from the ART exposure data library
+/loggedin/mechanisticresults.aspx	Browse the built-in database and select from exposure scenarios that are deemed potentially compatible with the activities configured in the mechanistic model.
+/loggedin/mechanisticresults.aspx	Upload own analogous data
+/loggedin/mechanisticresults.aspx	In ART v1.5 you must make your own assessment as to whether the exposure measurements are analogous to your scenario. You should only upload measurements that you consider fully analogous."
+/loggedin/mechanisticresults.aspx	If you would like to provide data from both sources, begin by
+/loggedin/mechanisticresults.aspx	browsing the exposure data library
+/loggedin/mechanisticresults.aspx	Return to mechanistic results
+/loggedin/browseedb.aspx	ART — Exposure Data Library
+/loggedin/browseedb.aspx	Show scenarios for:
+/loggedin/browseedb.aspx	Primary emission sources only
+/loggedin/browseedb.aspx	Primary and Secondary
+/loggedin/browseedb.aspx	All:
+/loggedin/browseedb.aspx	No suitable scenarios were found in the exposure library.
+/loggedin/browseedb.aspx	To continue with the Bayesian update, please
+/loggedin/browseedb.aspx	upload your own data
+/loggedin/browseedb.aspx	The ART exposure data library consists of measurements covering different exposure types, i.e. dust, mist, vapours. A measurement belongs to a data set, called a scenario, which has an associated contextual description. The description has sufficient detail to allow you to make an informed decision about the relevance of the associated measurements to your assessment.
+/loggedin/browseedb.aspx	Scenarios deemed potentially compatible with your configured activities are listed on this page. View the description for each scenario and for each one that you consider suitably analogous, click the name to select it.
+/loggedin/browseedb.aspx	You may select multiple scenarios. Once you have made your selection, click
+/loggedin/browseedb.aspx	to continue.
+/loggedin/browseedb.aspx	Selected scenarios:
+/loggedin/browseedb.aspx	(click scenario name to select)
+/loggedin/browseedb.aspx	Note:
+/loggedin/browseedb.aspx	the scenarios in your current selection, taken together, represent more than one substance form (mist, vapour, or other).
+/loggedin/browseedb.aspx	Proceed to Bayesian update
+/loggedin/browseedb.aspx	Upload my analogous data
+/loggedin/browseedb.aspx	Mechanistic Results
+/loggedin/browseedb.aspx	Upload Data
+/loggedin/browseedb.aspx	Click to show all item descriptions
+/loggedin/browseedb.aspx	Click to hide all item descriptions
+/loggedin/browseedb.aspx	Exposure Statistics
+/loggedin/browseedb.aspx	help
+/loggedin/browseedb.aspx	expand
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-BAYES-TEST
+/loggedin/mechquest/q002_7_activities.aspx	dust handling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Falling of powders, granules or pelletised material
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Vacuum transfer of powders, granules or pelletised material
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Bagging solids
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Dumping solids in mixers
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Loading barges with minerals or cereals
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Scooping
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Scattering
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Falling of Powders, Granules or Pelletised Material
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring more than 1000 kg/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring 100 – 1000 kg/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring 10 – 100 kg/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring 1 – 10 kg/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring 0.1 – 1 kg/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring 10 – 100 gram/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Transferring less than 10 gram/minute
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Large scale transfer with big bags
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Routine transfer
+/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx	Careful transfer involves workers showing attention to potential danger, error or harm and carrying out the activity in a very exact and thorough (or cautious) manner e.g. careful weighing in laboratory
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-BAYES-2
+/loggedin/mechquest/q002_7_activities.aspx	dust transfer
+/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx	What is the drop height?
+/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx	Drop height > 0.5 m
+/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx	Drop height < 0.5 m
+/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx	The drop height is measured from the bottom of the dumping opening to the top of the receiving object or surface.
+/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx	What is the level of containment of the process?
+/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx	Open process
+/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx	Handling that reduces contact between product and adjacent air
+/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx	Note: This does not include processes that are fully contained by localised controls (see next questions).
+/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx	Example situation: Dumping powders in a big bag through a small dumping opening
+/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx	Select ‘open process’ here if the localised control ‘full containment without extraction’ or ‘enclosing hoods’ will be selected in the subsequent question on localised controls.
+/loggedin/browseedb.aspx	Scooping of coarse dust
+/loggedin/browseedb.aspx	This scenario describes the scooping of two types of powders (coarse dust (like sand)) in a testing environment. Operators were sampled for 12-30 minutes (per product) and performed the scooping of product during the entire sampling period.
+/loggedin/browseedb.aspx	In total 43kg calcium carbonate or aluminum oxide was used respectively. Scooping of product was performed at a use rate of 1-10kg/minute and at a dropping height of <0.5m. No localized controls were provided.
+/loggedin/browseedb.aspx	The exposure measurements reflect exposure levels to inhalable dust.
+/loggedin/browseedb.aspx	The activity was performed in a room of 30 m3 without ventilation.
+/loggedin/browseedb.aspx	Proj ref: Brouwer et. al. 2006
+/loggedin/browseedb.aspx	Exposure statistics
+/loggedin/browseedb.aspx	Scooping of extremely fine dust
+/loggedin/browseedb.aspx	This scenario describes the scooping of a powder (extremely fine dust) in a testing environment. Operators were sampled for 12-30 minutes (per product) and performed the scooping of product during the entire sampling period.
+/loggedin/browseedb.aspx	In total 43kg magnesium stearate was used. Scooping of product was performed at a use rate of 1-10kg/minute and at a dropping height of <0.5m. No localized controls were provided.
+/loggedin/browseedb.aspx	Scooping drugs [coarse dust]
+/loggedin/browseedb.aspx	This scenario describes the scooping of drugs (solid powder, coarse dust) in Pharmacies. Operators were sampled for 5-20 minutes who were involved in scooping for the entire sampling period.
+/loggedin/browseedb.aspx	The product used was Pyridoxine. Scooping the product was performed at a use rate of with careful handling and a drop height of less than 0.5m. No localized controls were provided.
+/loggedin/browseedb.aspx	The exposure measurements reflect exposure levels to Pyridoxine hydrochloride.
+/loggedin/browseedb.aspx	The activity was performed in a room of 30-100 m3 with mechanical ventilation. Demonstrable and effective housekeeping was in practice.
+/loggedin/browseedb.aspx	Proj ref: V6288
+/loggedin/browseedb.aspx	Scooping drugs with LEV [coarse dust]
+/loggedin/browseedb.aspx	This scenario describes the scooping of drugs (solid powder, coarse dust) in Pharmacies. Operators were sampled for 4-9 minutes who were involved in scooping for the entire sampling period.
+/loggedin/browseedb.aspx	The product used was Pyridoxine. Scooping the product was performed at a use rate of <10 g-1kg with careful handling and a drop height of less than 0.5m. Fixed LEV was provided.
+/loggedin/browseedb.aspx	Dumping petroleum coke with truck
+/loggedin/browseedb.aspx	This scenario describes dumping of petroleum coke with a truck. Operators were sampled for 180-370 minutes and were dumping for the entire sampling period.
+/loggedin/browseedb.aspx	The petroleum coke was dumped with a truck on a conveyer belt. The use rate was 100-1000kg per minute and a drop height of more than 0.5 m. And it was assumed that the truck was not provided with a cabin.
+/loggedin/browseedb.aspx	The activity was performed in a room of 300-3000 m3 with natural ventilation.
+/loggedin/browseedb.aspx	Scooping of coal
+/loggedin/browseedb.aspx	This scenario describes scooping of coal with scoops and brooms. Operators were sampled for 104-242 minutes and were scooping for the entire sampling period.
+/loggedin/browseedb.aspx	The product used was pit coal. Scooping was performed at a use-rate of 10-100 kg per minute and a drop height of less than 0.5 m. No localized controls were provided.
+/loggedin/browseedb.aspx	The activity was performed in a ship’s hold which is characterized as a room of 1000-3000 m3with natural ventilation.
+/loggedin/browseedb.aspx	Loading bottle bags in glovebox
+/loggedin/browseedb.aspx	This scenario describes the loading of bottle bags in a double-chamber glovebox (scored as medium specification) in the pharmaceutical industry. Operators were sampled for approximately 10 minutes.
+/loggedin/browseedb.aspx	Workers were involved in the automated filling of two bottle-bags with 25 kg product (70% of the time).The use rate was 1-10 kg per minute. Some cleaning activities were also performed inside the glovebox.
+/loggedin/browseedb.aspx	The dry powder was Fluticasone propionate and can be classified as coarse was processed. The exposure measurements reflect exposure levels to the active ingredient (analyte).
+/loggedin/browseedb.aspx	The room is clean with a volume of 100 m3 and a ventilation rate of 30 ACH.
+/loggedin/browseedb.aspx	Small scale weighing in ventilated weighing enclosures
+/loggedin/browseedb.aspx	This scenario describes the weighing of small amounts of product in ventilated weighing enclosures (Mach Aire weigh station) in the pharmaceutical industry. Operators were sampled between 15-40 minutes and were involved in weighing activities for 95% of the time.
+/loggedin/browseedb.aspx	The workers were scooping product of up to 50 gram aliquots. The use rate was 10-100 gram per minute.
+/loggedin/browseedb.aspx	A dry extremely fine powder was processed. The measurements reflect exposure to total inhalable dust.
+/loggedin/browseedb.aspx	The rooms were clean (the enclosure was cleaned with wet tissue) with a volume between 300-800 m3 and a ventilation rate of approximately 50 ACH.
+/loggedin/browseedb.aspx	Dumping stones
+/loggedin/browseedb.aspx	This scenario describes the dumping of stones for ballast in the railway industry. Operators were sampled for 60-120 minutes and were involved in dumping for 100% of the sampling time.
+/loggedin/browseedb.aspx	Dumping of stones was performed at a rate of more than 1000 kg/minute and the drop height was in excess of 0.5m. The workers were walking or standing in close proximity of the wagons where stones were dumped, approximately 3 meters from the source
+/loggedin/browseedb.aspx	The activity was performed outside.
+/loggedin/browseedb.aspx	Proj ref: 2002-GGI-R024
+/loggedin/browseedb.aspx	Milling asphalt
+/loggedin/browseedb.aspx	This scenario describes the milling of asphalt and dumping the milled asphalt. Operators were sampled for 100-300 minutes and milled and dumped (at the same time) for 35-65% of the sampling time.
+/loggedin/browseedb.aspx	Milling can be described as a near field task of mechanical abrasion of large surfaces and is a contained process, as dumping can be described as transferring 10-100kg/minute with a drop height of more than 0.5m in the far field, without localized controls.
+/loggedin/browseedb.aspx	Asphalt is milled and the exposure measurements reflect exposure to inhalable dust.
+/loggedin/browseedb.aspx	Proj ref: 2002-GGI-R003
+/loggedin/browseedb.aspx	Bagging fine powder with bagging machine with integrated LEV
+/loggedin/browseedb.aspx	This scenario describes the bagging of cement using a bagging machine with multiple filling mouths. Operators were sampled for 60-240 minutes and operated the bagging machine for 40%-97% of the sampling time.
+/loggedin/browseedb.aspx	Bagging was performed with a rate of 100-1000kg/minute. Fixed capturing hoods were applied. The exposure source was far field for 90% of the time. In case of obstruction the worker has to place the bags to the filling mouth by hand to start up the process again.
+/loggedin/browseedb.aspx	The used products were various cement types. All products were fine powders. The exposure measurements reflect exposure to inhalable dust.
+/loggedin/browseedb.aspx	The activities were performed in rooms of 1000-3000m3 with no ventilation.
+/loggedin/browseedb.aspx	Proj ref: V7607/02/01
+/loggedin/browseedb.aspx	Unloading ship hold with fine product using bobcat or truck
+/loggedin/browseedb.aspx	This scenario describes the unloading of a ship hold in the transshipment industry. Product was pushed together using a bobcat or truck. The product is transferred out of the hold using a crane. Operators were sampled for 40-320 minutes and dumped for 40%-80% of the sampling time.
+/loggedin/browseedb.aspx	Product was pushed together with a rate of >1000kg/minute. No localized controls were provided. The exposure source was farfield and the trucks or bobcats were not provided with a closed cabin.
+/loggedin/browseedb.aspx	The used products were alumina and palmflour. All products were fine dust. The exposure measurements reflect exposure to inhalable dust.
+/loggedin/browseedb.aspx	The activities were performed in ship holds.
+/loggedin/browseedb.aspx	Unloading ship hold with coarse dust using bobcat or truck
+/loggedin/browseedb.aspx	This scenario describes the unloading of a ship hold in the transshipment industry. Product was pushed together using a bobcat or truck. The product is transferred out of the hold using a crane. Operators were sampled for 60-80 minutes and dumped for 50%-100% of the sampling time.
+/loggedin/browseedb.aspx	The used products were sand and calcinated petroleum cokes. All products were coarse dust. The exposure measurements reflect exposure to inhalable dust.
+/loggedin/browseedb.aspx	Unloading ship hold with granules using bobcat or truck
+/loggedin/browseedb.aspx	This scenario describes the unloading of a ship hold in the transshipment industry. Product was pushed together using a bobcat or truck. The product is transferred out of the hold using a crane. Operators were sampled for 35-300 minutes and dumped for 65%-75% of the sampling time.
+/loggedin/browseedb.aspx	The used products were bauxite and soy pellets. All products were pellet-sized particles. The exposure measurements reflect exposure to inhalable dust.
+/loggedin/browseedb.aspx	The activities were performed in rooms ship holds.
+/loggedin/browseedb.aspx	Scooping of course dust [1-10 kg]
+/loggedin/browseedb.aspx	This scenario describes the work of operators at a package department in the food industry. The operators were measured between 13-154 minutes. The operators were involved in the scooping of product during the whole measurement period.
+/loggedin/browseedb.aspx	Workers scooped 5-15 kg product into a plastic bag. Scooping of product was performed at a use rate of 1-10kg/minute and at a dropping height of <0.5m. No localized controls were provided.
+/loggedin/browseedb.aspx	The product can be characterized as coarse dust and the exposure measurements reflect exposure levels to inhalable dust.
+/loggedin/browseedb.aspx	The activity was performed in a room of 300-1000 m3 without ventilation.
+/loggedin/browseedb.aspx	Proj ref: HSEref091
+/loggedin/browseedb.aspx	Scooping of course dust
+/loggedin/browseedb.aspx	This scenario describes the work of operators at a package department in the food industry. The operators were sampled between 30-157 minutes. The operators were involved in the scooping of product during the whole measurement period.
+/loggedin/browseedb.aspx	Workers scooped 0.5-5 kg product into a plastic bag. Scooping of product was performed at a use rate of 0.1-1kg/minute and at a dropping height of <0.5m. No localized controls were provided.
+/loggedin/browseedb.aspx	Big bagging of a granule product
+/loggedin/browseedb.aspx	This scenario describes the work of operators in the plastic recycling industry. The operators were measured between 65-220 minutes. The operators were involved in the filling big bags with granulate from the plastic shredder machine.
+/loggedin/browseedb.aspx	The big bagging machine automatically filled big bags with granulate. The workers then transported the filled bags for further processing. The bagging process is situated in the far field of the operator (>1m). Between 100-1000 kg of granulate is bagged per minute. No localized controls were provided.
+/loggedin/browseedb.aspx	The product can be characterized as granules and the exposure measurements reflect exposure levels to inhalable dust.
+/loggedin/browseedb.aspx	The activities were performed in rooms of >3000 m3 with forced general or natural ventilation.
+/loggedin/browseedb.aspx	Proj ref: F1806
+/loggedin/browseedb.aspx	Big bagging of a pre-washed granule product
+/loggedin/browseedb.aspx	This scenario describes the work of operators in the plastic recycling industry. The operators were measured between 123-202 minutes. The operators were involved in the filling big bags with granulate from the plastic shredder machine.
+/loggedin/browseedb.aspx	The big bagging machine automatically filled big bags with granulate. The workers then transported the filled bags for further processing.The bagging process is situated in the far field of the operator (>1m). Between 100-1000 kg of granulate is bagged per minute. No localized controls were provided.
+/loggedin/browseedb.aspx	The product was washed prior to the bagging process and can be characterized as clean granules. Exposure measurements reflect exposure levels to inhalable dust.
+/loggedin/browseedb.aspx	Big bagging of a granule product [including cleaning activities]
+/loggedin/browseedb.aspx	This scenario describes the work of operators in the plastic recycling industry. The operators were measured between 65-220 minutes. Operators were involved in the filling of big bags with granulate from the plastic shredder machine. A second task, cleaning the big bags using compressed air, was also performed and took approximately 10 minutes in total.
+/loggedin/browseedb.aspx	(1) The big bagging machine automatically filled big bags with granulate. The workers then transported the filled bags for further processing. The bagging process is situated in the far field of the operator (>1m). Between 100-1000 kg of granulate is bagged per minute. No localized controls were provided.
+/loggedin/browseedb.aspx	(2) Workers were also involved in the manual cleaning of big bags using compressed air. It is assumed that the amounts cleaned ranged between 0.1 - 1 kg. No localized controls were provided.
+/loggedin/browseedb.aspx	Dumping of a granule product from big bags [including cleaning activities]
+/loggedin/browseedb.aspx	This scenario describes the work of operators in the plastic recycling industry. The operators were measured between 62-193 minutes. Operators were involved in dumping activities using forklifts. After the dumping activity the big bags were cleaned with compressed air. This took approximately 10 minutes in total.
+/loggedin/browseedb.aspx	(1) Workers used forklifts to dump big bags with a granulate product into the top of a machine. The source of emission was located in the far field of the worker (>1m). Between 100-1000 kg of granulate was dumped per minute. No localized controls were provided.
+/loggedin/browseedb.aspx	Dumping of granule product from big-bags [excluding cleaning activities]
+/loggedin/browseedb.aspx	This scenario describes the work of operators in the plastic recycling industry. The operators were measured 15 minutes. Operators were involved in dumping activities using forklifts.
+/loggedin/browseedb.aspx	Workers used forklifts to dump big bags with a granulate product into the top of a machine. The source of emission was located in the far field of the worker (>1m). Between 100-1000 kg of granulate was dumped per minute. No localized controls were provided.
+/loggedin/browseedb.aspx	Dough makers using flour in traditional bakeries
+/loggedin/browseedb.aspx	This scenario describes the work of bakery workers in traditional bakeries. The bakery workers were involved in different tasks including mixing dough, processing dough, sprinkling flour, oven work and pastry work. They were sampled during a full shift (8 hours). Overall the bakers are involved in two major tasks; (1) making dough (90%) and (2) handling of contaminated objects during processing of dough and pastry work.
+/loggedin/browseedb.aspx	(1) Making dough: the baker is involved in mixing operations. Mainly flour with water and other ingredients are mixed to make dough. The dough is mixed in a tube containing 10-100 kg dough.
+/loggedin/browseedb.aspx	(2) Strewing or sprinkling of flour during dough making and other activities.
+/loggedin/browseedb.aspx	(3) Handling of contaminated objects with limited surface contamination: the baker was involved in various handling operations like processing dough, wrapping bread, oven work and pastry work.
+/loggedin/browseedb.aspx	Flour was used as a product or is the surface contaminant during handling activities. Flour is a fine dry powder. The exposure measurements reflect exposure levels to total inhalable dust.
+/loggedin/browseedb.aspx	Generally the work is performed in rooms varying between 300 and 1000 m3 with general ventilation.
+/loggedin/browseedb.aspx	Proj ref: Meijster et. al. 2007
+/loggedin/browseedb.aspx	Dumping powder in hopper with LEV
+/loggedin/browseedb.aspx	This scenario describes the dumping of powders. Workers were sampled for 20-222 minutes and were occupied during the entire sample time.
+/loggedin/browseedb.aspx	This activity involved the transfer (near field exposure) of 10-100 kg/minute of product at a dropping height of >0.5 m. Local exhaust ventilation (fixed capturing hoods) were provided.
+/loggedin/browseedb.aspx	The product is a dry fine dust. The exposure levels reflect exposure to inhalable dust.
+/loggedin/browseedb.aspx	The dumping was performed in rooms of >3000 m3 and were installed with mechanical ventilation.
+/loggedin/browseedb.aspx	Proj ref: V99.267
+/loggedin/browseedb.aspx	Dumping powder in hopper without LEV
+/loggedin/browseedb.aspx	This scenario describes the dumping of powders. Workers were sampled for 12-61 minutes and were occupied during the entire sampling time.
+/loggedin/browseedb.aspx	This activity involved the transfer (near field exposure) of 10-100 kg/minute of product at a dropping height of >0.5 m. No localized controls were provided.
+/loggedin/browseedb.aspx	Click to include/exclude scenario from Bayesian update
+/loggedin/browseedb.aspx	Click to view description
+/loggedin/browseedb.aspx	Click to hide description
+/loggedin/browseedb.aspx	Click to view summary statistics for measurements
+/loggedin/prebayesian.aspx	ART — Summary
+/loggedin/prebayesian.aspx	The calibrated exposure score is
+/loggedin/prebayesian.aspx	You uploaded
+/loggedin/prebayesian.aspx	analogous measurements.
+/loggedin/prebayesian.aspx	You retrieved
+/loggedin/prebayesian.aspx	analogous measurements from
+/loggedin/prebayesian.aspx	dataset.
+/loggedin/prebayesian.aspx	Your selected measurements will be adjusted so that their concentration of active substance matches that of your scenario.
+/loggedin/prebayesian.aspx	Retrieve existing analogous data
+/loggedin/prebayesian.aspx	Data Upload
+/loggedin/prebayesian.aspx	The current scenario details are shown on the left.
+/loggedin/prebayesian.aspx	Run Bayesian Model
+/loggedin/prebayesian.aspx	Go to Exposure Database
+/loggedin/prebayesian.aspx	Go to Data Upload
+/loggedin/progress.aspx	Running
+/loggedin/progress.aspx	Mechanistic model only:
+/loggedin/progress.aspx	After the Bayesian update:
+/loggedin/progress.aspx	The Bayesian results are based upon
+/loggedin/progress.aspx	uploaded records and
+/loggedin/progress.aspx	records retrieved from the exposure database. You may wish to
+/loggedin/progress.aspx	upload a new dataset
+/loggedin/progress.aspx	retrieve new records
+/loggedin/progress.aspx	Analogous Data Upload
+/loggedin/progress.aspx	Go to Mechanistic Results
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-BRANCH
+/loggedin/mechquest/q002_casno.aspx	Invalid CAS No.
+/loggedin/mechquest/q003_090_producttype.aspx	Solid Weight Fraction
+/loggedin/mechquest/q003_090_producttype.aspx	What is the weight fraction of the substance in the solid object?
+/loggedin/mechquest/q003_090_producttype.aspx	(0.0 < solid weight fraction ≤ 1.0)
+/loggedin/mechquest/q003_090_producttype.aspx	If the weight fraction is not precisely known, pick one of the categories below.
+/loggedin/mechquest/q003_090_producttype.aspx	The fraction of the substance in the solid object should be estimated by expert judgement. For instance, if the quartz content in solid stone is 5%, then 0.05 should be entered here. For impregnated wood logs it will be more difficult to estimate the right proportion of substance in the log.
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Solid Material
+/loggedin/mechquest/q008_095_solidmaterial.aspx	What is the material of the solid object?
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Wood
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Stone
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Metal
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Plastic (this is outside the applicability domain of the current ART)
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Leather (this is outside the applicability domain of the current ART)
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Glass (this is outside the applicability domain of the current ART)
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Textile fabrics (this is outside the applicability domain of the current ART)
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Other (this is outside the applicability domain of the current ART)
+/loggedin/mechquest/q008_095_solidmaterial.aspx	Select the material of the solid object then click Next.
+/loggedin/mechquest/q008_5_095_5_moisturecontent.aspx	What is the moisture content of the solid object?
+/loggedin/mechquest/q008_5_095_5_moisturecontent.aspx	Dry solid object (<5 % moisture content)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Fracturing and abrasion of solid objects
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Abrasive blasting
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Activities where solid objects are broken into smaller parts or are abraded due to frictional forces.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	A surface preparation technique for removing coatings or contamination by propelling abrasive material towards the surface at high velocity. ART only considers exposure arising from the surface coatings during abrasive blasting (i.e., exposure to the abrasive material is not included).
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Crushing concrete
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Jack hammering
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Pulverising
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Using a circular saw
+/loggedin/mechquest/q017_055_103_activityclass.aspx	(Manual) milling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Sanding
+/loggedin/mechquest/q017_055_103_activityclass.aspx	(Cut-off) Grinding of steel
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Drilling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Buffing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Polishing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Chiseling
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Cutting
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Logging
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Demolishing with wrecking ball
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Wrecking
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Shredding of batteries
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Wire drawing
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Cold rolling of metal sheets
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Fracturing and Abrasion of Solid Objects
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Mechanical sanding of wood resulting in large amounts of dust
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Mechanical handling of wood resulting in large amounts of dust (e.g., large speed of moving work pieces or rotating cutting blades)
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Mechanical handling of wood resulting in limited amount of dust
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Manual handling of wood resulting in limited amount of dust
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Manual handling of wood resulting in very limited amount of dust
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Belt sanding
+/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx	Handheld sanding machine
+/loggedin/mechquest/q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel.aspx	Example situation: enclosed cover on a circular saw (relatively small openings are possible)
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-PASTE
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-PASTE
+/loggedin/mechquest/q003_090_producttype.aspx	Contamination of Paste/Slurry
+/loggedin/mechquest/q003_090_producttype.aspx	Is the paste or slurry (potentially) contaminated with powdered material?
+/loggedin/mechquest/q003_090_producttype.aspx	There is no potential for exposure through inhalation from this source.
+/loggedin/mechquest/q003_090_producttype.aspx	Assess contamination of the paste/slurry then click Next.
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	Contamination of Paste/Slurry
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	Is the paste or slurry (potentially) contaminated with powdered material?
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	There is no potential for exposure through inhalation from this source.
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	Assess contamination of the paste/slurry then click Next.
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	Dustiness of Powder Contamination
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	What is the measured dustiness of the powder contamination on the paste or slurry (mg/kg for inhalable fraction)?
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	If the dustiness of the powder was not measured: To which dustiness class does the substance belong?
+/loggedin/mechquest/q015_1_102_1_contaminatedwithpowder.aspx	Dustiness may be measured by two methods, the rotating drum test and the continuous single drop test, which is described in detail in CEN EN 15051 (2006). The two test methods do not always rank materials in the same order and users should therefore choose the method that is most appropriate for the material and handling process they wish to simulate.
+/loggedin/mechquest/q015_2_102_2_dustiness.aspx	Dustiness of Powder Contamination
+/loggedin/mechquest/q015_2_102_2_dustiness.aspx	What is the measured dustiness of the powder contamination on the paste or slurry (mg/kg for inhalable fraction)?
+/loggedin/mechquest/q015_2_102_2_dustiness.aspx	If the dustiness of the powder was not measured: To which dustiness class does the substance belong?
+/loggedin/mechquest/q015_2_102_2_dustiness.aspx	Dustiness may be measured by two methods, the rotating drum test and the continuous single drop test, which is described in detail in CEN EN 15051 (2006). The two test methods do not always rank materials in the same order and users should therefore choose the method that is most appropriate for the material and handling process they wish to simulate.
+/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx	Weight Fraction of Powder Contamination
+/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx	What is the weight fraction of the substance in the powdered contamination on the paste or slurry?
+/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx	Weight Fraction of Powder Contamination
+/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx	What is the weight fraction of the substance in the powdered contamination on the paste or slurry?
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Sorting
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Stacking
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Carrying
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Picking / collecting objects
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Packaging
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Paving
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Wrapping
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Disposal of empty bags
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Plastering
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Kneading
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Modeling of product
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Bending metal tubes
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Sorting
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Stacking
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Carrying
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Picking / collecting objects
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Packaging
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Paving
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Wrapping
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Disposal of empty bags
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Plastering
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Kneading
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Modeling of product
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Bending metal tubes
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of Contaminated Solid Objects or Paste
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of substantially and visibly contaminated objects (layers of more than 0.5 kg)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of objects with visible contamination (object covered with fugitive dust from surrounding dusty activities)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of objects with limited residual dust (thin layer visible)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of slightly contaminated (layers of less than few grams) objects
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of apparently clean objects
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Stacking cement bags with dust contamination (leakage from bag valve)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Disposal of empty contaminated bags
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Disposal of heavily contaminated filters
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Maintenance of heavily contaminated equipment
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	For this activity class exposure is related to the contamination on the surface or object.
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of Contaminated Solid Objects or Paste
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of substantially and visibly contaminated objects (layers of more than 0.5 kg)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of objects with visible contamination (object covered with fugitive dust from surrounding dusty activities)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of objects with limited residual dust (thin layer visible)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of slightly contaminated (layers of less than few grams) objects
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Handling of apparently clean objects
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Stacking cement bags with dust contamination (leakage from bag valve)
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Disposal of empty contaminated bags
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Disposal of heavily contaminated filters
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	Maintenance of heavily contaminated equipment
+/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx	For this activity class exposure is related to the contamination on the surface or object.
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	How are contaminated objects or pastes handled?
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	Handling that departs from regular work procedures and involves large amounts of energy (e.g. rough handling or throwing of bags)
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	Normal handling, involves regular work procedures
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	Careful handling, involves workers showing attention to potential danger, error or harm and carrying out the activity in a very exact and thorough (or cautious) manner
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	How are contaminated objects or pastes handled?
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	Handling that departs from regular work procedures and involves large amounts of energy (e.g. rough handling or throwing of bags)
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	Normal handling, involves regular work procedures
+/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx	Careful handling, involves workers showing attention to potential danger, error or harm and carrying out the activity in a very exact and thorough (or cautious) manner
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-PIL
+/loggedin/mechquest/q001_chemicalname.aspx	ZZ-PIL
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	Weight Fraction of Powdered Substance
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	What is the weight fraction of the powdered substance in the liquid mixture?
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	(0.0 < weight fraction ≤ 1.0)
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	If known enter a value for weight fraction for the substance in the liquid mixture. Alternatively provide an estimate by selecting from one of the categories provided.
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	Weight Fraction of Powdered Substance
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	What is the weight fraction of the powdered substance in the liquid mixture?
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	(0.0 < weight fraction ≤ 1.0)
+/loggedin/mechquest/q015_5_1_102_5_1_liquidmatrixweightfraction.aspx	If known enter a value for weight fraction for the substance in the liquid mixture. Alternatively provide an estimate by selecting from one of the categories provided.
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Viscosity of Powder/Liquid Mixture
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	What is the viscosity of the powder/liquid mixture?
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Liquids with low viscosity (like water)
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Liquids with medium viscosity (like oil)
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Select the viscosity of the powder/liquid mixture then click Next to continue.
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Viscosity of Powder/Liquid Mixture
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	What is the viscosity of the powder/liquid mixture?
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Liquids with low viscosity (like water)
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Liquids with medium viscosity (like oil)
+/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx	Select the viscosity of the powder/liquid mixture then click Next to continue.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Please select an activity class/subclass.
+/loggedin/mechquest/q017_055_103_activityclass.aspx	Please select an activity class/subclass.
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Far Field Primary Emission Source —
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	Are there any control measures in close proximity of the far-field emission source intended to minimise emissions from the source?
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	국소배기장치(LEV)
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	낙하 억제(knockdown)
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	ART 홈페이지로 이동
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	ART 도움말
+/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx	ART 로고
+/loggedin/mechquest/q017_055_103_activityclass.aspx	귀하의 활동은 어느 활동 등급(Activity Class)에 속합니까?
+/loggedin/mechquest/q017_055_103_activityclass.aspx	(이는 현재 ART 의 적용 범위를 벗어납니다.)
+/loggedin/mechquest/q017_055_103_activityclass.aspx	선박 등에 대한 도료 분무 도장 (HVLP 또는 무기압 기법 사용)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	높은 도포율 (> 3 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	중간 도포율 (0.3 - 3 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	낮은 도포율 (0.03 - 0.3 l/minute)
+/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx	매우 낮은 도포율 (< 0.03 l/minute)
+/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx	Paint spraying using HVLP or airless techniques
+/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx	Pest control operations using backpack
+/loggedin/mechquest/q017_055_103_activityclass.aspx	탱크 검척(dipping)
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Activities with Relatively Undisturbed Surfaces
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	(No Aerosol Formation)
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Open surface > 3 m²
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Open surface 1 - 3 m²
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Open surface 0.3 - 1 m²
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Open surface 0.1 - 0.3 m²
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Open surface < 0.1 m²
+/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx	Please configure this activity situation before continuing.
+/	Advanced Reach Tool 1.5에 오신 것을 환영합니다
+/	화학물질 안전성 평가는 복잡하고 시간이 많이 걸릴 수 있습니다. 노출을 추정하는 Tier I 모델을 이용할 수 있지만, 이들 모델로 안전한 사용을 입증하지 못한다면 더 많은 데이터나 더 나은 가정을 통해 정교화하는 것이 유일한 방법입니다. Advanced REACH Tool(ART) 1.5 버전은 흡입 노출의 기계론적 모델과, 내장된 노출 데이터베이스 또는 사용자 자신의 데이터에서 선택한 측정값으로 추정값을 갱신하는 통계적 기능을 함께 제공합니다. 모델 추정값과 실측 데이터를 결합하면 더 정교한 노출 추정값과 더 낮은 불확실성을 얻을 수 있습니다.
+/	ART 프로젝트는 산업계와 회원국의 다양한 이해관계자와 긴밀히 협력하여 수행되었습니다. REACH 하에서 근로자 노출평가에 ART 를 사용하는 방법은 ECHA 의 개정된 지침에 기술되어 있습니다:
+/	ART 는 현재 흡입성 분진, 증기, 미스트에 대한 노출 평가에만 보정되어 있습니다. 다만 적절한 보정 데이터가 없어, 흄, 섬유, 가스, 그리고 고온 야금 공정의 배출로 발생하는 분진의 평가에는 (당분간) 사용할 수 없습니다.
+/	ART 참여 기관
+/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx	Handling of Contaminated Objects
+/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx	Activities with treated/contaminated objects (surface > 3 m²)
+/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx	Activities with treated/contaminated objects (surface 1 - 3 m²)
+/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx	Activities with treated/contaminated objects (surface 0.3 - 1 m²)
+/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx	Activities with treated/contaminated objects (surface 0.1 - 0.3 m²)
+/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx	Activities with treated/contaminated objects (surface < 0.1 m²)
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	Bottom Loading
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	Transfer of liquid product with flow of:
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	> 1000 l/minute
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	100 - 1000 l/minute
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	10 - 100 l/minute
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	1 - 10 l/minute
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	0.1 - 1 l/minute
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	< 0.1 l/minute
+/loggedin/mechquest/q032_070_118_bottomloading.aspx	Configure this activity situation then click Next to continue.
+/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx	Spreading of Liquid Products
+/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx	Spreading of liquids at surfaces or work pieces > 3 m² / hour
+/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx	Spreading of liquids at surfaces or work pieces 1 - 3 m² / hour
+/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx	Spreading of liquids at surfaces or work pieces 0.3 - 1 m² / hour
+/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx	Spreading of liquids at surfaces or work pieces 0.1 - 0.3 m² / hour
+/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx	Spreading of liquids at surfaces or work pieces < 0.1 m² / hour
+/loggedin/mechquest/q030_068_116_liquidshighspeedprocesses.aspx	Application of Liquids in High Speed Processes (e.g. Rotating Tools)
+/loggedin/mechquest/q009_096_processtemperature.aspx	Temperature out of range. Please enter a temperature in °C in the range shown.

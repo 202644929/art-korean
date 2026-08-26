@@ -1,0 +1,100 @@
+%%{init: {"flowchart": {"useMaxWidth": false, "nodeSpacing": 45, "rankSpacing": 55}, "themeVariables": {"fontSize": "15px"}} }%%
+flowchart TD
+  Sq002_7_activities{"시나리오 개요 - ART 기계론적 모델"}
+  Sq009_096_processtemperature{"공정 중 액체의 온도는 얼마입니까?"}
+  Sq010_010_5_097_097_5_vapourpressure{"실온에서 물질의 증기압(Pascal)은 얼마입니까?"}
+  Sq012_099_liquidweightfraction{"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다."}
+  Sq013_100_viscosity{"물질/조제품의 점도는 얼마입니까?"}
+  Sq016_nearfieldsource{"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 …"}
+  Sq017_055_103_activityclass{"활동 등급 선택"}
+  Sq028_066_114_liquidopensurfaceundisturbed{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq028_3_066_3_114_3_liquidopensurfaceagitated{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq030_068_116_liquidshighspeedprocesses{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq029_067_115_spreadingliquidproducts{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq032_070_118_bottomloading{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq033_071_119_fallingliquids{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq026_064_112_surfacesprayingliquids{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq027_065_113_sprayingliquidsinspace{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq028_5_066_5_114_5_handlingcontaminatedobjects{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq026_5_064_5_112_5_surfacesprayingliquidsspraydirection{"분무 방향은 어떻습니까?"}
+  Sq026_7_064_7_112_7_surfacesprayingliquidsspraytechnique{"분무 기법은 무엇입니까?"}
+  Sq042_080_130_primarylocalizedcontrols{"일반 제어수단"}
+  Sq028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel{"물체 표면의 오염 정도는 어떻습니까?"}
+  Sq030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq033_5_071_5_119_5_fallingliquidscontainmentlevel{"공정의 밀폐 수준은 어떻습니까?"}
+  Sq034_072_120_transferloadingtype{"액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니…"}
+  Sq045_081_surfacecontamination{"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?"}
+  Sq043_131_segregation{"격리(발생원) 선택"}
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols{"일반 제어수단"}
+  Sq044_personalenclosure{"Select 격리(작업자)"}
+  Sq084_dispersion{"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?"}
+  Sq048_dispersion{"작업을 실내 또는 실외에서 수행합니까?"}
+  Sq089_0_secondaryfarfieldsources{"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?"}
+  Sq003_090_producttype{"물질/조제품의 제품 유형은 무엇입니까?"}
+  X_Sq002_7_activities_BLOCKED[/"막힘(검증오류)"/]
+  Sq002_7_activities -->|"(선택지 없음 - 값 입력 후 다음)"| X_Sq002_7_activities_BLOCKED
+  Sq009_096_processtemperature -->|"고온 공정 (50 - 150 ℃)<br/>실온 (15 - 25 ℃)<br/>실온 미만 (< 15 ℃)<br/>실온 초과 (25 - 50 ℃)"| Sq010_010_5_097_097_5_vapourpressure
+  Sq010_010_5_097_097_5_vapourpressure -->|"(선택지 없음 - 값 입력 후 다음)"| Sq012_099_liquidweightfraction
+  Sq012_099_liquidweightfraction -->|"8개 선택지"| Sq013_100_viscosity
+  Sq013_100_viscosity -->|"저점도 액체 (물과 유사)<br/>중점도 액체 (기름과 유사)"| Sq016_nearfieldsource
+  Sq016_nearfieldsource -->|"아니오<br/>예"| Sq017_055_103_activityclass
+  Sq017_055_103_activityclass -->|"개방 액면 또는 개방 저장조에서의 활동 / (미수집) 13<br/>개방 액면 또는 개방 저장조에서의 활동 / (미수집) 13<br/>개방 액면 또는 개방 저장조에서의 활동 / — 선택 —<br/>개방 액면 또는 개방 저장조에서의 활동 / — 선택 —"| Sq028_066_114_liquidopensurfaceundisturbed
+  Sq017_055_103_activityclass -->|"개방 액면 또는 개방 저장조에서의 활동 / (미수집) 14<br/>개방 액면 또는 개방 저장조에서의 활동 / (미수집) 14"| Sq028_3_066_3_114_3_liquidopensurfaceagitated
+  Sq017_055_103_activityclass -->|"고속 공정에서의 액체 적용 (예: 회전 공구)<br/>고속 공정에서의 액체 적용 (예: 회전 공구)"| Sq030_068_116_liquidshighspeedprocesses
+  Sq017_055_103_activityclass -->|"액상 제품의 도포<br/>액상 제품의 도포"| Sq029_067_115_spreadingliquidproducts
+  Sq017_055_103_activityclass -->|"8개 선택지"| Sq032_070_118_bottomloading
+  Sq017_055_103_activityclass -->|"액상 제품의 이송 / (미수집) 19<br/>액상 제품의 이송 / (미수집) 19<br/>액체의 연소 / (미수집) 19<br/>액체의 연소 / (미수집) 19"| Sq033_071_119_fallingliquids
+  Sq017_055_103_activityclass -->|"액체의 분무 적용 / — 선택 —<br/>액체의 분무 적용 / — 선택 —<br/>액체의 분무 적용 / 액체의 표면 분무<br/>액체의 분무 적용 / 액체의 표면 분무"| Sq026_064_112_surfacesprayingliquids
+  Sq017_055_103_activityclass -->|"액체의 분무 적용 / 공간 내 액체 분무<br/>액체의 분무 적용 / 공간 내 액체 분무"| Sq027_065_113_sprayingliquidsinspace
+  Sq017_055_103_activityclass -->|"오염된 물체의 취급<br/>오염된 물체의 취급"| Sq028_5_066_5_114_5_handlingcontaminatedobjects
+  Sq026_064_112_surfacesprayingliquids -->|"7개 선택지"| Sq026_5_064_5_112_5_surfacesprayingliquidsspraydirection
+  X_Sq026_064_112_surfacesprayingliquids_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq026_064_112_surfacesprayingliquids -->|"매우 낮은 도포율 (< 0.03 l/minute)"| X_Sq026_064_112_surfacesprayingliquids_PRUNED
+  Sq026_5_064_5_112_5_surfacesprayingliquidsspraydirection -->|"6개 선택지"| Sq026_7_064_7_112_7_surfacesprayingliquidsspraytechnique
+  Sq026_7_064_7_112_7_surfacesprayingliquidsspraytechnique -->|"압축공기 미사용 또는 사용이 적은 분무<br/>압축공기 미사용 또는 사용이 적은 분무<br/>압축공기 사용이 많은 분무<br/>압축공기 사용이 많은 분무"| Sq042_080_130_primarylocalizedcontrols
+  Sq027_065_113_sprayingliquidsinspace -->|"대규모 공간 분무<br/>대규모 공간 분무<br/>소규모 공간 분무<br/>소규모 공간 분무"| Sq042_080_130_primarylocalizedcontrols
+  Sq028_066_114_liquidopensurfaceundisturbed -->|"8개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  X_Sq028_066_114_liquidopensurfaceundisturbed_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq028_066_114_liquidopensurfaceundisturbed -->|"개방 표면 0.1 - 0.3 m2<br/>개방 표면 < 0.1 m2"| X_Sq028_066_114_liquidopensurfaceundisturbed_PRUNED
+  Sq028_3_066_3_114_3_liquidopensurfaceagitated -->|"8개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  X_Sq028_3_066_3_114_3_liquidopensurfaceagitated_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq028_3_066_3_114_3_liquidopensurfaceagitated -->|"개방 표면 0.1 - 0.3 m2<br/>개방 표면 < 0.1 m2"| X_Sq028_3_066_3_114_3_liquidopensurfaceagitated_PRUNED
+  Sq028_5_066_5_114_5_handlingcontaminatedobjects -->|"8개 선택지"| Sq028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel
+  X_Sq028_5_066_5_114_5_handlingcontaminatedobjects_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq028_5_066_5_114_5_handlingcontaminatedobjects -->|"처리/오염된 물체를 다루는 활동 (표면 0.1-0.3 m2)<br/>처리/오염된 물체를 다루는 활동 (표면 <0.1 m2)"| X_Sq028_5_066_5_114_5_handlingcontaminatedobjects_PRUNED
+  Sq028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel -->|"6개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  Sq029_067_115_spreadingliquidproducts -->|"8개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  X_Sq029_067_115_spreadingliquidproducts_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq029_067_115_spreadingliquidproducts -->|"표면 또는 가공물에 대한 액체 도포 0.1 - 0.3 m2 …<br/>표면 또는 가공물에 대한 액체 도포 < 0.1 m2 / ho…"| X_Sq029_067_115_spreadingliquidproducts_PRUNED
+  Sq030_068_116_liquidshighspeedprocesses -->|"고속 운동이 수반되는 대규모 활동<br/>고속 운동이 수반되는 대규모 활동<br/>고속 운동이 수반되는 소규모 활동<br/>고속 운동이 수반되는 소규모 활동"| Sq030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel
+  Sq030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel -->|"개방 공정: 공정과 작업자 간 격리(작업자) 없음<br/>개방 공정: 공정과 작업자 간 격리(작업자) 없음<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq042_080_130_primarylocalizedcontrols
+  Sq032_070_118_bottomloading -->|"9개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  X_Sq032_070_118_bottomloading_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq032_070_118_bottomloading -->|"0.1 - 1 l/minute<br/>1 - 10 l/minute<br/>< 0.1 l/minute"| X_Sq032_070_118_bottomloading_PRUNED
+  Sq033_071_119_fallingliquids -->|"9개 선택지"| Sq033_5_071_5_119_5_fallingliquidscontainmentlevel
+  X_Sq033_071_119_fallingliquids_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq033_071_119_fallingliquids -->|"0.1 - 1 l/minute<br/>1 - 10 l/minute<br/>< 0.1 l/minute"| X_Sq033_071_119_fallingliquids_PRUNED
+  Sq033_5_071_5_119_5_fallingliquidscontainmentlevel -->|"개방 공정<br/>개방 공정<br/>제품과 주변 공기의 접촉을 줄이는 취급<br/>제품과 주변 공기의 접촉을 줄이는 취급"| Sq034_072_120_transferloadingtype
+  Sq034_072_120_transferloadingtype -->|"상부 낙하식 적재 — 액체 주입구가 저장조 상부에 위치하여 …<br/>상부 낙하식 적재 — 액체 주입구가 저장조 상부에 위치하여 …<br/>침적식 적재 — 액체 주입구가 액면 아래에 위치하여 에어로졸…<br/>침적식 적재 — 액체 주입구가 액면 아래에 위치하여 에어로졸…"| Sq042_080_130_primarylocalizedcontrols
+  Sq042_080_130_primarylocalizedcontrols -->|"국소 제어 없음"| Sq045_081_surfacecontamination
+  Sq042_080_130_primarylocalizedcontrols -->|"국소 제어 없음"| Sq043_131_segregation
+  X_Sq042_080_130_primarylocalizedcontrols_BLOCKED[/"막힘(검증오류)"/]
+  Sq042_080_130_primarylocalizedcontrols -->|"국소배기장치(LEV)<br/>국소배기장치(LEV)<br/>글로브 박스 및 글로브 백<br/>글로브 박스 및 글로브 백"| X_Sq042_080_130_primarylocalizedcontrols_BLOCKED
+  Sq042_080_130_primarylocalizedcontrols -->|"밀폐 — 배기 없음<br/>밀폐 — 배기 없음<br/>증기 회수 시스템<br/>증기 회수 시스템"| Sq042_5_080_5_130_5_secondarylocalizedcontrols
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"2차 국소 제어 없음<br/>밀폐 — 배기 없음<br/>증기 회수 시스템"| Sq045_081_surfacecontamination
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"2차 국소 제어 없음<br/>밀폐 — 배기 없음<br/>증기 회수 시스템"| Sq043_131_segregation
+  X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_BLOCKED[/"막힘(검증오류)"/]
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"국소배기장치(LEV)<br/>국소배기장치(LEV)<br/>글로브 박스 및 글로브 백<br/>글로브 박스 및 글로브 백"| X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_BLOCKED
+  Sq043_131_segregation -->|"(미수집) rbCompleteNoVentilation<br/>(미수집) rbPartialNoVentilation<br/>(미수집) rbPartialVentilation"| Sq044_personalenclosure
+  X_Sq043_131_segregation_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq043_131_segregation -->|"(미수집) rbCompleteVentilation<br/>(미수집) rbNoSegregation"| X_Sq043_131_segregation_PRUNED
+  Sq044_personalenclosure -->|"(미수집) rbCompleteNoVentilation<br/>(미수집) rbPartialNoVentilation<br/>(미수집) rbPartialVentilation"| Sq045_081_surfacecontamination
+  X_Sq044_personalenclosure_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq044_personalenclosure -->|"(미수집) rbCompleteVentilation<br/>(미수집) rbNoPersonalEnclosure"| X_Sq044_personalenclosure_PRUNED
+  Sq045_081_surfacecontamination -->|"아니오<br/>예"| Sq084_dispersion
+  Sq045_081_surfacecontamination -->|"아니오<br/>예"| Sq048_dispersion
+  X_Sq048_dispersion_BLOCKED[/"막힘(검증오류)"/]
+  Sq048_dispersion -->|"(미수집) rbIndoors<br/>(미수집) rbOutdoors"| X_Sq048_dispersion_BLOCKED
+  Sq084_dispersion -->|"스프레이 룸<br/>실내<br/>실외<br/>하향 층류 부스"| Sq089_0_secondaryfarfieldsources
+  Sq089_0_secondaryfarfieldsources -->|"아니오"| Sq002_7_activities
+  Sq089_0_secondaryfarfieldsources -->|"예"| Sq003_090_producttype

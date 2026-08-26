@@ -1,0 +1,806 @@
+﻿제품유형,화면,질문,답,다음화면,비고,컨트롤,값
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,가스,,선택 불가 (ART 미지원),ctl00$cphMain$ProductType,rbGas
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,고온 또는 용융 금속,,선택 불가 (ART 미지원),ctl00$cphMain$ProductType,rbHotMetal
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,고체 물체,q007_094_solidweightfraction,,ctl00$cphMain$ProductType,rbSolidObjects
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,"분말, 과립 또는 펠릿형 재료",q004_091_dustiness,,ctl00$cphMain$ProductType,rbGranularMaterial
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,섬유상 물질,,선택 불가 (ART 미지원),ctl00$cphMain$ProductType,rbFibrous
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,액체,q009_096_processtemperature,,ctl00$cphMain$ProductType,rbLiquids
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,액체에 용해되거나 액상 매트릭스에 포함된 분말 (예: 방오도료 내 구리),q015_5_1_102_5_1_liquidmatrixweightfraction,,ctl00$cphMain$ProductType,rbPowderInLiquid
+공통,q003_090_producttype,물질/조제품의 제품 유형은 무엇입니까?,"페이스트, 슬러리 또는 명백히 (젖은) 습윤 분말 (휘발성 액체 성분 불포함)",q015_1_102_1_contaminatedwithpowder,,ctl00$cphMain$ProductType,rbPasteSlurry
+분말·과립,q004_091_dustiness,"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)","견고한 과립, 플레이크 또는 펠릿",q006_093_moisturecontent,,ctl00$cphMain$ddlDustiness,5
+분말·과립,q004_091_dustiness,"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)","과립, 플레이크 또는 펠릿",q006_093_moisturecontent,,ctl00$cphMain$ddlDustiness,4
+분말·과립,q004_091_dustiness,"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)",극도로 미세하고 가벼운 분말,q006_093_moisturecontent,,ctl00$cphMain$ddlDustiness,1
+분말·과립,q004_091_dustiness,"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)",미세 분진,q006_093_moisturecontent,,ctl00$cphMain$ddlDustiness,2
+분말·과립,q004_091_dustiness,"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)",조대 분진,q006_093_moisturecontent,,ctl00$cphMain$ddlDustiness,3
+분말·과립,q006_093_moisturecontent,제품의 수분 함량은 얼마입니까?,건조 제품 (수분 함량 <5 %),q006_5_093_5_powderweightfraction,,ctl00$cphMain$MoistureContent,rbPercentLT5
+분말·과립,q006_093_moisturecontent,제품의 수분 함량은 얼마입니까?,수분 함량 5 - 10 %,q006_5_093_5_powderweightfraction,,ctl00$cphMain$MoistureContent,rbPercent5To10
+분말·과립,q006_093_moisturecontent,제품의 수분 함량은 얼마입니까?,수분 함량 >10 %,q006_5_093_5_powderweightfraction,,ctl00$cphMain$MoistureContent,rbPercentGT10
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",극미량 (0.01 - 0.1 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,8
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",극미량 (< 0.01 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,9
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",극히 적음 (0.1 - 0.5 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,7
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",매우 적음 (0.5 - 1 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,6
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",상당량 (10 - 50 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,3
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",소량 (5 - 10 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,4
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",순수 물질 (100%),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,1
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",적음 (1 - 5 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,5
+분말·과립,q006_5_093_5_powderweightfraction,"분말, 과립 또는 펠릿형 재료 내 물질의 질량분율은 얼마입니까?",주성분 (50 - 90 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,2
+분말·과립,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",아니오,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbNo
+분말·과립,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",예,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbYes
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 압축",q025_063_111_compressinggranularmaterial,,ctl00$cphMain$ActivityClass,rbGranularMaterialCompressing
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 압축",q025_063_111_compressinggranularmaterial,,ctl00$cphMain$ActivityClass,rbGranularMaterialCompressing
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이동 및 교반",q023_061_109_movementagitationgranularmaterial,,ctl00$cphMain$ActivityClass,rbGranularMaterialMovementAgitation
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이동 및 교반",q023_061_109_movementagitationgranularmaterial,,ctl00$cphMain$ActivityClass,rbGranularMaterialMovementAgitation
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이송 / — 선택 —",q024_062_110_fallinggranularmaterial,,ctl00$cphMain$ActivityClass~~selSubclass,rbGranularMaterialTransfer~~0
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이송 / — 선택 —",q024_062_110_fallinggranularmaterial,,ctl00$cphMain$ActivityClass~~selSubclass,rbGranularMaterialTransfer~~0
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 펠릿형 재료의 낙하",q024_062_110_fallinggranularmaterial,,ctl00$cphMain$ActivityClass~~selSubclass,rbGranularMaterialTransfer~~7
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 펠릿형 재료의 낙하",q024_062_110_fallinggranularmaterial,,ctl00$cphMain$ActivityClass~~selSubclass,rbGranularMaterialTransfer~~7
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 펠릿형 재료의 진공 이송",q024_9_1_062_9_1_110_9_1_vacuumtransfer,,ctl00$cphMain$ActivityClass~~selSubclass,rbGranularMaterialTransfer~~8
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 이송 / 분말, 과립 또는 펠릿형 재료의 진공 이송",q024_9_1_062_9_1_110_9_1_vacuumtransfer,,ctl00$cphMain$ActivityClass~~selSubclass,rbGranularMaterialTransfer~~8
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 파쇄",q025_5_063_5_111_5_fracturinggranularmaterial,,ctl00$cphMain$ActivityClass,rbGranularMaterialFracturing
+분말·과립,q017_055_103_activityclass,활동 등급 선택,"분말, 과립 또는 펠릿형 재료의 파쇄",q025_5_063_5_111_5_fracturinggranularmaterial,,ctl00$cphMain$ActivityClass,rbGranularMaterialFracturing
+분말·과립,q017_055_103_activityclass,활동 등급 선택,분말의 분무 적용,q022_060_108_sprayapplicationpowders,,ctl00$cphMain$ActivityClass,rbGranularMaterialSprayApplication
+분말·과립,q017_055_103_activityclass,활동 등급 선택,분말의 분무 적용,q022_060_108_sprayapplicationpowders,,ctl00$cphMain$ActivityClass,rbGranularMaterialSprayApplication
+분말·과립,q017_055_103_activityclass,활동 등급 선택,오염된 고체 물체 또는 페이스트의 취급,q021_059_107_contaminatedobjectspaste,,ctl00$cphMain$ActivityClass,rbGranularMaterialHandlingContaminated
+분말·과립,q017_055_103_activityclass,활동 등급 선택,오염된 고체 물체 또는 페이스트의 취급,q021_059_107_contaminatedobjectspaste,,ctl00$cphMain$ActivityClass,rbGranularMaterialHandlingContaminated
+분말·과립,q017_055_103_activityclass,활동 등급 선택,오염된 고체 물체에 대한 충격,q020_058_106_impactionsolidobjects,,ctl00$cphMain$ActivityClass,rbGranularMaterialImpactionContaminated
+분말·과립,q017_055_103_activityclass,활동 등급 선택,오염된 고체 물체에 대한 충격,q020_058_106_impactionsolidobjects,,ctl00$cphMain$ActivityClass,rbGranularMaterialImpactionContaminated
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,경미하게 오염된(수 그램 미만의 층) 물체에 대한 충격,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbSlightlyContaminatedObjects
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,경미하게 오염된(수 그램 미만의 층) 물체에 대한 충격,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ISO,rbSlightlyContaminatedObjects
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,상당하고 육안으로 보이는 오염이 있는 물체에 대한 충격 (0.5 kg 초과의 층),q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbSubstantiallyContaminatedObjects
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,상당하고 육안으로 보이는 오염이 있는 물체에 대한 충격 (0.5 kg 초과의 층),q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbSubstantiallyContaminatedObjects
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,외견상 깨끗한 물체에 대한 충격,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbNoVisibleContamination
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,외견상 깨끗한 물체에 대한 충격,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ISO,rbNoVisibleContamination
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 잔류 분진이 있는 물체에 대한 충격,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbVisibleResidualDust
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 잔류 분진이 있는 물체에 대한 충격,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbVisibleResidualDust
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 잔류 분진이 적은 물체에 대한 충격,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbLimitedVisibleResidualDust
+분말·과립,q020_058_106_impactionsolidobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 잔류 분진이 적은 물체에 대한 충격,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,,ctl00$cphMain$ISO,rbLimitedVisibleResidualDust
+분말·과립,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,취급의 종류는 무엇입니까?,중(重)기계적 충격,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ISOHT,rbHeavyMechanical
+분말·과립,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,취급의 종류는 무엇입니까?,중(重)기계적 충격,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ISOHT,rbHeavyMechanical
+분말·과립,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,취급의 종류는 무엇입니까?,통상적 충격 (수동 또는 경(輕)기계적),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ISOHT,rbNormal
+분말·과립,q020_5_058_5_106_5_impactionsolidobjectshandlingtype,취급의 종류는 무엇입니까?,통상적 충격 (수동 또는 경(輕)기계적),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ISOHT,rbNormal
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,경미하게 오염된(수 그램 미만의 층) 물체의 취급,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbSlightlyContaminatedObjects
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,경미하게 오염된(수 그램 미만의 층) 물체의 취급,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$COP,rbSlightlyContaminatedObjects
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,상당하고 육안으로 보이는 오염이 있는 물체의 취급 (0.5 kg 초과의 층),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbSubstantiallyContaminatedObjects
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,상당하고 육안으로 보이는 오염이 있는 물체의 취급 (0.5 kg 초과의 층),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbSubstantiallyContaminatedObjects
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,외견상 깨끗한 물체의 취급,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbNoVisibleContamination
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,외견상 깨끗한 물체의 취급,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$COP,rbNoVisibleContamination
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 오염이 있는 물체의 취급 (주변 분진 발생 활동에서 비산된 분진으로 덮인 물체),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbVisibleContamination
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 오염이 있는 물체의 취급 (주변 분진 발생 활동에서 비산된 분진으로 덮인 물체),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbVisibleContamination
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,잔류 분진이 적은 물체의 취급 (얇은 층이 보임),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbLimitedVisibleResidualDust
+분말·과립,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,잔류 분진이 적은 물체의 취급 (얇은 층이 보임),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbLimitedVisibleResidualDust
+분말·과립,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"주의 깊은 취급이란 작업자가 잠재적 위험, 오류, 피해에 주의를 기울이며 매우 정확하고 꼼꼼하게(또는 조심스럽게) 작업을 수행하는 것을 말합니다",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbCareful
+분말·과립,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"주의 깊은 취급이란 작업자가 잠재적 위험, 오류, 피해에 주의를 기울이며 매우 정확하고 꼼꼼하게(또는 조심스럽게) 작업을 수행하는 것을 말합니다",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbCareful
+분말·과립,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,통상적인 작업 절차에서 벗어나 많은 에너지가 수반되는 취급 (예: 거친 취급 또는 자루 던지기),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbRough
+분말·과립,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,통상적인 작업 절차에서 벗어나 많은 에너지가 수반되는 취급 (예: 거친 취급 또는 자루 던지기),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbRough
+분말·과립,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"통상적인 취급, 정규 작업 절차 수반",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbNormal
+분말·과립,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"통상적인 취급, 정규 작업 절차 수반",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbNormal
+분말·과립,q022_060_108_sprayapplicationpowders,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,분체 도장,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,,ctl00$cphMain$SAS,rbPowderCoating
+분말·과립,q022_060_108_sprayapplicationpowders,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,분체 도장,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,,ctl00$cphMain$SAS,rbPowderCoating
+분말·과립,q022_060_108_sprayapplicationpowders,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,블로워를 이용한 분말 살포,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,,ctl00$cphMain$SAS,rbDusting
+분말·과립,q022_060_108_sprayapplicationpowders,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,블로워를 이용한 분말 살포,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,,ctl00$cphMain$SAS,rbDusting
+분말·과립,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,분무 방향은 어떻습니까?,모든 방향(상향 포함)으로의 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SASSD,rbAnyDirection
+분말·과립,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,분무 방향은 어떻습니까?,모든 방향(상향 포함)으로의 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SASSD,rbAnyDirection
+분말·과립,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,분무 방향은 어떻습니까?,수평 또는 하향 분무만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SASSD,rbHorizontalDownward
+분말·과립,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,분무 방향은 어떻습니까?,수평 또는 하향 분무만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SASSD,rbHorizontalDownward
+분말·과립,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,분무 방향은 어떻습니까?,하향 분무만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SASSD,rbDownwardOnly
+분말·과립,q022_5_060_5_108_5_sprayapplicationpowdersspraydirection,분무 방향은 어떻습니까?,하향 분무만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SASSD,rbDownwardOnly
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 kg의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbG100To1000
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 kg의 이동 및 교반,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$MASP,rbG100To1000
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 kg의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg1To10
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 kg의 이동 및 교반,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$MASP,rbKg1To10
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 gram의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbG10To100
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 gram의 이동 및 교반,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$MASP,rbG10To100
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 kg의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg10To100
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 kg의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg10To100
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 kg의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg100To1000
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 kg의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg100To1000
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1000 kg 이상의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg1000OrMore
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1000 kg 이상의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbKg1000OrMore
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 10 gram의 이동 및 교반,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,,ctl00$cphMain$MASP,rbGLT10
+분말·과립,q023_061_109_movementagitationgranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 10 gram의 이동 및 교반,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$MASP,rbGLT10
+분말·과립,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,교반 정도는 어떻습니까?,교반 정도가 낮은 취급,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,,ctl00$cphMain$MASPHT,rbLow
+분말·과립,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,교반 정도는 어떻습니까?,교반 정도가 낮은 취급,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,,ctl00$cphMain$MASPHT,rbLow
+분말·과립,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,교반 정도는 어떻습니까?,교반 정도가 높은 기타 취급,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,,ctl00$cphMain$MASPHT,rbHigh
+분말·과립,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,교반 정도는 어떻습니까?,교반 정도가 높은 기타 취급,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,,ctl00$cphMain$MASPHT,rbHigh
+분말·과립,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,교반 정도는 어떻습니까?,압축공기 사용,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,,ctl00$cphMain$MASPHT,rbCompressedAir
+분말·과립,q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel,교반 정도는 어떻습니까?,압축공기 사용,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,,ctl00$cphMain$MASPHT,rbCompressedAir
+분말·과립,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 0.1 - 1 kg/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbGPerMin100To1000
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 0.1 - 1 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbGPerMin100To1000
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1 - 10 kg/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMin1To10
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1 - 10 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbKgPerMin1To10
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 gram/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbGPerMin10To100
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 gram/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbGPerMin10To100
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 kg/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMin10To100
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 kg/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMin10To100
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 gram/minute 미만,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbGPerMinLT10
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 gram/minute 미만,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbGPerMinLT10
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 100 - 1000 kg/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMin100To1000
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 100 - 1000 kg/minute,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMin100To1000
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1000 kg/minute 초과,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMinGT1000
+분말·과립,q024_062_110_fallinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1000 kg/minute 초과,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,,ctl00$cphMain$FSP,rbKgPerMinGT1000
+분말·과립,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,취급의 종류는 무엇입니까?,정형적 이송,q024_7_062_7_110_7_fallinggranularmaterialdropheight,,ctl00$cphMain$FSPHT,rbNormal
+분말·과립,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,취급의 종류는 무엇입니까?,정형적 이송,q024_7_062_7_110_7_fallinggranularmaterialdropheight,,ctl00$cphMain$FSPHT,rbNormal
+분말·과립,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,취급의 종류는 무엇입니까?,"주의 깊은 이송이란 작업자가 잠재적 위험, 오류, 피해에 주의를 기울이며 매우 정확하고 꼼꼼하게(또는 조심스럽게) 작업을 수행하는 것을 말합니다. 예: 실험실에서",q024_7_062_7_110_7_fallinggranularmaterialdropheight,,ctl00$cphMain$FSPHT,rbCareful
+분말·과립,q024_5_062_5_110_5_fallinggranularmaterialhandlingtype,취급의 종류는 무엇입니까?,"주의 깊은 이송이란 작업자가 잠재적 위험, 오류, 피해에 주의를 기울이며 매우 정확하고 꼼꼼하게(또는 조심스럽게) 작업을 수행하는 것을 말합니다. 예: 실험실에서",q024_7_062_7_110_7_fallinggranularmaterialdropheight,,ctl00$cphMain$FSPHT,rbCareful
+분말·과립,q024_7_062_7_110_7_fallinggranularmaterialdropheight,낙하 높이는 얼마입니까?,낙하 높이 < 0.5 m,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,,ctl00$cphMain$FSPDH,rbCmLT50
+분말·과립,q024_7_062_7_110_7_fallinggranularmaterialdropheight,낙하 높이는 얼마입니까?,낙하 높이 < 0.5 m,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,,ctl00$cphMain$FSPDH,rbCmLT50
+분말·과립,q024_7_062_7_110_7_fallinggranularmaterialdropheight,낙하 높이는 얼마입니까?,낙하 높이 > 0.5 m,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,,ctl00$cphMain$FSPDH,rbCmGT50
+분말·과립,q024_7_062_7_110_7_fallinggranularmaterialdropheight,낙하 높이는 얼마입니까?,낙하 높이 > 0.5 m,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,,ctl00$cphMain$FSPDH,rbCmGT50
+분말·과립,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 0.1 - 1 kg/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbGPerMin100To1000
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 0.1 - 1 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbGPerMin100To1000
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1 - 10 kg/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMin1To10
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1 - 10 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbKgPerMin1To10
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 gram/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbGPerMin10To100
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 gram/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbGPerMin10To100
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 kg/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMin10To100
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 - 100 kg/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMin10To100
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 gram/minute 미만,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbGPerMinLT10
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 10 gram/minute 미만,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FSP,rbGPerMinLT10
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 100 - 1000 kg/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMin100To1000
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 100 - 1000 kg/minute,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMin100To1000
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1000 kg/minute 초과,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMinGT1000
+분말·과립,q024_9_1_062_9_1_110_9_1_vacuumtransfer,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,이송 1000 kg/minute 초과,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,,ctl00$cphMain$FSP,rbKgPerMinGT1000
+분말·과립,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 0.1 - 1 kg/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbGPerMin100To1000
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 0.1 - 1 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$CS,rbGPerMin100To1000
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 1 - 10 kg/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMin1To10
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 1 - 10 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$CS,rbKgPerMin1To10
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 10 - 100 gram/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbGPerMin10To100
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 10 - 100 gram/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$CS,rbGPerMin10To100
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 10 - 100 kg/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMin10To100
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 10 - 100 kg/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMin10To100
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 10 gram/minute 미만,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbGPerMinLT10
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 10 gram/minute 미만,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$CS,rbGPerMinLT10
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 100 - 1000 kg/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMin100To1000
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 100 - 1000 kg/minute,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMin100To1000
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 1000 kg/minute 초과,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMinGT1000
+분말·과립,q025_063_111_compressinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,압축 1000 kg/minute 초과,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,,ctl00$cphMain$CS,rbKgPerMinGT1000
+분말·과립,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 0.1 - 1 kg/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbGPerMin100To1000
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 0.1 - 1 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FS,rbGPerMin100To1000
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 1 - 10 kg/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMin1To10
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 1 - 10 kg/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FS,rbKgPerMin1To10
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 10 - 100 gram/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbGPerMin10To100
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 10 - 100 gram/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FS,rbGPerMin10To100
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 10 - 100 kg/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMin10To100
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 10 - 100 kg/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMin10To100
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 10 gram/minute 미만,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbGPerMinLT10
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 10 gram/minute 미만,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$FS,rbGPerMinLT10
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 100 - 1000 kg/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMin100To1000
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 100 - 1000 kg/minute,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMin100To1000
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 1000 kg/minute 초과,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMinGT1000
+분말·과립,q025_5_063_5_111_5_fracturinggranularmaterial,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,파쇄 1000 kg/minute 초과,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,,ctl00$cphMain$FS,rbKgPerMinGT1000
+분말·과립,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정 (예: 개방된 표면에서의 벌크 분쇄),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정 (예: 개방된 표면에서의 벌크 분쇄),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+분말·과립,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,억제 기법,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,억제 기법,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+분말·과립,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,억제 기법,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,억제 기법,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+분말·과립,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+분말·과립,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbCompleteNoVentilation
+분말·과립,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbCompleteVentilation
+분말·과립,q043_131_segregation,격리(발생원) 선택,(미수집) rbNoSegregation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbNoSegregation
+분말·과립,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialNoVentilation
+분말·과립,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialVentilation
+분말·과립,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbCompleteNoVentilation
+분말·과립,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbCompleteVentilation
+분말·과립,q044_personalenclosure,Select 격리(작업자),(미수집) rbNoPersonalEnclosure,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbNoPersonalEnclosure
+분말·과립,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialNoVentilation
+분말·과립,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialVentilation
+분말·과립,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+분말·과립,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+분말·과립,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+분말·과립,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+분말·과립,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbIndoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+분말·과립,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbOutdoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+분말·과립,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",스프레이 룸,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbSprayRoom
+분말·과립,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실내,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+분말·과립,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실외,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+분말·과립,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",하향 층류 부스,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbBooth
+분말·과립,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",아니오,q002_7_activities,,ctl00$cphMain$FFSES,rbNo
+분말·과립,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",예,q003_090_producttype,,ctl00$cphMain$FFSES,rbYes
+액체,q002_7_activities,시나리오 개요 - ART 기계론적 모델,(선택지 없음 - 값 입력 후 다음),,막힘(검증오류),(직진),
+액체,q009_096_processtemperature,공정 중 액체의 온도는 얼마입니까?,고온 공정 (50 - 150 ℃),q010_010_5_097_097_5_vapourpressure,,ctl00$cphMain$ddlTemperature,1
+액체,q009_096_processtemperature,공정 중 액체의 온도는 얼마입니까?,실온 (15 - 25 ℃),q010_010_5_097_097_5_vapourpressure,,ctl00$cphMain$ddlTemperature,3
+액체,q009_096_processtemperature,공정 중 액체의 온도는 얼마입니까?,실온 미만 (< 15 ℃),q010_010_5_097_097_5_vapourpressure,,ctl00$cphMain$ddlTemperature,4
+액체,q009_096_processtemperature,공정 중 액체의 온도는 얼마입니까?,실온 초과 (25 - 50 ℃),q010_010_5_097_097_5_vapourpressure,,ctl00$cphMain$ddlTemperature,2
+액체,q010_010_5_097_097_5_vapourpressure,실온에서 물질의 증기압(Pascal)은 얼마입니까?,(선택지 없음 - 값 입력 후 다음),q012_099_liquidweightfraction,,(직진),
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",극미량 (0.01 - 0.1 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,8
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",극히 적음 (0.1 - 0.5 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,7
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",매우 적음 (0.5 - 1 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,6
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",상당량 (10 - 50 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,3
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",소량 (5 - 10 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,4
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",순수 액체 (100%),q013_100_viscosity,,ctl00$cphMain$ddlFraction,1
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",적음 (1 - 5 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,5
+액체,q012_099_liquidweightfraction,"해당 물질은 저휘발성으로 간주되며, 미스트 노출로 추정됩니다.",주성분 (50 - 90 %),q013_100_viscosity,,ctl00$cphMain$ddlFraction,2
+액체,q013_100_viscosity,물질/조제품의 점도는 얼마입니까?,저점도 액체 (물과 유사),q016_nearfieldsource,,ctl00$cphMain$Viscosity,rbLow
+액체,q013_100_viscosity,물질/조제품의 점도는 얼마입니까?,중점도 액체 (기름과 유사),q016_nearfieldsource,,ctl00$cphMain$Viscosity,rbMedium
+액체,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",아니오,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbNo
+액체,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",예,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbYes
+액체,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 13,q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~13
+액체,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 13,q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~13
+액체,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 14,q028_3_066_3_114_3_liquidopensurfaceagitated,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~14
+액체,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 14,q028_3_066_3_114_3_liquidopensurfaceagitated,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~14
+액체,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / — 선택 —,q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~0
+액체,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / — 선택 —,q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~0
+액체,q017_055_103_activityclass,활동 등급 선택,고속 공정에서의 액체 적용 (예: 회전 공구),q030_068_116_liquidshighspeedprocesses,,ctl00$cphMain$ActivityClass,rbLiquidHighSpeedProcesses
+액체,q017_055_103_activityclass,활동 등급 선택,고속 공정에서의 액체 적용 (예: 회전 공구),q030_068_116_liquidshighspeedprocesses,,ctl00$cphMain$ActivityClass,rbLiquidHighSpeedProcesses
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 도포,q029_067_115_spreadingliquidproducts,,ctl00$cphMain$ActivityClass,rbLiquidSpreadingProducts
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 도포,q029_067_115_spreadingliquidproducts,,ctl00$cphMain$ActivityClass,rbLiquidSpreadingProducts
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~18
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~18
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~19
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~19
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / — 선택 —,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~0
+액체,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / — 선택 —,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~0
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / — 선택 —,q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~0
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / — 선택 —,q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~0
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / 공간 내 액체 분무,q027_065_113_sprayingliquidsinspace,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~12
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / 공간 내 액체 분무,q027_065_113_sprayingliquidsinspace,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~12
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / 액체의 표면 분무,q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~11
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / 액체의 표면 분무,q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~11
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~18
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~18
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~19
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~19
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / — 선택 —,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~0
+액체,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / — 선택 —,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~0
+액체,q017_055_103_activityclass,활동 등급 선택,오염된 물체의 취급,q028_5_066_5_114_5_handlingcontaminatedobjects,,ctl00$cphMain$ActivityClass,rbLiquidHandlingContaminatedObjects
+액체,q017_055_103_activityclass,활동 등급 선택,오염된 물체의 취급,q028_5_066_5_114_5_handlingcontaminatedobjects,,ctl00$cphMain$ActivityClass,rbLiquidHandlingContaminatedObjects
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,낮은 도포율 (0.03 - 0.3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbLowApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,낮은 도포율 (0.03 - 0.3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbLowApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,높은 도포율 (> 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbHighApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,높은 도포율 (> 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbHighApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,매우 낮은 도포율 (< 0.03 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbVeryLowApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,매우 낮은 도포율 (< 0.03 l/minute),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$SSL,rbVeryLowApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,중간 도포율 (0.3 - 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbModerateApplicationRate
+액체,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,중간 도포율 (0.3 - 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbModerateApplicationRate
+액체,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,모든 방향(상향 포함)으로의 분무,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbAnyDirection
+액체,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,모든 방향(상향 포함)으로의 분무,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbAnyDirection
+액체,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,수평 또는 하향 분무만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbHorizontalDownward
+액체,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,수평 또는 하향 분무만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbHorizontalDownward
+액체,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,하향만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbDownwardOnly
+액체,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,하향만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbDownwardOnly
+액체,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 미사용 또는 사용이 적은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbLowCompressedAir
+액체,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 미사용 또는 사용이 적은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbLowCompressedAir
+액체,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 사용이 많은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbHighCompressedAir
+액체,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 사용이 많은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbHighCompressedAir
+액체,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,대규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbLargeScale
+액체,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,대규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbLargeScale
+액체,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbSmallScale
+액체,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbSmallScale
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSqLT1000
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSqLT1000
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSqLT1000
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSqLT1000
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.1-0.3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSq1000To3000
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.1-0.3 m2),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$HCO,rbCmSq1000To3000
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.3-1 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSq3000To10000
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.3-1 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSq3000To10000
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 1-3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSq1To3
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 1-3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSq1To3
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 <0.1 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSqLT1000
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 <0.1 m2),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$HCO,rbCmSqLT1000
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 > 3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSqGT3
+액체,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 > 3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSqGT3
+액체,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 10-90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercent10To90
+액체,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 10-90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercent10To90
+액체,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 < 10 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentLT10
+액체,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 < 10 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentLT10
+액체,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 > 90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentGT90
+액체,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 > 90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentGT90
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.1 - 0.3 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHour1000To3000
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.1 - 0.3 m2 / hour,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$SLP,rbCmSqPerHour1000To3000
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.3 - 1 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHour3000To10000
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.3 - 1 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHour3000To10000
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 1 - 3 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHour1To3
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 1 - 3 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHour1To3
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 < 0.1 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHourLT1000
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 < 0.1 m2 / hour,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$SLP,rbCmSqPerHourLT1000
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 > 3 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHourGT3
+액체,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 > 3 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHourGT3
+액체,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 대규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbLargeScale
+액체,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 대규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbLargeScale
+액체,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 소규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbSmallScale
+액체,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 소규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbSmallScale
+액체,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정: 공정과 작업자 간 격리(작업자) 없음,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+액체,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정: 공정과 작업자 간 격리(작업자) 없음,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+액체,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+액체,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbMlPerMin100To1000
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMin100To1000
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin1To10
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbLPerMin1To10
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin10To100
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin10To100
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbMlPerMinLT100
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMinLT100
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbMlPerMin100To1000
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMin100To1000
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin1To10
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbLPerMin1To10
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin10To100
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin10To100
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbMlPerMinLT100
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMinLT100
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbOpenProcess
+액체,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbOpenProcess
+액체,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbReducedContact
+액체,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbReducedContact
+액체,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,상부 낙하식 적재 — 액체 주입구가 저장조 상부에 위치하여 액체가 자유롭게 튀는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSplash
+액체,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,상부 낙하식 적재 — 액체 주입구가 저장조 상부에 위치하여 액체가 자유롭게 튀는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSplash
+액체,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,침적식 적재 — 액체 주입구가 액면 아래에 위치하여 에어로졸 생성량을 줄이는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSubmerged
+액체,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,침적식 적재 — 액체 주입구가 액면 아래에 위치하여 에어로졸 생성량을 줄이는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSubmerged
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbCompleteNoVentilation
+액체,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbCompleteVentilation
+액체,q043_131_segregation,격리(발생원) 선택,(미수집) rbNoSegregation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbNoSegregation
+액체,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialNoVentilation
+액체,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialVentilation
+액체,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbCompleteNoVentilation
+액체,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbCompleteVentilation
+액체,q044_personalenclosure,Select 격리(작업자),(미수집) rbNoPersonalEnclosure,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbNoPersonalEnclosure
+액체,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialNoVentilation
+액체,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialVentilation
+액체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+액체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+액체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+액체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+액체,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbIndoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+액체,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbOutdoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+액체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",스프레이 룸,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbSprayRoom
+액체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실내,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+액체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실외,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+액체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",하향 층류 부스,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbBooth
+액체,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",아니오,q002_7_activities,,ctl00$cphMain$FFSES,rbNo
+액체,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",예,q003_090_producttype,,ctl00$cphMain$FFSES,rbYes
+페이스트·슬러리,q015_1_102_1_contaminatedwithpowder,해당 페이스트 또는 슬러리가 분말 물질로 (잠재적으로) 오염되어 있습니까?,아니오,q016_nearfieldsource,,ctl00$cphMain$Contaminated,rbNo
+페이스트·슬러리,q015_1_102_1_contaminatedwithpowder,해당 페이스트 또는 슬러리가 분말 물질로 (잠재적으로) 오염되어 있습니까?,예,q015_2_102_2_dustiness,,ctl00$cphMain$Contaminated,rbYes
+페이스트·슬러리,q015_2_102_2_dustiness,"페이스트 또는 슬러리 상의 분말 오염물에 대해 측정된 발진성은 얼마입니까? (흡입성 분율, mg/kg)","견고한 과립, 플레이크 또는 펠릿",q015_4_102_4_powderweightfraction,,ctl00$cphMain$ddlDustiness,5
+페이스트·슬러리,q015_2_102_2_dustiness,"페이스트 또는 슬러리 상의 분말 오염물에 대해 측정된 발진성은 얼마입니까? (흡입성 분율, mg/kg)","과립, 플레이크 또는 펠릿",q015_4_102_4_powderweightfraction,,ctl00$cphMain$ddlDustiness,4
+페이스트·슬러리,q015_2_102_2_dustiness,"페이스트 또는 슬러리 상의 분말 오염물에 대해 측정된 발진성은 얼마입니까? (흡입성 분율, mg/kg)",극도로 미세하고 가벼운 분말,q015_4_102_4_powderweightfraction,,ctl00$cphMain$ddlDustiness,1
+페이스트·슬러리,q015_2_102_2_dustiness,"페이스트 또는 슬러리 상의 분말 오염물에 대해 측정된 발진성은 얼마입니까? (흡입성 분율, mg/kg)",미세 분진,q015_4_102_4_powderweightfraction,,ctl00$cphMain$ddlDustiness,2
+페이스트·슬러리,q015_2_102_2_dustiness,"페이스트 또는 슬러리 상의 분말 오염물에 대해 측정된 발진성은 얼마입니까? (흡입성 분율, mg/kg)",조대 분진,q015_4_102_4_powderweightfraction,,ctl00$cphMain$ddlDustiness,3
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,극미량 (0.01 - 0.1 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,8
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,극미량 (< 0.01 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,9
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,극히 적음 (0.1 - 0.5 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,7
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,매우 적음 (0.5 - 1 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,6
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,상당량 (10 - 50 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,3
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,소량 (5 - 10 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,4
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,순수 물질 (100%),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,1
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,적음 (1 - 5 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,5
+페이스트·슬러리,q015_4_102_4_powderweightfraction,페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?,주성분 (50 - 90 %),q016_nearfieldsource,,ctl00$cphMain$ddlFraction,2
+페이스트·슬러리,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",아니오,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbNo
+페이스트·슬러리,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",예,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbYes
+페이스트·슬러리,q017_055_103_activityclass,활동 등급 선택,오염된 고체 물체 또는 페이스트의 취급,q021_059_107_contaminatedobjectspaste,,ctl00$cphMain$ActivityClass,rbGranularMaterialHandlingContaminated
+페이스트·슬러리,q017_055_103_activityclass,활동 등급 선택,오염된 고체 물체 또는 페이스트의 취급,q021_059_107_contaminatedobjectspaste,,ctl00$cphMain$ActivityClass,rbGranularMaterialHandlingContaminated
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,경미하게 오염된(수 그램 미만의 층) 물체의 취급,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbSlightlyContaminatedObjects
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,경미하게 오염된(수 그램 미만의 층) 물체의 취급,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$COP,rbSlightlyContaminatedObjects
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,상당하고 육안으로 보이는 오염이 있는 물체의 취급 (0.5 kg 초과의 층),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbSubstantiallyContaminatedObjects
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,상당하고 육안으로 보이는 오염이 있는 물체의 취급 (0.5 kg 초과의 층),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbSubstantiallyContaminatedObjects
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,외견상 깨끗한 물체의 취급,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbNoVisibleContamination
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,외견상 깨끗한 물체의 취급,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$COP,rbNoVisibleContamination
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 오염이 있는 물체의 취급 (주변 분진 발생 활동에서 비산된 분진으로 덮인 물체),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbVisibleContamination
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,육안으로 보이는 오염이 있는 물체의 취급 (주변 분진 발생 활동에서 비산된 분진으로 덮인 물체),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbVisibleContamination
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,잔류 분진이 적은 물체의 취급 (얇은 층이 보임),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbLimitedVisibleResidualDust
+페이스트·슬러리,q021_059_107_contaminatedobjectspaste,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,잔류 분진이 적은 물체의 취급 (얇은 층이 보임),q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,,ctl00$cphMain$COP,rbLimitedVisibleResidualDust
+페이스트·슬러리,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"주의 깊은 취급이란 작업자가 잠재적 위험, 오류, 피해에 주의를 기울이며 매우 정확하고 꼼꼼하게(또는 조심스럽게) 작업을 수행하는 것을 말합니다",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbCareful
+페이스트·슬러리,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"주의 깊은 취급이란 작업자가 잠재적 위험, 오류, 피해에 주의를 기울이며 매우 정확하고 꼼꼼하게(또는 조심스럽게) 작업을 수행하는 것을 말합니다",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbCareful
+페이스트·슬러리,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,통상적인 작업 절차에서 벗어나 많은 에너지가 수반되는 취급 (예: 거친 취급 또는 자루 던지기),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbRough
+페이스트·슬러리,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,통상적인 작업 절차에서 벗어나 많은 에너지가 수반되는 취급 (예: 거친 취급 또는 자루 던지기),q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbRough
+페이스트·슬러리,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"통상적인 취급, 정규 작업 절차 수반",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbNormal
+페이스트·슬러리,q021_5_059_5_107_5_contaminatedobjectspastehandlingtype,오염된 물체 또는 페이스트를 어떻게 취급합니까?,"통상적인 취급, 정규 작업 절차 수반",q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$COPHT,rbNormal
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+페이스트·슬러리,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+페이스트·슬러리,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+페이스트·슬러리,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbCompleteNoVentilation
+페이스트·슬러리,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbCompleteVentilation
+페이스트·슬러리,q043_131_segregation,격리(발생원) 선택,(미수집) rbNoSegregation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbNoSegregation
+페이스트·슬러리,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialNoVentilation
+페이스트·슬러리,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialVentilation
+페이스트·슬러리,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbCompleteNoVentilation
+페이스트·슬러리,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbCompleteVentilation
+페이스트·슬러리,q044_personalenclosure,Select 격리(작업자),(미수집) rbNoPersonalEnclosure,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbNoPersonalEnclosure
+페이스트·슬러리,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialNoVentilation
+페이스트·슬러리,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialVentilation
+페이스트·슬러리,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+페이스트·슬러리,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+페이스트·슬러리,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+페이스트·슬러리,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+페이스트·슬러리,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbIndoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+페이스트·슬러리,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbOutdoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+페이스트·슬러리,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",스프레이 룸,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbSprayRoom
+페이스트·슬러리,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실내,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+페이스트·슬러리,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실외,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+페이스트·슬러리,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",하향 층류 부스,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbBooth
+페이스트·슬러리,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",아니오,q002_7_activities,,ctl00$cphMain$FFSES,rbNo
+페이스트·슬러리,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",예,q003_090_producttype,,ctl00$cphMain$FFSES,rbYes
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,극미량 (0.01 - 0.1 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,7
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,극히 적음 (0.1 - 0.5 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,6
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,매우 적음 (0.5 - 1 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,5
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,상당량 (10 - 50 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,2
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,소량 (5 - 10 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,3
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,적음 (1 - 5 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,4
+액체내분말,q015_5_1_102_5_1_liquidmatrixweightfraction,액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?,주성분 (50 - 90 %),q015_5_2_102_5_2_viscosity,,ctl00$cphMain$ddlFraction,1
+액체내분말,q015_5_2_102_5_2_viscosity,분말/액체 혼합물의 점도는 얼마입니까?,저점도 액체 (물과 유사),q016_nearfieldsource,,ctl00$cphMain$Viscosity,rbLow
+액체내분말,q015_5_2_102_5_2_viscosity,분말/액체 혼합물의 점도는 얼마입니까?,중점도 액체 (기름과 유사),q016_nearfieldsource,,ctl00$cphMain$Viscosity,rbMedium
+액체내분말,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",아니오,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbNo
+액체내분말,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",예,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbYes
+액체내분말,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 13,q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~13
+액체내분말,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 13,q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~13
+액체내분말,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 14,q028_3_066_3_114_3_liquidopensurfaceagitated,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~14
+액체내분말,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (미수집) 14,q028_3_066_3_114_3_liquidopensurfaceagitated,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~14
+액체내분말,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (하위 활동 등급 없음),q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,개방 액면 또는 개방 저장조에서의 활동 / (하위 활동 등급 없음),q028_066_114_liquidopensurfaceundisturbed,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidOpenSurface~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,고속 공정에서의 액체 적용 (예: 회전 공구),q030_068_116_liquidshighspeedprocesses,,ctl00$cphMain$ActivityClass,rbLiquidHighSpeedProcesses
+액체내분말,q017_055_103_activityclass,활동 등급 선택,고속 공정에서의 액체 적용 (예: 회전 공구),q030_068_116_liquidshighspeedprocesses,,ctl00$cphMain$ActivityClass,rbLiquidHighSpeedProcesses
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 도포,q029_067_115_spreadingliquidproducts,,ctl00$cphMain$ActivityClass,rbLiquidSpreadingProducts
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 도포,q029_067_115_spreadingliquidproducts,,ctl00$cphMain$ActivityClass,rbLiquidSpreadingProducts
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~18
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~18
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~19
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~19
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (하위 활동 등급 없음),q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액상 제품의 이송 / (하위 활동 등급 없음),q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidTransfer~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / (미수집) 11,q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~11
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / (미수집) 11,q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~11
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / (미수집) 12,q027_065_113_sprayingliquidsinspace,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~12
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / (미수집) 12,q027_065_113_sprayingliquidsinspace,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~12
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / (하위 활동 등급 없음),q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 분무 적용 / (하위 활동 등급 없음),q026_064_112_surfacesprayingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbLiquidSprayApplication~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~18
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 18,q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~18
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~19
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (미수집) 19,q033_071_119_fallingliquids,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~19
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (하위 활동 등급 없음),q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,액체의 연소 / (하위 활동 등급 없음),q032_070_118_bottomloading,,ctl00$cphMain$ActivityClass~~selSubclass,rbBurningLiquids~~0
+액체내분말,q017_055_103_activityclass,활동 등급 선택,오염된 물체의 취급,q028_5_066_5_114_5_handlingcontaminatedobjects,,ctl00$cphMain$ActivityClass,rbLiquidHandlingContaminatedObjects
+액체내분말,q017_055_103_activityclass,활동 등급 선택,오염된 물체의 취급,q028_5_066_5_114_5_handlingcontaminatedobjects,,ctl00$cphMain$ActivityClass,rbLiquidHandlingContaminatedObjects
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,낮은 도포율 (0.03 - 0.3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbLowApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,낮은 도포율 (0.03 - 0.3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbLowApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,높은 도포율 (> 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbHighApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,높은 도포율 (> 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbHighApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,매우 낮은 도포율 (< 0.03 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbVeryLowApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,매우 낮은 도포율 (< 0.03 l/minute),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$SSL,rbVeryLowApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,중간 도포율 (0.3 - 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbModerateApplicationRate
+액체내분말,q026_064_112_surfacesprayingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,중간 도포율 (0.3 - 3 l/minute),q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,,ctl00$cphMain$SSL,rbModerateApplicationRate
+액체내분말,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,모든 방향(상향 포함)으로의 분무,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbAnyDirection
+액체내분말,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,모든 방향(상향 포함)으로의 분무,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbAnyDirection
+액체내분말,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,수평 또는 하향 분무만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbHorizontalDownward
+액체내분말,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,수평 또는 하향 분무만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbHorizontalDownward
+액체내분말,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,하향만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbDownwardOnly
+액체내분말,q026_5_064_5_112_5_surfacesprayingliquidsspraydirection,분무 방향은 어떻습니까?,하향만,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,,ctl00$cphMain$SSLSD,rbDownwardOnly
+액체내분말,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 미사용 또는 사용이 적은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbLowCompressedAir
+액체내분말,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 미사용 또는 사용이 적은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbLowCompressedAir
+액체내분말,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 사용이 많은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbHighCompressedAir
+액체내분말,q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique,분무 기법은 무엇입니까?,압축공기 사용이 많은 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SSL,rbHighCompressedAir
+액체내분말,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,대규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbLargeScale
+액체내분말,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,대규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbLargeScale
+액체내분말,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbSmallScale
+액체내분말,q027_065_113_sprayingliquidsinspace,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소규모 공간 분무,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLS,rbSmallScale
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSqLT1000
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSqLT1000
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체내분말,q028_066_114_liquidopensurfaceundisturbed,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.1 - 0.3 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSq1000To3000
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 0.3 - 1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSq3000To10000
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 1 - 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSq1To3
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbCmSqLT1000
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 < 0.1 m2,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$LOSU,rbCmSqLT1000
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체내분말,q028_3_066_3_114_3_liquidopensurfaceagitated,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,개방 표면 > 3 m2,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$LOSU,rbMSqGT3
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.1-0.3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSq1000To3000
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.1-0.3 m2),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$HCO,rbCmSq1000To3000
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.3-1 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSq3000To10000
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 0.3-1 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSq3000To10000
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 1-3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSq1To3
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 1-3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSq1To3
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 <0.1 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbCmSqLT1000
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 <0.1 m2),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$HCO,rbCmSqLT1000
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 > 3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSqGT3
+액체내분말,q028_5_066_5_114_5_handlingcontaminatedobjects,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,처리/오염된 물체를 다루는 활동 (표면 > 3 m2),q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,,ctl00$cphMain$HCO,rbMSqGT3
+액체내분말,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 10-90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercent10To90
+액체내분말,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 10-90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercent10To90
+액체내분말,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 < 10 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentLT10
+액체내분말,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 < 10 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentLT10
+액체내분말,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 > 90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentGT90
+액체내분말,q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel,물체 표면의 오염 정도는 어떻습니까?,표면의 > 90 % 오염,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Contamination,rbPercentGT90
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.1 - 0.3 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHour1000To3000
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.1 - 0.3 m2 / hour,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$SLP,rbCmSqPerHour1000To3000
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.3 - 1 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHour3000To10000
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 0.3 - 1 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHour3000To10000
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 1 - 3 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHour1To3
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 1 - 3 m² / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHour1To3
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 < 0.1 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbCmSqPerHourLT1000
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 < 0.1 m2 / hour,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$SLP,rbCmSqPerHourLT1000
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 > 3 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHourGT3
+액체내분말,q029_067_115_spreadingliquidproducts,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,표면 또는 가공물에 대한 액체 도포 > 3 m2 / hour,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$SLP,rbMSqPerHourGT3
+액체내분말,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 대규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbLargeScale
+액체내분말,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 대규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbLargeScale
+액체내분말,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 소규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbSmallScale
+액체내분말,q030_068_116_liquidshighspeedprocesses,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,고속 운동이 수반되는 소규모 활동,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,,ctl00$cphMain$LHSP,rbSmallScale
+액체내분말,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정: 공정과 작업자 간 격리(작업자) 없음,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+액체내분말,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정: 공정과 작업자 간 격리(작업자) 없음,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+액체내분말,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+액체내분말,q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbMlPerMin100To1000
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMin100To1000
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin1To10
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbLPerMin1To10
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin10To100
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin10To100
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbMlPerMinLT100
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMinLT100
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체내분말,q032_070_118_bottomloading,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbMlPerMin100To1000
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,0.1 - 1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMin100To1000
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin1To10
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,1 - 10 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbLPerMin1To10
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin10To100
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,10 - 100 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin10To100
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,100 - 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMin100To1000
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbMlPerMinLT100
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,< 0.1 l/minute,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$BL,rbMlPerMinLT100
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체내분말,q033_071_119_fallingliquids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,> 1000 l/minute,q033_5_071_5_119_5_fallingliquidscontainmentlevel,,ctl00$cphMain$BL,rbLPerMinGT1000
+액체내분말,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbOpenProcess
+액체내분말,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbOpenProcess
+액체내분말,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbReducedContact
+액체내분말,q033_5_071_5_119_5_fallingliquidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q034_072_120_transferloadingtype,,ctl00$cphMain$Containment,rbReducedContact
+액체내분말,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,상부 낙하식 적재 — 액체 주입구가 저장조 상부에 위치하여 액체가 자유롭게 튀는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSplash
+액체내분말,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,상부 낙하식 적재 — 액체 주입구가 저장조 상부에 위치하여 액체가 자유롭게 튀는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSplash
+액체내분말,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,침적식 적재 — 액체 주입구가 액면 아래에 위치하여 에어로졸 생성량을 줄이는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSubmerged
+액체내분말,q034_072_120_transferloadingtype,액체 이송을 상부 낙하식(splash) 적재 또는 침적식(submerged) 적재로 수행합니까?,침적식 적재 — 액체 주입구가 액면 아래에 위치하여 에어로졸 생성량을 줄이는 방식,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$TLT,rbSubmerged
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체내분말,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체내분말,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+액체내분말,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbCompleteNoVentilation
+액체내분말,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbCompleteVentilation
+액체내분말,q043_131_segregation,격리(발생원) 선택,(미수집) rbNoSegregation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbNoSegregation
+액체내분말,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialNoVentilation
+액체내분말,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialVentilation
+액체내분말,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbCompleteNoVentilation
+액체내분말,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbCompleteVentilation
+액체내분말,q044_personalenclosure,Select 격리(작업자),(미수집) rbNoPersonalEnclosure,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbNoPersonalEnclosure
+액체내분말,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialNoVentilation
+액체내분말,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialVentilation
+액체내분말,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+액체내분말,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+액체내분말,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+액체내분말,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+액체내분말,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbIndoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+액체내분말,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbOutdoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+액체내분말,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",스프레이 룸,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbSprayRoom
+액체내분말,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실내,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+액체내분말,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실외,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+액체내분말,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",하향 층류 부스,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbBooth
+액체내분말,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",아니오,q002_7_activities,,ctl00$cphMain$FFSES,rbNo
+액체내분말,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",예,q003_090_producttype,,ctl00$cphMain$FFSES,rbYes
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,극미량 (0.01 - 0.1 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,8
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,극히 적음 (0.1 - 0.5 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,7
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,매우 적음 (0.5 - 1 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,6
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,상당량 (10 - 50 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,3
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,소량 (5 - 10 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,4
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,순수 물질 (100%),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,1
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,적음 (1 - 5 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,5
+고체물체,q007_094_solidweightfraction,고체 물체 내 물질의 질량분율은 얼마입니까?,주성분 (50 - 90 %),q008_095_solidmaterial,,ctl00$cphMain$ddlFraction,2
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,가죽 (현재 ART 의 적용 범위를 벗어납니다),,선택 불가 (ART 미지원),ctl00$cphMain$SolidMaterial,rbLeather
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,금속,q008_5_095_5_moisturecontent,,ctl00$cphMain$SolidMaterial,rbMetal
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,기타 (현재 ART 의 적용 범위를 벗어납니다),,선택 불가 (ART 미지원),ctl00$cphMain$SolidMaterial,rbOther
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,목재,q008_5_095_5_moisturecontent,,ctl00$cphMain$SolidMaterial,rbWood
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,석재,q008_5_095_5_moisturecontent,,ctl00$cphMain$SolidMaterial,rbStone
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,유리 (현재 ART 의 적용 범위를 벗어납니다),,선택 불가 (ART 미지원),ctl00$cphMain$SolidMaterial,rbGlass
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,직물 (현재 ART 의 적용 범위를 벗어납니다),,선택 불가 (ART 미지원),ctl00$cphMain$SolidMaterial,rbTextileFabrics
+고체물체,q008_095_solidmaterial,고체 물체의 재질은 무엇입니까?,플라스틱 (현재 ART 의 적용 범위를 벗어납니다),,선택 불가 (ART 미지원),ctl00$cphMain$SolidMaterial,rbPlastic
+고체물체,q008_5_095_5_moisturecontent,고체 물체의 수분 함량은 얼마입니까?,건조 고체 물체 (수분 함량 <5 %),q016_nearfieldsource,,ctl00$cphMain$MoistureContent,rbPercentLT5
+고체물체,q008_5_095_5_moisturecontent,고체 물체의 수분 함량은 얼마입니까?,수분 함량 5 - 10 %,q016_nearfieldsource,,ctl00$cphMain$MoistureContent,rbPercent5To10
+고체물체,q008_5_095_5_moisturecontent,고체 물체의 수분 함량은 얼마입니까?,수분 함량 >10 %,q016_nearfieldsource,,ctl00$cphMain$MoistureContent,rbPercentGT10
+고체물체,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",아니오,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbNo
+고체물체,q016_nearfieldsource,"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 공기 체적) 안에 있습니까?",예,q017_055_103_activityclass,,ctl00$cphMain$NFPES,rbYes
+고체물체,q017_055_103_activityclass,활동 등급 선택,고체 물체의 파쇄 및 마모,q018_056_104_fracturingabrasionsolids,,ctl00$cphMain$ActivityClass,rbSolidObjectsFracturingAbrasion
+고체물체,q017_055_103_activityclass,활동 등급 선택,고체 물체의 파쇄 및 마모,q018_056_104_fracturingabrasionsolids,,ctl00$cphMain$ActivityClass,rbSolidObjectsFracturingAbrasion
+고체물체,q017_055_103_activityclass,활동 등급 선택,연마재 분사,q019_057_105_abrasiveblasting,,ctl00$cphMain$ActivityClass,rbSolidObjectsAbrasiveBlasting
+고체물체,q017_055_103_activityclass,활동 등급 선택,연마재 분사,q019_057_105_abrasiveblasting,,ctl00$cphMain$ActivityClass,rbSolidObjectsAbrasiveBlasting
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,극소량의 분진이 발생하는 목재의 수동 취급,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodManualHandlingVeryLimited
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,극소량의 분진이 발생하는 목재의 수동 취급,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Wooden,rbWoodManualHandlingVeryLimited
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,다량의 분진이 발생하는 목재의 기계적 샌딩,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodMechanicalSanding
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,다량의 분진이 발생하는 목재의 기계적 샌딩,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodMechanicalSanding
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,다량의 분진이 발생하는 목재의 기계적 취급 (예: 가공물의 빠른 이동 속도 또는 회전 절단 날),q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodMechanicalHandlingLarge
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,다량의 분진이 발생하는 목재의 기계적 취급 (예: 가공물의 빠른 이동 속도 또는 회전 절단 날),q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodMechanicalHandlingLarge
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소량의 분진이 발생하는 목재의 기계적 취급,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodMechanicalHandlingLimited
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소량의 분진이 발생하는 목재의 기계적 취급,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodMechanicalHandlingLimited
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소량의 분진이 발생하는 목재의 수동 취급,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,,ctl00$cphMain$Wooden,rbWoodManualHandlingLimited
+고체물체,q018_056_104_fracturingabrasionsolids,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소량의 분진이 발생하는 목재의 수동 취급,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Wooden,rbWoodManualHandlingLimited
+고체물체,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+고체물체,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,개방 공정,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbOpenProcess
+고체물체,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+고체물체,q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel,공정의 밀폐 수준은 어떻습니까?,제품과 주변 공기의 접촉을 줄이는 취급,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$Containment,rbReducedContact
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,대형 표면의 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbLargeSurfaces
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,대형 표면의 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbLargeSurfaces
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,마이크로 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbMicro
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,마이크로 연마 블라스팅,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$AB,rbMicro
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소형 부품의 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbSmallParts
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,소형 부품의 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbSmallParts
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,초대형 표면의 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbVeryLargeSurfaces
+고체물체,q019_057_105_abrasiveblasting,아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?,초대형 표면의 연마 블라스팅,q019_3_057_3_105_3_abrasiveblastingtechnique,,ctl00$cphMain$AB,rbVeryLargeSurfaces
+고체물체,q019_3_057_3_105_3_abrasiveblastingtechnique,연마 블라스팅 기법의 종류는 무엇입니까?,건식 연마 블라스팅,q019_5_057_5_105_5_abrasiveblastingdirection,,ctl00$cphMain$ABT,rbDry
+고체물체,q019_3_057_3_105_3_abrasiveblastingtechnique,연마 블라스팅 기법의 종류는 무엇입니까?,건식 연마 블라스팅,q019_5_057_5_105_5_abrasiveblastingdirection,,ctl00$cphMain$ABT,rbDry
+고체물체,q019_3_057_3_105_3_abrasiveblastingtechnique,연마 블라스팅 기법의 종류는 무엇입니까?,습식 연마 블라스팅,q019_5_057_5_105_5_abrasiveblastingdirection,,ctl00$cphMain$ABT,rbWet
+고체물체,q019_3_057_3_105_3_abrasiveblastingtechnique,연마 블라스팅 기법의 종류는 무엇입니까?,습식 연마 블라스팅,q019_5_057_5_105_5_abrasiveblastingdirection,,ctl00$cphMain$ABT,rbWet
+고체물체,q019_5_057_5_105_5_abrasiveblastingdirection,연마 블라스팅의 방향은 어떻습니까?,모든 방향(상향 포함)으로의 연마 블라스팅,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ABD,rbAnyDirection
+고체물체,q019_5_057_5_105_5_abrasiveblastingdirection,연마 블라스팅의 방향은 어떻습니까?,모든 방향(상향 포함)으로의 연마 블라스팅,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ABD,rbAnyDirection
+고체물체,q019_5_057_5_105_5_abrasiveblastingdirection,연마 블라스팅의 방향은 어떻습니까?,수평 또는 하향 블라스팅만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ABD,rbHorizontalDownward
+고체물체,q019_5_057_5_105_5_abrasiveblastingdirection,연마 블라스팅의 방향은 어떻습니까?,수평 또는 하향 블라스팅만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ABD,rbHorizontalDownward
+고체물체,q019_5_057_5_105_5_abrasiveblastingdirection,연마 블라스팅의 방향은 어떻습니까?,하향 블라스팅만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ABD,rbDownwardOnly
+고체물체,q019_5_057_5_105_5_abrasiveblastingdirection,연마 블라스팅의 방향은 어떻습니까?,하향 블라스팅만,q042_080_130_primarylocalizedcontrols,,ctl00$cphMain$ABD,rbDownwardOnly
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,억제 기법,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,억제 기법,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+고체물체,q042_080_130_primarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q042_5_080_5_130_5_secondarylocalizedcontrols,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,2차 국소 제어 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbNoLocalizedControls
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,국소배기장치(LEV),,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbLEV
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,막힘(검증오류),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,글로브 박스 및 글로브 백,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbGlove
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,밀폐 — 배기 없음,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbContainment
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,억제 기법,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,억제 기법,q043_131_segregation,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbSuppression
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,q045_081_surfacecontamination,,ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+고체물체,q042_5_080_5_130_5_secondarylocalizedcontrols,일반 제어수단,증기 회수 시스템,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$ctrlLocalizedControls$ControlMeasures,rbVapourRecoverySystem
+고체물체,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbCompleteNoVentilation
+고체물체,q043_131_segregation,격리(발생원) 선택,(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbCompleteVentilation
+고체물체,q043_131_segregation,격리(발생원) 선택,(미수집) rbNoSegregation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$Segregation,rbNoSegregation
+고체물체,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialNoVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialNoVentilation
+고체물체,q043_131_segregation,격리(발생원) 선택,(미수집) rbPartialVentilation,q044_personalenclosure,,ctl00$cphMain$Segregation,rbPartialVentilation
+고체물체,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbCompleteNoVentilation
+고체물체,q044_personalenclosure,Select 격리(작업자),(미수집) rbCompleteVentilation,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbCompleteVentilation
+고체물체,q044_personalenclosure,Select 격리(작업자),(미수집) rbNoPersonalEnclosure,,가지치기(형제 선택지와 같은 곳),ctl00$cphMain$PersonalEnclosure,rbNoPersonalEnclosure
+고체물체,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialNoVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialNoVentilation
+고체물체,q044_personalenclosure,Select 격리(작업자),(미수집) rbPartialVentilation,q045_081_surfacecontamination,,ctl00$cphMain$PersonalEnclosure,rbPartialVentilation
+고체물체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+고체물체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",아니오,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedNo
+고체물체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q084_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+고체물체,q045_081_surfacecontamination,"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?",예,q048_dispersion,,ctl00$cphMain$Enclosed,rbEnclosedYes
+고체물체,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbIndoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+고체물체,q048_dispersion,작업을 실내 또는 실외에서 수행합니까?,(미수집) rbOutdoors,,막힘(검증오류),ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+고체물체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",스프레이 룸,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbSprayRoom
+고체물체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실내,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbIndoors
+고체물체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",실외,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbOutdoors
+고체물체,q084_dispersion,"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?",하향 층류 부스,q089_0_secondaryfarfieldsources,,ctl00$cphMain$ctrlDispersion$Site,rbBooth
+고체물체,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",아니오,q002_7_activities,,ctl00$cphMain$FFSES,rbNo
+고체물체,q089_0_secondaryfarfieldsources,"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?",예,q003_090_producttype,,ctl00$cphMain$FFSES,rbYes

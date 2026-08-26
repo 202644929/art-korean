@@ -1,0 +1,15 @@
+%%{init: {"flowchart": {"useMaxWidth": false, "nodeSpacing": 45, "rankSpacing": 55}, "themeVariables": {"fontSize": "15px"}} }%%
+flowchart TD
+  Sq003_090_producttype{"물질/조제품의 제품 유형은 무엇입니까?"}
+  Sq007_094_solidweightfraction{"고체 물체 내 물질의 질량분율은 얼마입니까?"}
+  Sq004_091_dustiness{"측정된 재료의 발진성은 얼마입니까? (흡입성 분율, mg/kg)"}
+  Sq009_096_processtemperature{"공정 중 액체의 온도는 얼마입니까?"}
+  Sq015_5_1_102_5_1_liquidmatrixweightfraction{"액체 혼합물 내 분말 물질의 질량분율은 얼마입니까?"}
+  Sq015_1_102_1_contaminatedwithpowder{"해당 페이스트 또는 슬러리가 분말 물질로 (잠재적으로) 오염되어 있습니까?"}
+  X_Sq003_090_producttype_DISABLED[/"선택 불가 (ART 미지원)"/]
+  Sq003_090_producttype -->|"가스<br/>고온 또는 용융 금속<br/>섬유상 물질"| X_Sq003_090_producttype_DISABLED
+  Sq003_090_producttype -->|"고체 물체"| Sq007_094_solidweightfraction
+  Sq003_090_producttype -->|"분말, 과립 또는 펠릿형 재료"| Sq004_091_dustiness
+  Sq003_090_producttype -->|"액체"| Sq009_096_processtemperature
+  Sq003_090_producttype -->|"액체에 용해되거나 액상 매트릭스에 포함된 분말 (예: 방오도…"| Sq015_5_1_102_5_1_liquidmatrixweightfraction
+  Sq003_090_producttype -->|"페이스트, 슬러리 또는 명백히 (젖은) 습윤 분말 (휘발성 …"| Sq015_1_102_1_contaminatedwithpowder

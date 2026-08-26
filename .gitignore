@@ -1,0 +1,32 @@
+# 크롬 디버그 프로필 — **로그인 쿠키가 들어 있습니다.** 절대 올리지 마십시오.
+# parallel.ps1 이 -b, -c 를 더 만들기 때문에 별표로 받습니다.
+.chrome-debug*/
+
+# 의존성·캐시
+tools/node_modules/
+**/__pycache__/
+*.pyc
+
+# 자동화 기록. 다시 돌리면 생깁니다.
+tools/*.log
+tools/*.err
+
+# 순회 중간 산출물 — 계정마다 따로 도는 검증본
+tools/crawl_edges.v*.json
+tools/crawl_screens.v*.json
+tools/crawl_todo.v*.json
+tools/crawl_otherattrs.v*.json
+tools/crawl_labels.s*.json
+
+# 형식 바꾸기 전 백업
+tools/*.pre-*.json
+
+# 편집기·OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# ART 원본 문서 (PDF·추출 텍스트). TNO/ART 측 저작물이라 재배포하지 않습니다.
+# 로컬에는 그대로 남아 있고, 작업에 필요하면 ART 사이트에서 직접 받으십시오.
+tools/source/

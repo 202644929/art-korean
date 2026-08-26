@@ -1,0 +1,51 @@
+%%{init: {"flowchart": {"useMaxWidth": false, "nodeSpacing": 45, "rankSpacing": 55}, "themeVariables": {"fontSize": "15px"}} }%%
+flowchart TD
+  Sq015_1_102_1_contaminatedwithpowder{"해당 페이스트 또는 슬러리가 분말 물질로 (잠재적으로) 오염되어 있습니까?"}
+  Sq016_nearfieldsource{"1차 배출 발생원이 작업자의 호흡 영역(즉, 작업자 머리로부터 모든 방향으로 1미터 이내의 …"}
+  Sq015_2_102_2_dustiness{"페이스트 또는 슬러리 상의 분말 오염물에 대해 측정된 발진성은 얼마입니까? (흡입성 분율, …"}
+  Sq015_4_102_4_powderweightfraction{"페이스트 또는 슬러리 상의 분말 오염물 내 물질의 질량분율은 얼마입니까?"}
+  Sq017_055_103_activityclass{"활동 등급 선택"}
+  Sq021_059_107_contaminatedobjectspaste{"아래 상황 중 귀하의 활동을 가장 잘 나타내는 것은 무엇입니까?"}
+  Sq021_5_059_5_107_5_contaminatedobjectspastehandlingtype{"오염된 물체 또는 페이스트를 어떻게 취급합니까?"}
+  Sq042_080_130_primarylocalizedcontrols{"일반 제어수단"}
+  Sq045_081_surfacecontamination{"공정이 완전히 밀폐되어 있고, 그 밀폐의 건전성을 정기적으로 점검합니까?"}
+  Sq043_131_segregation{"격리(발생원) 선택"}
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols{"일반 제어수단"}
+  Sq044_personalenclosure{"Select 격리(작업자)"}
+  Sq084_dispersion{"작업은 실내, 실외, 분무실, 또는 하향 층류 부스 중 어디에서 수행됩니까?"}
+  Sq048_dispersion{"작업을 실내 또는 실외에서 수행합니까?"}
+  Sq089_0_secondaryfarfieldsources{"작업자 호흡 영역의 발생원 외에, 작업실 내에 2차 발생원이 존재합니까?"}
+  Sq002_7_activities{"시나리오 개요 - ART 기계론적 모델"}
+  Sq003_090_producttype{"물질/조제품의 제품 유형은 무엇입니까?"}
+  Sq015_1_102_1_contaminatedwithpowder -->|"아니오"| Sq016_nearfieldsource
+  Sq015_1_102_1_contaminatedwithpowder -->|"예"| Sq015_2_102_2_dustiness
+  Sq015_2_102_2_dustiness -->|"5개 선택지"| Sq015_4_102_4_powderweightfraction
+  Sq015_4_102_4_powderweightfraction -->|"9개 선택지"| Sq016_nearfieldsource
+  Sq016_nearfieldsource -->|"아니오<br/>예"| Sq017_055_103_activityclass
+  Sq017_055_103_activityclass -->|"오염된 고체 물체 또는 페이스트의 취급<br/>오염된 고체 물체 또는 페이스트의 취급"| Sq021_059_107_contaminatedobjectspaste
+  Sq021_059_107_contaminatedobjectspaste -->|"8개 선택지"| Sq021_5_059_5_107_5_contaminatedobjectspastehandlingtype
+  X_Sq021_059_107_contaminatedobjectspaste_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq021_059_107_contaminatedobjectspaste -->|"경미하게 오염된(수 그램 미만의 층) 물체의 취급<br/>외견상 깨끗한 물체의 취급"| X_Sq021_059_107_contaminatedobjectspaste_PRUNED
+  Sq021_5_059_5_107_5_contaminatedobjectspastehandlingtype -->|"6개 선택지"| Sq042_080_130_primarylocalizedcontrols
+  Sq042_080_130_primarylocalizedcontrols -->|"국소 제어 없음"| Sq045_081_surfacecontamination
+  Sq042_080_130_primarylocalizedcontrols -->|"국소 제어 없음"| Sq043_131_segregation
+  X_Sq042_080_130_primarylocalizedcontrols_BLOCKED[/"막힘(검증오류)"/]
+  Sq042_080_130_primarylocalizedcontrols -->|"국소배기장치(LEV)<br/>국소배기장치(LEV)<br/>글로브 박스 및 글로브 백<br/>글로브 박스 및 글로브 백"| X_Sq042_080_130_primarylocalizedcontrols_BLOCKED
+  Sq042_080_130_primarylocalizedcontrols -->|"밀폐 — 배기 없음<br/>밀폐 — 배기 없음<br/>증기 회수 시스템<br/>증기 회수 시스템"| Sq042_5_080_5_130_5_secondarylocalizedcontrols
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"2차 국소 제어 없음<br/>밀폐 — 배기 없음<br/>증기 회수 시스템"| Sq045_081_surfacecontamination
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"2차 국소 제어 없음<br/>밀폐 — 배기 없음<br/>증기 회수 시스템"| Sq043_131_segregation
+  X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_BLOCKED[/"막힘(검증오류)"/]
+  Sq042_5_080_5_130_5_secondarylocalizedcontrols -->|"국소배기장치(LEV)<br/>국소배기장치(LEV)<br/>글로브 박스 및 글로브 백<br/>글로브 박스 및 글로브 백"| X_Sq042_5_080_5_130_5_secondarylocalizedcontrols_BLOCKED
+  Sq043_131_segregation -->|"(미수집) rbCompleteNoVentilation<br/>(미수집) rbPartialNoVentilation<br/>(미수집) rbPartialVentilation"| Sq044_personalenclosure
+  X_Sq043_131_segregation_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq043_131_segregation -->|"(미수집) rbCompleteVentilation<br/>(미수집) rbNoSegregation"| X_Sq043_131_segregation_PRUNED
+  Sq044_personalenclosure -->|"(미수집) rbCompleteNoVentilation<br/>(미수집) rbPartialNoVentilation<br/>(미수집) rbPartialVentilation"| Sq045_081_surfacecontamination
+  X_Sq044_personalenclosure_PRUNED[/"가지치기(형제 선택지와 같은 곳)"/]
+  Sq044_personalenclosure -->|"(미수집) rbCompleteVentilation<br/>(미수집) rbNoPersonalEnclosure"| X_Sq044_personalenclosure_PRUNED
+  Sq045_081_surfacecontamination -->|"아니오<br/>예"| Sq084_dispersion
+  Sq045_081_surfacecontamination -->|"아니오<br/>예"| Sq048_dispersion
+  X_Sq048_dispersion_BLOCKED[/"막힘(검증오류)"/]
+  Sq048_dispersion -->|"(미수집) rbIndoors<br/>(미수집) rbOutdoors"| X_Sq048_dispersion_BLOCKED
+  Sq084_dispersion -->|"스프레이 룸<br/>실내<br/>실외<br/>하향 층류 부스"| Sq089_0_secondaryfarfieldsources
+  Sq089_0_secondaryfarfieldsources -->|"아니오"| Sq002_7_activities
+  Sq089_0_secondaryfarfieldsources -->|"예"| Sq003_090_producttype

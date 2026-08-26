@@ -1,0 +1,8 @@
+{
+ "Conversion table:": "",
+ "mmHg": "",
+ "When estimating the vapour pressure for substances in a mixture one needs to account for the fact that more than one substance will contribute to the overall vapour pressure. This is based on a fundamental thermodynamic relationship called Raoult’s law. Raoult’s law relates the vapour pressure of the components to their composition in an ideal solution. A correction factor is introduced into Raoult’s law so it can be used to find the vapour pressures above non-ideal solutions. This correction factor is called the activity coefficient,": "",
+ ". It describes how interactions between the components’ molecules in solution affect composition (expressed as mole fraction,": "",
+ ") and hence the vapour pressure exerted by the components of the mixture. Activity coefficients can be determined experimentally. In addition a computer software tool called UNIFAC is available to estimate the activity coefficients, which can be found at": "",
+ "XLUNIFAC": ""
+}

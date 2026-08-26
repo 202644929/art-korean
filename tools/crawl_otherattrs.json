@@ -1,0 +1,635 @@
+{
+ "data-art-en-title=Go to the ART home page": [
+  "/loggedin/myscenarios.aspx",
+  "/loggedin/mechanisticresults.aspx",
+  "/",
+  "/science.aspx",
+  "/support.aspx",
+  "/training.aspx",
+  "/cookie.aspx",
+  "/credits.aspx",
+  "/loggedin/browseedb.aspx",
+  "/loggedin/analogousdatauploader.aspx",
+  "/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx",
+  "/loggedin/mechquest/q045_081_surfacecontamination.aspx",
+  "/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx",
+  "/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx",
+  "/loggedin/mechquest/q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel.aspx",
+  "/loggedin/mechquest/q024_5_062_5_110_5_fallinggranularmaterialhandlingtype.aspx",
+  "/loggedin/mechquest/q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel.aspx",
+  "/loggedin/mechquest/q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel.aspx",
+  "/loggedin/mechquest/q019_3_057_3_105_3_abrasiveblastingtechnique.aspx",
+  "/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx",
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel.aspx",
+  "/loggedin/mechquest/q033_5_071_5_119_5_fallingliquidscontainmentlevel.aspx",
+  "/loggedin/mechquest/q016_nearfieldsource.aspx",
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx",
+  "/loggedin/mechquest/q006_093_moisturecontent.aspx",
+  "/loggedin/mechquest/q008_095_solidmaterial.aspx",
+  "/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx",
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx",
+  "/loggedin/mechquest/q013_100_viscosity.aspx",
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx",
+  "/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx",
+  "/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx",
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q003_090_producttype.aspx",
+  "/loggedin/mechquest/q002_7_activities.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q027_065_113_sprayingliquidsinspace.aspx",
+  "/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx",
+  "/loggedin/mechquest/q028_3_066_3_114_3_liquidopensurfaceagitated.aspx",
+  "/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx",
+  "/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx",
+  "/loggedin/mechquest/q030_068_116_liquidshighspeedprocesses.aspx",
+  "/loggedin/mechquest/q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel.aspx",
+  "/loggedin/mechquest/q032_070_118_bottomloading.aspx",
+  "/loggedin/mechquest/q033_071_119_fallingliquids.aspx",
+  "/loggedin/mechquest/q034_072_120_transferloadingtype.aspx",
+  "/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx",
+  "/loggedin/mechquest/q043_131_segregation.aspx",
+  "/loggedin/mechquest/q044_personalenclosure.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx",
+  "/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx",
+  "/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx",
+  "/loggedin/mechquest/q022_060_108_sprayapplicationpowders.aspx",
+  "/loggedin/mechquest/q022_5_060_5_108_5_sprayapplicationpowdersspraydirection.aspx",
+  "/loggedin/mechquest/q023_061_109_movementagitationgranularmaterial.aspx",
+  "/loggedin/mechquest/q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx",
+  "/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx",
+  "/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q024_9_1_062_9_1_110_9_1_vacuumtransfer.aspx",
+  "/loggedin/mechquest/q025_063_111_compressinggranularmaterial.aspx",
+  "/loggedin/mechquest/q025_5_063_5_111_5_fracturinggranularmaterial.aspx",
+  "/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx",
+  "/loggedin/mechquest/q019_057_105_abrasiveblasting.aspx",
+  "/loggedin/mechquest/q019_5_057_5_105_5_abrasiveblastingdirection.aspx"
+ ],
+ "data-art-en-title=Communicating with server. Please wait...": [
+  "/loggedin/myscenarios.aspx",
+  "/loggedin/mechanisticresults.aspx",
+  "/",
+  "/science.aspx",
+  "/support.aspx",
+  "/training.aspx",
+  "/cookie.aspx",
+  "/credits.aspx",
+  "/loggedin/analogousdatauploader.aspx",
+  "/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx",
+  "/loggedin/mechquest/q045_081_surfacecontamination.aspx",
+  "/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx",
+  "/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx",
+  "/loggedin/mechquest/q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel.aspx",
+  "/loggedin/mechquest/q024_5_062_5_110_5_fallinggranularmaterialhandlingtype.aspx",
+  "/loggedin/mechquest/q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel.aspx",
+  "/loggedin/mechquest/q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel.aspx",
+  "/loggedin/mechquest/q019_3_057_3_105_3_abrasiveblastingtechnique.aspx",
+  "/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx",
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel.aspx",
+  "/loggedin/mechquest/q033_5_071_5_119_5_fallingliquidscontainmentlevel.aspx",
+  "/loggedin/mechquest/q016_nearfieldsource.aspx",
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx",
+  "/loggedin/mechquest/q006_093_moisturecontent.aspx",
+  "/loggedin/mechquest/q008_095_solidmaterial.aspx",
+  "/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx",
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx",
+  "/loggedin/mechquest/q013_100_viscosity.aspx",
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx",
+  "/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx",
+  "/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx",
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q003_090_producttype.aspx",
+  "/loggedin/mechquest/q002_7_activities.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q027_065_113_sprayingliquidsinspace.aspx",
+  "/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx",
+  "/loggedin/mechquest/q028_3_066_3_114_3_liquidopensurfaceagitated.aspx",
+  "/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx",
+  "/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx",
+  "/loggedin/mechquest/q030_068_116_liquidshighspeedprocesses.aspx",
+  "/loggedin/mechquest/q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel.aspx",
+  "/loggedin/mechquest/q032_070_118_bottomloading.aspx",
+  "/loggedin/mechquest/q033_071_119_fallingliquids.aspx",
+  "/loggedin/mechquest/q034_072_120_transferloadingtype.aspx",
+  "/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx",
+  "/loggedin/mechquest/q043_131_segregation.aspx",
+  "/loggedin/mechquest/q044_personalenclosure.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx",
+  "/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx",
+  "/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx",
+  "/loggedin/mechquest/q022_060_108_sprayapplicationpowders.aspx",
+  "/loggedin/mechquest/q022_5_060_5_108_5_sprayapplicationpowdersspraydirection.aspx",
+  "/loggedin/mechquest/q023_061_109_movementagitationgranularmaterial.aspx",
+  "/loggedin/mechquest/q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx",
+  "/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx",
+  "/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q024_9_1_062_9_1_110_9_1_vacuumtransfer.aspx",
+  "/loggedin/mechquest/q025_063_111_compressinggranularmaterial.aspx",
+  "/loggedin/mechquest/q025_5_063_5_111_5_fracturinggranularmaterial.aspx",
+  "/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx",
+  "/loggedin/mechquest/q019_057_105_abrasiveblasting.aspx",
+  "/loggedin/mechquest/q019_5_057_5_105_5_abrasiveblastingdirection.aspx"
+ ],
+ "data-art-en-title=Click to load scenario": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Click to load scenario and start editing": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Click to configure activities": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Click to load and run scenario": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Click to delete scenario (NB: deletion is irreversible)": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Unload any currently loaded scenario and start a new one": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Save scenario to database": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Copy open scenario and save": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Edit scenario": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Configure activities": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Delete scenario (NB: deletion is irreversible)": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Unload scenario (NB: any changes since last save will be lost)": [
+  "/loggedin/myscenarios.aspx"
+ ],
+ "data-art-en-title=Click for help": [
+  "/loggedin/mechanisticresults.aspx",
+  "/loggedin/browseedb.aspx",
+  "/loggedin/analogousdatauploader.aspx",
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q043_131_segregation.aspx",
+  "/loggedin/mechquest/q044_personalenclosure.aspx"
+ ],
+ "data-art-en-alt=Click for help": [
+  "/loggedin/mechanisticresults.aspx",
+  "/loggedin/browseedb.aspx",
+  "/loggedin/analogousdatauploader.aspx",
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q043_131_segregation.aspx",
+  "/loggedin/mechquest/q044_personalenclosure.aspx"
+ ],
+ "data-art-en=Full shift": [
+  "/loggedin/mechanisticresults.aspx"
+ ],
+ "data-art-en=Long term": [
+  "/loggedin/mechanisticresults.aspx"
+ ],
+ "data-art-en=Reconfigure scenario": [
+  "/loggedin/mechanisticresults.aspx"
+ ],
+ "data-art-en=Proceed to Bayesian Model": [
+  "/loggedin/mechanisticresults.aspx",
+  "/loggedin/browseedb.aspx",
+  "/loggedin/analogousdatauploader.aspx"
+ ],
+ "data-art-en-title=Go to Activity Configuration": [
+  "/loggedin/mechanisticresults.aspx"
+ ],
+ "data-art-en-title=Click to edit notes, comments and justifications": [
+  "/loggedin/mechanisticresults.aspx",
+  "/loggedin/browseedb.aspx",
+  "/loggedin/analogousdatauploader.aspx",
+  "/loggedin/mechquest/q089_0_secondaryfarfieldsources.aspx",
+  "/loggedin/mechquest/q045_081_surfacecontamination.aspx",
+  "/loggedin/mechquest/q020_5_058_5_106_5_impactionsolidobjectshandlingtype.aspx",
+  "/loggedin/mechquest/q021_5_059_5_107_5_contaminatedobjectspastehandlingtype.aspx",
+  "/loggedin/mechquest/q023_5_061_5_109_5_movementagitationgranularmaterialagitationlevel.aspx",
+  "/loggedin/mechquest/q024_5_062_5_110_5_fallinggranularmaterialhandlingtype.aspx",
+  "/loggedin/mechquest/q024_9_2_062_9_2_110_9_2_vacuumtransfercontainmentlevel.aspx",
+  "/loggedin/mechquest/q025_3_063_3_111_3_compressinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q025_8_063_8_111_8_fracturinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q018_6_056_6_104_6_fracturingabrasionsolidscontainmentlevel.aspx",
+  "/loggedin/mechquest/q019_3_057_3_105_3_abrasiveblastingtechnique.aspx",
+  "/loggedin/mechquest/q026_5_064_5_112_5_surfacesprayingliquidsspraydirection.aspx",
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q028_7_066_7_114_7_handlingcontaminatedobjectscontaminationlevel.aspx",
+  "/loggedin/mechquest/q033_5_071_5_119_5_fallingliquidscontainmentlevel.aspx",
+  "/loggedin/mechquest/q016_nearfieldsource.aspx",
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx",
+  "/loggedin/mechquest/q006_093_moisturecontent.aspx",
+  "/loggedin/mechquest/q008_095_solidmaterial.aspx",
+  "/loggedin/mechquest/q010_010_5_097_097_5_vapourpressure.aspx",
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx",
+  "/loggedin/mechquest/q013_100_viscosity.aspx",
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx",
+  "/loggedin/mechquest/q026_064_112_surfacesprayingliquids.aspx",
+  "/loggedin/mechquest/q026_7_064_7_112_7_surfacesprayingliquidsspraytechnique.aspx",
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q003_090_producttype.aspx",
+  "/loggedin/mechquest/q002_7_activities.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q027_065_113_sprayingliquidsinspace.aspx",
+  "/loggedin/mechquest/q028_066_114_liquidopensurfaceundisturbed.aspx",
+  "/loggedin/mechquest/q028_3_066_3_114_3_liquidopensurfaceagitated.aspx",
+  "/loggedin/mechquest/q028_5_066_5_114_5_handlingcontaminatedobjects.aspx",
+  "/loggedin/mechquest/q029_067_115_spreadingliquidproducts.aspx",
+  "/loggedin/mechquest/q030_068_116_liquidshighspeedprocesses.aspx",
+  "/loggedin/mechquest/q030_5_068_5_116_5_liquidshighspeedprocessescontainmentlevel.aspx",
+  "/loggedin/mechquest/q032_070_118_bottomloading.aspx",
+  "/loggedin/mechquest/q033_071_119_fallingliquids.aspx",
+  "/loggedin/mechquest/q034_072_120_transferloadingtype.aspx",
+  "/loggedin/mechquest/q015_5_2_102_5_2_viscosity.aspx",
+  "/loggedin/mechquest/q043_131_segregation.aspx",
+  "/loggedin/mechquest/q044_personalenclosure.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx",
+  "/loggedin/mechquest/q020_058_106_impactionsolidobjects.aspx",
+  "/loggedin/mechquest/q021_059_107_contaminatedobjectspaste.aspx",
+  "/loggedin/mechquest/q022_060_108_sprayapplicationpowders.aspx",
+  "/loggedin/mechquest/q022_5_060_5_108_5_sprayapplicationpowdersspraydirection.aspx",
+  "/loggedin/mechquest/q023_061_109_movementagitationgranularmaterial.aspx",
+  "/loggedin/mechquest/q023_7_061_7_109_7_movementagitationgranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q024_062_110_fallinggranularmaterial.aspx",
+  "/loggedin/mechquest/q024_7_062_7_110_7_fallinggranularmaterialdropheight.aspx",
+  "/loggedin/mechquest/q024_8_062_8_110_8_fallinggranularmaterialcontainmentlevel.aspx",
+  "/loggedin/mechquest/q024_9_1_062_9_1_110_9_1_vacuumtransfer.aspx",
+  "/loggedin/mechquest/q025_063_111_compressinggranularmaterial.aspx",
+  "/loggedin/mechquest/q025_5_063_5_111_5_fracturinggranularmaterial.aspx",
+  "/loggedin/mechquest/q018_056_104_fracturingabrasionsolids.aspx",
+  "/loggedin/mechquest/q019_057_105_abrasiveblasting.aspx",
+  "/loggedin/mechquest/q019_5_057_5_105_5_abrasiveblastingdirection.aspx"
+ ],
+ "data-art-en-title=Click to show all item descriptions": [
+  "/loggedin/browseedb.aspx"
+ ],
+ "data-art-en-title=Click to hide all item descriptions": [
+  "/loggedin/browseedb.aspx"
+ ],
+ "data-art-en-title=Exposure Statistics": [
+  "/loggedin/browseedb.aspx"
+ ],
+ "data-art-en=Mechanistic Results": [
+  "/loggedin/browseedb.aspx",
+  "/loggedin/analogousdatauploader.aspx"
+ ],
+ "data-art-en=Upload Data": [
+  "/loggedin/browseedb.aspx"
+ ],
+ "data-art-en-title=Advanced REACH Tool": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Health and Safety Executive": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Agence Française de Sécurité Sanitaire de l'Environment et du Travail (French Agency for Environmental and Occupational Health and Safety)": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Conseil Europeen des Federations de l'Industrie Chimique (European Chemical Industry Council)": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Long-range Research Initiative": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=British Occupational Hygiene Society": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Nederlandse Organisatie voor Toegepast Natuurwetenschappelijk Onderzoek (Dutch Organisation for Applied Scientific Research)": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Institute of Risk Assessment Sciences": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Bundesanstalt für Arbeitsschutz und Arbeitsmedizin (Federal Institute for Occupational Safety and Health)": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Det Nationale Forskningscenter for Aberjdsmiljø (National Research Centre for the Working Environment)": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Institute of Occupational Medicine": [
+  "/credits.aspx"
+ ],
+ "data-art-en-title=Health and Safety Laboratory": [
+  "/credits.aspx"
+ ],
+ "data-art-en=Retrieve existing analogous data": [
+  "/loggedin/analogousdatauploader.aspx"
+ ],
+ "data-art-en-title=Go to Exposure Database": [
+  "/loggedin/analogousdatauploader.aspx"
+ ],
+ "data-art-en-title=Go to Mechanistic Results": [
+  "/loggedin/analogousdatauploader.aspx"
+ ],
+ "data-art-en=Process fully enclosed (air tight) and the integrity of the enclosure is monitored at least once a month. The containment is not breached for example for sampling or routine cleaning.": [
+  "/loggedin/mechquest/q045_081_surfacecontamination.aspx"
+ ],
+ "data-art-en=Knockdown suppression": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Wetting at point of release": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Low level containment": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Medium level containment": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=High level containment": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Receiving hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Capturing hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Enclosing hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Other LEV systems": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Glove bags": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Glove boxes": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en-alt=Help - Glove boxes and glove bags": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Canopy hood": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Other receiving hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en-alt=Help - Receiving Hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Movable capturing hood": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Fixed capturing hood": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=On-tool extraction": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en-alt=Help - Capturing Hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Fume cupboard": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Horizontal/downward laminar flow booth": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Other enclosing hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en-alt=Help - Enclosing Hoods": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Glove bags (non-ventilated)": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Glove bags (ventilated or kept under negative pressure)": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Low specification glove box": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Medium specification glove box": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=High specification glove box / isolator": [
+  "/loggedin/mechquest/q042_080_130_primarylocalizedcontrols.aspx",
+  "/loggedin/mechquest/q042_5_080_5_130_5_secondarylocalizedcontrols.aspx"
+ ],
+ "data-art-en=Pure material (100%)": [
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx"
+ ],
+ "data-art-en=Main component (50 - 90 %)": [
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx",
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx"
+ ],
+ "data-art-en=Very small (0.5 - 1 %)": [
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx",
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx"
+ ],
+ "data-art-en=Extremely small (0.1 - 0.5 %)": [
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx",
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx"
+ ],
+ "data-art-en=Extremely minute (< 0.01 %)": [
+  "/loggedin/mechquest/q015_4_102_4_powderweightfraction.aspx"
+ ],
+ "data-art-en=Pure liquid (100%)": [
+  "/loggedin/mechquest/q012_099_liquidweightfraction.aspx"
+ ],
+ "data-art-en-title=Activities used to atomise liquids into droplets for dispersion on surfaces (surface spraying) or into air (space spraying). Spraying techniques may be used for dispersion of e.g. pesticides, biocides, and paints.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Handling of a liquid product in a bath or other reservoir. The liquid may either be relatively undisturbed (e.g. manual stirring, dipping in bath) or agitated (e.g. gas bubbling, mechanical mixing in vessel).": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Handling of solid objects that are treated or contaminated with the liquid of interest.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where a liquid product is directly spread on surfaces using e.g. a roller, brush or wipe.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=High energy activities with e.g. rotating tools where liquids are added to the process (e.g. metal working fluids).": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where a stream of liquid product is transferred from one reservoir to the next. The stream may either fall or glide from high to a lower point (falling liquids) or is transferred with pressure (pressurised transfer: e.g. bottom loading).": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en=(no activity subclasses)": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Only for situations where there are no or few boundaries nearby, i.e. the source is not located close to walls or in an enclosed courtyard. If this is not the case, the assessor should assume the work is essentially carried out indoors in an appropriately sized room.": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Any size workroom": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Large workrooms only": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Small workrooms only": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Cross-flow spray room": [
+  "/loggedin/mechquest/q084_dispersion.aspx"
+ ],
+ "data-art-en=Down-flow spray room": [
+  "/loggedin/mechquest/q084_dispersion.aspx"
+ ],
+ "data-art-en=No barriers or screens": [
+  "/loggedin/mechquest/q084_dispersion.aspx"
+ ],
+ "data-art-en=Partial screen": [
+  "/loggedin/mechquest/q084_dispersion.aspx"
+ ],
+ "data-art-en=Partial screen fitted with glove ports": [
+  "/loggedin/mechquest/q084_dispersion.aspx"
+ ],
+ "data-art-en=Full screen fitted with glove ports": [
+  "/loggedin/mechquest/q084_dispersion.aspx"
+ ],
+ "data-art-en=No restriction on general ventilation characteristics": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Only good natural ventilation": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Mechanical ventilation giving at least 1 ACH": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en=Specialised room ventilation with more than 10 ACH": [
+  "/loggedin/mechquest/q084_dispersion.aspx",
+  "/loggedin/mechquest/q048_dispersion.aspx"
+ ],
+ "data-art-en-alt=Help on enabling an activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-alt=Help on name and duration": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Click to enable activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Click to disable activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit name of activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit duration of activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Activity is configured": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-alt=Activity is configured": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Activity is not configured": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-alt=Activity is not configured": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Start workflow questionnaire for this activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Click for quick revision options": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-alt=Click for quick revision options": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit non-exposure period": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit near-field activity emission potential for this activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit near-field localised controls for this activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit near-field surface contamination for this activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en-title=Edit near-field dispersion for this activity": [
+  "/loggedin/mechquest/q002_7_activities.aspx"
+ ],
+ "data-art-en=Demonstrable and effective housekeeping practices (examples include daily cleaning using appropriate methods (eg vacuum), preventive maintenance of machinery and control measures, and use of protective clothing that will repel spills and reduce personal cloud).": [
+  "/loggedin/mechquest/q045_081_surfacecontamination.aspx"
+ ],
+ "data-art-en=Worker resides inside an enclosed cabin or room (door & windows closed) for the entire duration of the activity. The air within the separate room is not actively ventilated.": [
+  "/loggedin/mechquest/q044_personalenclosure.aspx"
+ ],
+ "data-art-en=Sources are completely segregated from the work environment by isolating the source in a fully enclosed and separate room (incl. closed doors & windows). This segregated area is generally not entered by the worker during a given activity or working shift. The air within the separate area is not ventilated.": [
+  "/loggedin/mechquest/q043_131_segregation.aspx"
+ ],
+ "data-art-en-title=Activities where impaction or striking of a tool on an object contaminated with powder or granules potentially results in re-suspension of that powder. For this activity class, exposure is estimated to be related to the level of contamination on the surface or the object that is impacted on.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Handling or transport of surfaces, objects or pastes that are (potentially) contaminated with powders or granules. For this activity class, exposure is estimated to the contamination on the surface, object or paste.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Spraying activities used to intentionally disperse powders on surfaces by using a pressure difference.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where movement and agitation of powders results in disturbances of the product causing dust particles to become airborne.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where a stream of powder is transferred from one reservoir (or container, vessel) to the receiving vessel. The product may either fall due to gravity from a high to a lower point (dumping of powders), be transferred horizontally (scooping of powders) or is transferred through a hose or tube with pressure (vacuum transfer).": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where powders, granules or pelletised material are compressed due to compaction or crushing.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where powders, granules or pelletised material are crushed and broken into smaller parts or sizes due to frictional forces (e.g. between two surfaces or objects).": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=Activities where solid objects are broken into smaller parts or are abraded due to frictional forces.": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ],
+ "data-art-en-title=A surface preparation technique for removing coatings or contamination by propelling abrasive material towards the surface at high velocity. ART only considers exposure arising from the surface coatings during abrasive blasting (i.e., exposure to the abrasive material is not included).": [
+  "/loggedin/mechquest/q017_055_103_activityclass.aspx"
+ ]
+}
